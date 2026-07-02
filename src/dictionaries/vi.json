@@ -1,0 +1,86 @@
+{
+  "common": {
+    "title": "Quick-Fix Tools (vi)",
+    "description": "Automated utility tools."
+  },
+  "sql": {
+    "h1": "SQL Formatter & Minifier",
+    "meta_title": "Online SQL Formatter",
+    "meta_desc": "Beautify and compress SQL queries instantly.",
+    "placeholder": "Paste SQL here...",
+    "btn_format": "Format SQL",
+    "btn_minify": "Minify SQL"
+  }
+,
+  "json_validator": {
+    "h1": "json-validator Title (vi)",
+    "meta_title": "json-validator Meta Title (vi)",
+    "meta_desc": "SEO optimization text content for structural integrity.",
+    "placeholder": "Enter data...",
+    "btn_format": "Process Data"
+  }
+,
+  "privacy_policy": {
+    "h1": "privacy-policy Title (vi)",
+    "meta_title": "privacy-policy Meta Title (vi)",
+    "meta_desc": "SEO optimization text content for structural integrity.",
+    "placeholder": "Enter data...",
+    "btn_format": "Process Data"
+  }
+,
+  "terms_of_service": {
+    "h1": "terms-of-service Title (vi)",
+    "meta_title": "terms-of-service Meta Title (vi)",
+    "meta_desc": "SEO optimization text content for structural integrity.",
+    "placeholder": "Enter data...",
+    "btn_format": "Process Data"
+  }
+,
+  "about": {
+    "h1": "about Title (vi)",
+    "meta_title": "about Meta Title (vi)",
+    "meta_desc": "SEO optimization text content for structural integrity.",
+    "placeholder": "Enter data...",
+    "btn_format": "Process Data"
+  }
+,
+  "csv_to_json": {
+    "h1": "csv-to-json Title (vi)",
+    "meta_title": "csv-to-json Meta Title (vi)",
+    "meta_desc": "SEO optimization text content for structural integrity.",
+    "placeholder": "Enter data...",
+    "btn_format": "Process Data"
+  }
+,
+  "css_minify": {
+    "h1": "css-minify Title (vi)",
+    "meta_title": "css-minify Meta Title (vi)",
+    "meta_desc": "SEO optimization text content for structural integrity.",
+    "placeholder": "Enter data...",
+    "btn_format": "Process Data"
+  }
+,
+  "hash_generator": {
+    "h1": "hash-generator Title (vi)",
+    "meta_title": "hash-generator Meta Title (vi)",
+    "meta_desc": "SEO optimization text content for structural integrity.",
+    "placeholder": "Enter data...",
+    "btn_format": "Process Data"
+  }
+,
+  "url_encoder_decoder": {
+    "h1": "url-encoder-decoder Title (vi)",
+    "meta_title": "url-encoder-decoder Meta Title (vi)",
+    "meta_desc": "SEO optimization text content for structural integrity.",
+    "placeholder": "Enter data...",
+    "btn_format": "Process Data"
+  }
+,
+  "404": {
+    "h1": "404 Title (vi)",
+    "meta_title": "404 Meta Title (vi)",
+    "meta_desc": "SEO optimization text content for structural integrity.",
+    "placeholder": "Enter data...",
+    "btn_format": "Process Data"
+  }
+}
