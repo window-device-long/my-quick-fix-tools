@@ -13,12 +13,14 @@ export const metadata: Metadata = {
     shortcut: '/favicon-32x32.png',
     apple: '/favicon-32x32.png',
   },
+  verification: {
+    google: 'kJ8icoC4KXn8Nlfth-I-dHfEP8tvlcpw5wgg7oiNzV4', // Chỉ cần dán phần mã content vào đây
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-    
       <body>
       
         {children}
