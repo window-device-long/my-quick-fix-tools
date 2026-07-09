@@ -1,86 +1,77 @@
 {
   "common": {
-    "title": "Quick-Fix Tools (vi)",
-    "description": "Automated utility tools."
+    "title": "Quick-Fix Tools",
+    "description": "Bộ công cụ trực tuyến miễn phí cho developer, analyst và đội SEO để định dạng, kiểm tra và tối ưu nội dung tức thì."
   },
   "sql": {
-    "h1": "SQL Formatter & Minifier",
-    "meta_title": "Online SQL Formatter",
-    "meta_desc": "Beautify and compress SQL queries instantly.",
-    "placeholder": "Paste SQL here...",
-    "btn_format": "Format SQL",
-    "btn_minify": "Minify SQL"
-  }
-,
+    "h1": "Công cụ định dạng & nén SQL",
+    "meta_title": "Công cụ định dạng SQL trực tuyến miễn phí",
+    "meta_desc": "Định dạng và nén câu lệnh SQL tức thì bằng công cụ trực tuyến bảo mật, phù hợp cho developer và DBA.",
+    "placeholder": "Dán SQL tại đây...",
+    "btn_format": "Định dạng SQL",
+    "btn_minify": "Nén SQL"
+  },
   "json_validator": {
-    "h1": "json-validator Title (vi)",
-    "meta_title": "json-validator Meta Title (vi)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
-    "placeholder": "Enter data...",
-    "btn_format": "Process Data"
-  }
-,
+    "h1": "Công cụ kiểm tra và làm đẹp JSON",
+    "meta_title": "Công cụ kiểm tra JSON trực tuyến miễn phí",
+    "meta_desc": "Kiểm tra cú pháp JSON, phát hiện lỗi và định dạng payload JSON ngay trong trình duyệt.",
+    "placeholder": "Nhập dữ liệu...",
+    "btn_format": "Xử lý dữ liệu"
+  },
   "privacy_policy": {
-    "h1": "privacy-policy Title (vi)",
-    "meta_title": "privacy-policy Meta Title (vi)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
-    "placeholder": "Enter data...",
-    "btn_format": "Process Data"
-  }
-,
+    "h1": "Chính sách bảo mật",
+    "meta_title": "Chính sách bảo mật | Quick-Fix Tools",
+    "meta_desc": "Tìm hiểu cách Quick-Fix Tools xử lý dữ liệu riêng tư, xử lý tại trình duyệt và cookie.",
+    "placeholder": "Nhập dữ liệu...",
+    "btn_format": "Xử lý dữ liệu"
+  },
   "terms_of_service": {
-    "h1": "terms-of-service Title (vi)",
-    "meta_title": "terms-of-service Meta Title (vi)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
-    "placeholder": "Enter data...",
-    "btn_format": "Process Data"
-  }
-,
+    "h1": "Điều khoản dịch vụ",
+    "meta_title": "Điều khoản dịch vụ | Quick-Fix Tools",
+    "meta_desc": "Xem điều khoản sử dụng nền tảng Quick-Fix Tools và các công cụ trực tuyến của nó.",
+    "placeholder": "Nhập dữ liệu...",
+    "btn_format": "Xử lý dữ liệu"
+  },
   "about": {
-    "h1": "about Title (vi)",
-    "meta_title": "about Meta Title (vi)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
-    "placeholder": "Enter data...",
-    "btn_format": "Process Data"
-  }
-,
+    "h1": "Về Quick-Fix Tools",
+    "meta_title": "Về Quick-Fix Tools",
+    "meta_desc": "Tìm hiểu về nền tảng Quick-Fix Tools, mục đích và bộ công cụ dành cho developer và đội SEO.",
+    "placeholder": "Nhập dữ liệu...",
+    "btn_format": "Xử lý dữ liệu"
+  },
   "csv_to_json": {
-    "h1": "csv-to-json Title (vi)",
-    "meta_title": "csv-to-json Meta Title (vi)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
-    "placeholder": "Enter data...",
-    "btn_format": "Process Data"
-  }
-,
+    "h1": "Công cụ chuyển CSV sang JSON",
+    "meta_title": "Công cụ chuyển CSV sang JSON trực tuyến",
+    "meta_desc": "Chuyển dữ liệu CSV hoặc bảng tính thành JSON tức thì cho API, ứng dụng và quy trình tự động hóa.",
+    "placeholder": "Nhập dữ liệu...",
+    "btn_format": "Xử lý dữ liệu"
+  },
   "css_minify": {
-    "h1": "css-minify Title (vi)",
-    "meta_title": "css-minify Meta Title (vi)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
-    "placeholder": "Enter data...",
-    "btn_format": "Process Data"
-  }
-,
+    "h1": "Công cụ nén CSS",
+    "meta_title": "Công cụ nén CSS trực tuyến miễn phí",
+    "meta_desc": "Nén CSS và giảm kích thước file để tăng tốc độ tải website bằng công cụ nén CSS bảo mật.",
+    "placeholder": "Nhập dữ liệu...",
+    "btn_format": "Xử lý dữ liệu"
+  },
   "hash_generator": {
-    "h1": "hash-generator Title (vi)",
-    "meta_title": "hash-generator Meta Title (vi)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
-    "placeholder": "Enter data...",
-    "btn_format": "Process Data"
-  }
-,
+    "h1": "Công cụ tạo hash",
+    "meta_title": "Công cụ tạo hash trực tuyến | MD5 & SHA",
+    "meta_desc": "Tạo hash MD5, SHA-1, SHA-256 và SHA-512 tức thì cho xác minh, lưu trữ và debug.",
+    "placeholder": "Nhập dữ liệu...",
+    "btn_format": "Xử lý dữ liệu"
+  },
   "url_encoder_decoder": {
-    "h1": "url-encoder-decoder Title (vi)",
-    "meta_title": "url-encoder-decoder Meta Title (vi)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
-    "placeholder": "Enter data...",
-    "btn_format": "Process Data"
-  }
-,
+    "h1": "Công cụ mã hóa / giải mã URL",
+    "meta_title": "Công cụ mã hóa URL trực tuyến miễn phí",
+    "meta_desc": "Mã hóa hoặc giải mã URL tức thì cho query string, API và liên kết an toàn trên trình duyệt.",
+    "placeholder": "Nhập dữ liệu...",
+    "btn_format": "Xử lý dữ liệu"
+  },
   "404": {
-    "h1": "404 Title (vi)",
-    "meta_title": "404 Meta Title (vi)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
-    "placeholder": "Enter data...",
-    "btn_format": "Process Data"
+    "h1": "Không tìm thấy trang",
+    "meta_title": "Không tìm thấy trang | Quick-Fix Tools",
+    "meta_desc": "Trang bạn yêu cầu không tồn tại. Quay lại trang chủ Quick-Fix Tools để khám phá bộ công cụ hữu ích.",
+    "placeholder": "Nhập dữ liệu...",
+    "btn_format": "Xử lý dữ liệu"
   }
 }

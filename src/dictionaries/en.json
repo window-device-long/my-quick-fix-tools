@@ -1,86 +1,76 @@
 {
   "common": {
-    "title": "Quick-Fix Tools (en)",
-    "description": "Automated utility tools."
+    "title": "Quick-Fix Tools",
+    "description": "Free online utilities for developers, analysts, and SEO teams to format, validate, and optimize content instantly."
   },
   "sql": {
-    "h1": "SQL Formatter & Minifier",
-    "meta_title": "Online SQL Formatter",
-    "meta_desc": "Beautify and compress SQL queries instantly.",
+    "h1": "Online SQL Formatter & Minifier",
+    "meta_title": "Free Online SQL Formatter & Minifier",
+    "meta_desc": "Format and minify SQL queries instantly with a free, privacy-safe SQL formatter for cleaner database work.",
     "placeholder": "Paste SQL here...",
     "btn_format": "Format SQL",
     "btn_minify": "Minify SQL"
-
-  }
-,
+  },
   "json_validator": {
-    "h1": "json-validator Title (en)",
-    "meta_title": "json-validator Meta Title (en)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
+    "h1": "Free JSON Validator & Beautifier",
+    "meta_title": "Free JSON Validator & Beautifier Online",
+    "meta_desc": "Validate JSON syntax, detect errors, and format JSON payloads instantly with this browser-based JSON validator.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
-  }
-,
+  },
   "privacy_policy": {
-    "h1": "privacy-policy Title (en)",
-    "meta_title": "privacy-policy Meta Title (en)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
+    "h1": "Privacy Policy",
+    "meta_title": "Privacy Policy | Quick-Fix Tools",
+    "meta_desc": "Read how Quick-Fix Tools handles data privacy, browser-side processing, and cookie usage.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
-  }
-,
+  },
   "terms_of_service": {
-    "h1": "terms-of-service Title (en)",
-    "meta_title": "terms-of-service Meta Title (en)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
+    "h1": "Terms of Service",
+    "meta_title": "Terms of Service | Quick-Fix Tools",
+    "meta_desc": "Review the terms for using the Quick-Fix Tools platform and its browser-based utilities.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
-  }
-,
+  },
   "about": {
-    "h1": "about Title (en)",
-    "meta_title": "about Meta Title (en)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
+    "h1": "About Quick-Fix Tools",
+    "meta_title": "About Quick-Fix Tools",
+    "meta_desc": "Learn about the Quick-Fix Tools platform, its purpose, and the utility suite built for developers and SEO teams.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
-  }
-,
+  },
   "csv_to_json": {
-    "h1": "csv-to-json Title (en)",
-    "meta_title": "csv-to-json Meta Title (en)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
+    "h1": "Free CSV to JSON Converter",
+    "meta_title": "CSV to JSON Converter Online Free",
+    "meta_desc": "Convert CSV or spreadsheet data into JSON format instantly for APIs, apps, and automation workflows.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
-  }
-,
+  },
   "css_minify": {
-    "h1": "css-minify Title (en)",
-    "meta_title": "css-minify Meta Title (en)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
+    "h1": "Free CSS Minifier",
+    "meta_title": "Free CSS Minifier Online",
+    "meta_desc": "Minify CSS and reduce file size for faster website loading with a simple, privacy-safe CSS compressor.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
-  }
-,
+  },
   "hash_generator": {
-    "h1": "hash-generator Title (en)",
-    "meta_title": "hash-generator Meta Title (en)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
+    "h1": "Free Hash Generator",
+    "meta_title": "Free Hash Generator Online | MD5 & SHA",
+    "meta_desc": "Generate MD5, SHA-1, SHA-256, and SHA-512 hashes instantly for verification, storage, and debugging.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
-  }
-,
+  },
   "url_encoder_decoder": {
-    "h1": "url-encoder-decoder Title (en)",
-    "meta_title": "url-encoder-decoder Meta Title (en)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
+    "h1": "Free URL Encoder / Decoder",
+    "meta_title": "URL Encoder Decoder Online Free",
+    "meta_desc": "Encode or decode URLs instantly for query strings, APIs, and browser-safe links.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
-  }
-,
+  },
   "404": {
-    "h1": "404 Title (en)",
-    "meta_title": "404 Meta Title (en)",
-    "meta_desc": "SEO optimization text content for structural integrity.",
+    "h1": "Page Not Found",
+    "meta_title": "Page Not Found | Quick-Fix Tools",
+    "meta_desc": "The requested page could not be found. Return to the Quick-Fix Tools homepage to explore the utility suite.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
   }

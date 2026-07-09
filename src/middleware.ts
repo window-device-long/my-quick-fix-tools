@@ -3,9 +3,20 @@ import type { NextRequest } from 'next/server';
 
 const locales = ['en', 'es', 'vi'];
 const defaultLocale = 'en';
+const publicAssetExtensions = ['.png', '.jpg', '.jpeg', '.svg', '.ico', '.webp', '.gif', '.avif', '.txt', '.xml', '.json', '.map'];
+
+const isPublicAsset = (pathname: string) => {
+  const basename = pathname.split('/').filter(Boolean).pop() || '';
+  if (basename.startsWith('favicon') || basename === 'robots.txt' || basename === 'sitemap.xml') return true;
+  return publicAssetExtensions.some((extension) => pathname.toLowerCase().endsWith(extension));
+};
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  if (isPublicAsset(pathname)) {
+    return NextResponse.next();
+  }
 
   // 1. Tách các phân đoạn của URL ra thành mảng để kiểm tra (Bỏ các khoảng trống)
   const segments = pathname.split('/').filter(Boolean);

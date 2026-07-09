@@ -59,14 +59,26 @@ export default function Header({ lang, tools }: HeaderProps) {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         
         {/* LOGO */}
-        <Link href={`/${lang}`} className="flex items-center space-x-2 font-black text-xl tracking-tight text-slate-900">
-          <span className="bg-gradient-to-r from-blue-600 to-indigo-600 px-2.5 py-1 text-white rounded-lg shadow-sm">QFix</span>
-          <span className="hidden sm:inline text-slate-800 font-bold">DevTools</span>
+        <Link href={`/${lang}`} className="flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-slate-200 bg-slate-900 shadow-sm">
+            <img src="/favicon-32x32.png" alt="QuickFix Studio logo" className="h-5 w-5" />
+          </div>
+          <div className="leading-tight">
+            <div className="text-base font-semibold tracking-tight text-slate-900">QuickFix Studio</div>
+            <div className="hidden text-[10px] font-semibold uppercase tracking-[0.24em] text-slate-500 sm:block">Online utilities</div>
+          </div>
         </Link>
 
         {/* ACTIONS */}
         <div className="flex items-center space-x-4 sm:space-x-6">
           
+          <nav className="hidden items-center gap-4 md:flex">
+            <Link href={`/${lang}/tools`} className="text-sm font-semibold text-slate-600 transition hover:text-blue-600">{lang === 'vi' ? 'Công cụ' : 'Tools'}</Link>
+            <Link href={`/${lang}/guides`} className="text-sm font-semibold text-slate-600 transition hover:text-blue-600">{lang === 'vi' ? 'Hướng dẫn' : 'Guides'}</Link>
+            <Link href={`/${lang}/faq`} className="text-sm font-semibold text-slate-600 transition hover:text-blue-600">FAQ</Link>
+            <Link href={`/${lang}/blog`} className="text-sm font-semibold text-slate-600 transition hover:text-blue-600">Blog</Link>
+          </nav>
+
           {/* 2. MEGAMENU DANH SÁCH CÔNG CỤ (Giữ nguyên) */}
           <div 
             className="relative"
@@ -81,7 +93,12 @@ export default function Header({ lang, tools }: HeaderProps) {
             </button>
 
             {isToolsOpen && (
-              <div className="absolute right-0 mt-0 w-[480px] origin-top-right rounded-2xl border border-slate-200 bg-white p-5 shadow-xl ring-1 ring-black/5 grid grid-cols-2 gap-4">
+              <div className="absolute right-0 mt-0 w-[520px] origin-top-right rounded-2xl border border-slate-200 bg-white p-5 shadow-xl ring-1 ring-black/5 grid grid-cols-2 gap-4">
+                <div className="col-span-2 rounded-xl border border-blue-100 bg-blue-50/70 p-3">
+                  <Link href={`/${lang}/tools`} className="text-sm font-semibold text-blue-700 hover:text-blue-800" onClick={() => setIsToolsOpen(false)}>
+                    {lang === 'vi' ? '🧭 Xem toàn bộ hệ thống công cụ SEO' : '🧭 View the full SEO tools hub'}
+                  </Link>
+                </div>
                 {Object.entries(categories).map(([category, items]) => (
                   <div key={category} className="space-y-2">
                     <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 px-2">{category}</h4>

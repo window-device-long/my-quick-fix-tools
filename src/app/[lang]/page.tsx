@@ -23,7 +23,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           ✨ Free & 100% Client-Side Privacy
         </span>
         <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent">
-          {dict.common?.title || 'Quick-Fix Web Tools'}
+          {dict.common?.title || 'QuickFix Studio'}
         </h1>
         <p className="text-base sm:text-lg text-slate-500 leading-relaxed">
           {dict.common?.description || 'Instant utilities to format, validate, and optimize code structures without sending data to any servers.'}
@@ -61,48 +61,52 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
-      {/* FOOTER ĐƯỢC CHUẨN HÓA SÂU ĐỂ CHỐNG THIN CONTENT VÀ ĐĂNG KÝ ADSENSE */}
-      <footer className="pt-12 border-t border-slate-200 text-slate-600 space-y-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
-          {/* CỘT 1 & 2: LIỆT KÊ TOÀN BỘ TÍNH NĂNG ĐỂ PHỦ KEYWORD CHO BOT QUÉT */}
-          <div className="space-y-3 md:col-span-2">
-            <h4 className="font-bold text-slate-800 text-xs uppercase tracking-widest">{lang === 'vi' ? 'Danh mục chức năng chính' : 'Core System Functions'}</h4>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-slate-500">
-              <Link href={`/${lang}/sql-formatter`} className="hover:text-blue-600 transition">&bull; Beautify / Clean SQL Syntax</Link>
-              <Link href={`/${lang}/json-validator`} className="hover:text-blue-600 transition">&bull; JSON Schema Validation</Link>
-              <Link href={`/${lang}/csv-to-json`} className="hover:text-blue-600 transition">&bull; Excel CSV to JSON Array</Link>
-              <Link href={`/${lang}/css-minify`} className="hover:text-blue-600 transition">&bull; CSS Stylesheet Minifier</Link>
-              <Link href={`/${lang}/hash-generator`} className="hover:text-blue-600 transition">&bull; MD5 & SHA-256 Encryption</Link>
-              <Link href={`/${lang}/url-encoder-decoder`} className="hover:text-blue-600 transition">&bull; HTTP URL string encoding</Link>
+      <footer className="rounded-3xl border border-slate-200 bg-slate-900 px-6 py-8 text-slate-300 shadow-sm sm:px-8">
+        <div className="grid gap-8 lg:grid-cols-[1.3fr_0.8fr_0.8fr]">
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10">
+                <img src="/favicon-32x32.png" alt="QuickFix Studio" className="h-6 w-6" />
+              </div>
+              <div>
+                <div className="text-lg font-semibold text-white">QuickFix Studio</div>
+                <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">Fast, private, production-ready</div>
+              </div>
+            </div>
+            <p className="max-w-xl text-sm leading-7 text-slate-400">
+              {lang === 'vi'
+                ? 'Bộ công cụ web nhanh, riêng tư và sẵn sàng cho phát triển, SEO và vận hành nội dung mà không cần cài đặt thêm.'
+                : 'A fast, privacy-first suite of web tools built for developers, SEO teams, and content teams who need reliable results without extra setup.'}
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">{lang === 'vi' ? 'Công cụ nổi bật' : 'Featured tools'}</h4>
+            <div className="space-y-2 text-sm text-slate-400">
+              <Link href={`/${lang}/sql-formatter`} className="block transition hover:text-white">SQL Formatter</Link>
+              <Link href={`/${lang}/json-validator`} className="block transition hover:text-white">JSON Validator</Link>
+              <Link href={`/${lang}/css-minify`} className="block transition hover:text-white">CSS Minifier</Link>
+              <Link href={`/${lang}/hash-generator`} className="block transition hover:text-white">Hash Generator</Link>
             </div>
           </div>
 
-          {/* CỘT 3: CHỨNG CHỈ BẢO MẬT/THÔNG TIN MẠNG LƯỚI */}
           <div className="space-y-3">
-            <h4 className="font-bold text-slate-800 text-xs uppercase tracking-widest">{lang === 'vi' ? 'Tiêu chuẩn vận hành' : 'Compliance & Security'}</h4>
-            <ul className="text-xs text-slate-500 space-y-1.5 list-none">
-              <li>🛡️ 100% GDPR Compliant</li>
-              <li>🔒 Local Storage Encryption</li>
-              <li>🚀 Next.js Static Edge Cached</li>
-            </ul>
-          </div>
-
-          {/* CỘT 4: PHÁP LÝ BẮT BUỘC ĐỂ DUYỆT ADSENSE */}
-          <div className="space-y-3">
-            <h4 className="font-bold text-slate-800 text-xs uppercase tracking-widest">{lang === 'vi' ? 'Điều khoản & Quy định' : 'Legal & Company'}</h4>
-            <div className="flex flex-col space-y-2 text-xs text-slate-500 font-medium">
-              <Link href={`/${lang}/about`} className="hover:text-blue-600 transition">About Our Platform</Link>
-              <Link href={`/${lang}/privacy-policy`} className="hover:text-blue-600 transition">Privacy & Cookie Policy</Link>
-              <Link href={`/${lang}/terms-of-service`} className="hover:text-blue-600 transition">Terms of Service Agreement</Link>
+            <h4 className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">{lang === 'vi' ? 'Thông tin & chính sách' : 'Company & policy'}</h4>
+            <div className="space-y-2 text-sm text-slate-400">
+              <Link href={`/${lang}/about`} className="block transition hover:text-white">{lang === 'vi' ? 'Về QuickFix Studio' : 'About QuickFix Studio'}</Link>
+              <Link href={`/${lang}/privacy-policy`} className="block transition hover:text-white">{lang === 'vi' ? 'Chính sách riêng tư' : 'Privacy Policy'}</Link>
+              <Link href={`/${lang}/terms-of-service`} className="block transition hover:text-white">{lang === 'vi' ? 'Điều khoản dịch vụ' : 'Terms of Service'}</Link>
             </div>
           </div>
         </div>
 
-        {/* BẢN QUYỀN VÀ THÔNG TIN BỔ SUNG */}
-        <div className="pt-6 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center text-[11px] text-slate-400 gap-2">
-          <div>&copy; 2026 Quick-Fix Tools Network. Global analytics architecture deployment.</div>
-          <div className="flex space-x-3">
-            <span>Status: <span className="text-green-500 font-bold">● Operational</span></span>
+        <div className="mt-8 flex flex-col gap-2 border-t border-white/10 pt-6 text-[11px] text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <div>&copy; 2026 QuickFix Studio. Designed for modern web workflows.</div>
+          <div className="flex items-center gap-3">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-1 text-emerald-400">
+              <span className="h-2 w-2 rounded-full bg-emerald-400" />
+              {lang === 'vi' ? 'Hoạt động ổn định' : 'Operational'}
+            </span>
           </div>
         </div>
       </footer>

@@ -8,8 +8,8 @@ const translations: Record<string, { title: string; desc: string; btn: string }>
   es: { title: "404 - Página No Encontrada", desc: "¡Ups! La herramienta o página que buscas no existe.", btn: "Volver al Inicio" }
 };
 
-export default function Page404({ params }: { params: { lang: string } }) {
-  const lang = params?.lang || 'en';
+export default async function Page404({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
   const t = translations[lang] || translations.en;
 
   return (
