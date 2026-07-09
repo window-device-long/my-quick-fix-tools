@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { seoClusterPages } from '@/lib/seo-cluster-pages';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://yourdomain.com'; // Thay bằng domain thật khi deploy
+  const baseUrl = 'https://jsnify.online'; // Thay bằng domain thật khi deploy
   const locales = ['en', 'es', 'vi'];
 
   const tools = ['404', 'tools', 'url-encoder-decoder', 'hash-generator', 'css-minify', 'csv-to-json', 'about', 'terms-of-service', 'privacy-policy', 'json-validator', '', 'sql-formatter'];

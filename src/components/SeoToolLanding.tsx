@@ -48,10 +48,10 @@ export default function SeoToolLanding({
     description: intro,
     applicationCategory: 'DeveloperApplication',
     operatingSystem: 'Web',
-    url: `https://yourdomain.com/${lang}${typeof window !== 'undefined' ? window.location.pathname : ''}`,
+    url: `https://jsnify.online/${lang}${typeof window !== 'undefined' ? window.location.pathname : ''}`,
     potentialAction: {
       '@type': 'UseAction',
-      target: `https://yourdomain.com/${lang}/tools`,
+      target: `https://jsnify.online/${lang}/tools`,
     },
     faq: faqs.map((item) => ({ '@type': 'Question', name: item.q, acceptedAnswer: { '@type': 'Answer', text: item.a } })),
     breadcrumb: {
@@ -60,7 +60,7 @@ export default function SeoToolLanding({
         '@type': 'ListItem',
         position: index + 1,
         name: item.label,
-        item: `https://yourdomain.com${item.href}`,
+        item: `https://jsnify.online${item.href}`,
       })),
     },
   };

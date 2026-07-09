@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     description: isVi
       ? 'Khám phá bộ công cụ trực tuyến giúp định dạng SQL, kiểm tra JSON, chuyển CSV sang JSON, tối ưu CSS và tạo hash nhanh chóng.'
       : 'Explore a complete toolkit for formatting SQL, validating JSON, converting CSV to JSON, minifying CSS, and generating hashes online.',
-    alternates: { canonical: `https://yourdomain.com/${lang}/tools` },
+    alternates: { canonical: `https://jsnify.online/${lang}/tools` },
   };
 }
 
@@ -131,13 +131,13 @@ export default async function ToolsPage({ params }: { params: Promise<{ lang: st
     '@type': 'CollectionPage',
     name: content.title,
     description: content.intro,
-    url: `https://yourdomain.com/${lang}/tools`,
+    url: `https://jsnify.online/${lang}/tools`,
     hasPart: toolCatalog.map((tool) => ({
       '@type': 'SoftwareApplication',
       name: tool.title,
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web',
-      url: `https://yourdomain.com/${lang}/${tool.path}`,
+      url: `https://jsnify.online/${lang}/${tool.path}`,
     })),
     breadcrumb: {
       '@type': 'BreadcrumbList',
@@ -145,7 +145,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ lang: st
         '@type': 'ListItem',
         position: index + 1,
         name: item.label,
-        item: `https://yourdomain.com${item.href}`,
+        item: `https://jsnify.online${item.href}`,
       })),
     },
   };

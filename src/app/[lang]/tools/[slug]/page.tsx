@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     title: isVi ? page.title.vi : page.title.en,
     description: isVi ? page.description.vi : page.description.en,
     keywords: [page.keyword.en, page.keyword.vi, page.tool],
-    alternates: { canonical: `https://yourdomain.com/${lang}/tools/${slug}` },
+    alternates: { canonical: `https://jsnify.online/${lang}/tools/${slug}` },
   };
 }
 
@@ -41,9 +41,9 @@ export default async function ToolClusterPage({ params }: { params: Promise<{ la
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: isVi ? 'Trang chủ' : 'Home', item: `https://yourdomain.com/${lang}` },
-      { '@type': 'ListItem', position: 2, name: isVi ? 'Công cụ' : 'Tools', item: `https://yourdomain.com/${lang}/tools` },
-      { '@type': 'ListItem', position: 3, name: isVi ? page.title.vi : page.title.en, item: `https://yourdomain.com/${lang}/tools/${slug}` },
+      { '@type': 'ListItem', position: 1, name: isVi ? 'Trang chủ' : 'Home', item: `https://jsnify.online/${lang}` },
+      { '@type': 'ListItem', position: 2, name: isVi ? 'Công cụ' : 'Tools', item: `https://jsnify.online/${lang}/tools` },
+      { '@type': 'ListItem', position: 3, name: isVi ? page.title.vi : page.title.en, item: `https://jsnify.online/${lang}/tools/${slug}` },
     ],
   };
 
@@ -54,7 +54,7 @@ export default async function ToolClusterPage({ params }: { params: Promise<{ la
     description: isVi ? page.description.vi : page.description.en,
     keywords: [page.keyword.en, page.keyword.vi, page.tool],
     inLanguage: lang,
-    mainEntityOfPage: `https://yourdomain.com/${lang}/tools/${slug}`,
+    mainEntityOfPage: `https://jsnify.online/${lang}/tools/${slug}`,
     author: { '@type': 'Organization', name: 'Quick-Fix Tools' },
     publisher: { '@type': 'Organization', name: 'Quick-Fix Tools' },
     articleSection: isVi ? 'Công cụ trực tuyến' : 'Online tools',
