@@ -36,12 +36,27 @@ export default function Header({ lang, tools }: HeaderProps) {
     return acc;
   }, {} as Record<string, typeof tools>);
 
-  const handleLangChange = (newLang: string) => {
-    const segments = pathname.split('/');
-    segments[1] = newLang;
-    router.push(segments.join('/'));
-    setIsLangOpen(false);
-  };
+const handleLangChange = (newLang: string) => {
+  const supportedLocales = languages.map((l) => l.code);
+
+  const segments = pathname
+    .split("/")
+    .filter(Boolean);
+
+  // bỏ locale hiện tại
+  if (supportedLocales.includes(segments[0])) {
+    segments.shift();
+  }
+
+  const nextPath =
+    segments.length > 0
+      ? `/${newLang}/${segments.join("/")}`
+      : `/${newLang}`;
+
+  router.push(nextPath);
+
+  setIsLangOpen(false);
+};
 
   // Đóng dropdown ngôn ngữ nếu người dùng click ra ngoài màn hình
   useEffect(() => {

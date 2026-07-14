@@ -1,0 +1,103 @@
+{
+  "common": {
+    "title": "Quick-Fix ツール",
+    "description": "開発者、アナリスト、SEOチーム向けの無料オンラインツール。コンテンツの整形、検証、最適化をすぐに実行できます。"
+  },
+  "sql": {
+    "h1": "オンライン SQL フォーマッター & ミニファイア",
+    "meta_title": "無料オンライン SQL フォーマッター & ミニファイア",
+    "meta_desc": "無料で安全なSQLツールを使用して、SQLクエリの整形と圧縮をすぐに実行できます。",
+    "placeholder": "SQLをここに貼り付け...",
+    "btn_format": "SQLを整形",
+    "btn_minify": "SQLを圧縮"
+  },
+  "json_validator": {
+    "h1": "無料 JSON バリデーター & 整形ツール",
+    "meta_title": "無料オンライン JSON バリデーター & 整形ツール",
+    "meta_desc": "JSON構文を検証し、エラーを検出し、ブラウザ上でJSONデータをすぐに整形できます。",
+    "placeholder": "データを入力...",
+    "btn_format": "データ処理"
+  },
+  "privacy_policy": {
+    "h1": "プライバシーポリシー",
+    "meta_title": "プライバシーポリシー | Quick-Fix Tools",
+    "meta_desc": "Quick-Fix Toolsのデータ保護、ブラウザ処理、Cookie利用について説明します。",
+    "placeholder": "データを入力...",
+    "btn_format": "データ処理"
+  },
+  "terms_of_service": {
+    "h1": "利用規約",
+    "meta_title": "利用規約 | Quick-Fix Tools",
+    "meta_desc": "Quick-Fix Toolsプラットフォームとブラウザベースのツール利用条件をご確認ください。",
+    "placeholder": "データを入力...",
+    "btn_format": "データ処理"
+  },
+  "about": {
+    "h1": "Quick-Fix Toolsについて",
+    "meta_title": "Quick-Fix Toolsについて",
+    "meta_desc": "開発者やSEOチーム向けに作られたQuick-Fix Toolsの目的とツール群について紹介します。",
+    "placeholder": "データを入力...",
+    "btn_format": "データ処理"
+  },
+  "csv_to_json": {
+    "h1": "無料 CSV → JSON 変換ツール",
+    "meta_title": "無料オンライン CSV → JSON コンバーター",
+    "meta_desc": "CSVや表計算データをAPI、アプリ、ワークフロー向けのJSON形式へ変換します。",
+    "placeholder": "データを入力...",
+    "btn_format": "データ処理"
+  },
+  "css_minify": {
+    "h1": "無料 CSS 圧縮ツール",
+    "meta_title": "無料オンライン CSS ミニファイア",
+    "meta_desc": "CSSファイルを圧縮してウェブサイトの読み込み速度を改善します。",
+    "placeholder": "データを入力...",
+    "btn_format": "データ処理"
+  },
+  "hash_generator": {
+    "h1": "無料ハッシュ生成ツール",
+    "meta_title": "無料オンライン ハッシュ生成 | MD5 & SHA",
+    "meta_desc": "検証、保存、デバッグ用にMD5、SHA-1、SHA-256、SHA-512ハッシュを生成します。",
+    "placeholder": "データを入力...",
+    "btn_format": "データ処理"
+  },
+  "url_encoder_decoder": {
+    "h1": "無料 URL エンコード / デコード",
+    "meta_title": "無料オンライン URL エンコーダー デコーダー",
+    "meta_desc": "URLをクエリ文字列、API、ブラウザ対応リンク用にエンコードまたはデコードします。",
+    "placeholder": "データを入力...",
+    "btn_format": "データ処理"
+  },
+  "404": {
+    "h1": "ページが見つかりません",
+    "meta_title": "ページが見つかりません | Quick-Fix Tools",
+    "meta_desc": "要求されたページは存在しません。Quick-Fix Toolsのホームページに戻ってツールをご利用ください。",
+    "placeholder": "データを入力...",
+    "btn_format": "データ処理"
+  },
+  "guides": {
+  "title": "日常的なWeb作業のための実践ガイド",
+  "description": "開発やSEOでよく使われる作業において、Quick-Fix Toolsを効果的に活用するための短く実用的なガイドです。",
+  "items": [
+    {
+      "title": "SQLをオンラインで整形する方法",
+      "summary": "SQLクエリを整理し、デバッグ、共有、レビューを簡単にします。",
+      "path": "sql-formatter"
+    },
+    {
+      "title": "JSONをすばやく検証する方法",
+      "summary": "構文エラーを検出し、APIやフロントエンド向けのJSONデータを整形します。",
+      "path": "json-validator"
+    },
+    {
+      "title": "CSVをJSONに変換する方法",
+      "summary": "表計算データをアプリ、自動化、連携向けのJSON形式に変換します。",
+      "path": "csv-to-json"
+    },
+    {
+      "title": "Web向けにCSSを圧縮する方法",
+      "summary": "スタイルシートのサイズを削減し、最適化されたコードでページ速度を向上させます。",
+      "path": "css-minify"
+    }
+  ]
+}
+}

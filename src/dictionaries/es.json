@@ -82,5 +82,31 @@
     "meta_desc": "SEO optimization text content for structural integrity.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
-  }
+  },
+  "guides": {
+  "title": "Guías prácticas para tareas web diarias",
+  "description": "Guías breves y prácticas para ayudarte a usar Quick-Fix Tools de forma efectiva en tareas comunes de desarrollo y SEO.",
+  "items": [
+    {
+      "title": "Cómo formatear SQL en línea",
+      "summary": "Limpia y estructura consultas SQL para depuración, uso compartido y revisión.",
+      "path": "sql-formatter"
+    },
+    {
+      "title": "Cómo validar JSON rápidamente",
+      "summary": "Detecta errores de sintaxis y formatea datos JSON para APIs y aplicaciones frontend.",
+      "path": "json-validator"
+    },
+    {
+      "title": "Cómo convertir CSV a JSON",
+      "summary": "Convierte exportaciones de hojas de cálculo a JSON para aplicaciones, automatización e integraciones.",
+      "path": "csv-to-json"
+    },
+    {
+      "title": "Cómo minimizar CSS para la web",
+      "summary": "Reduce el tamaño de las hojas de estilo y mejora la velocidad de carga con código optimizado.",
+      "path": "css-minify"
+    }
+  ]
+}
 }

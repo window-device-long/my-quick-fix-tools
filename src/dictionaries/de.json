@@ -1,0 +1,103 @@
+{
+  "common": {
+    "title": "Quick-Fix Tools",
+    "description": "Kostenlose Online-Tools für Entwickler, Analysten und SEO-Teams zum sofortigen Formatieren, Validieren und Optimieren von Inhalten."
+  },
+  "sql": {
+    "h1": "Online SQL Formatter & Minifier",
+    "meta_title": "Kostenloser Online SQL Formatter & Minifier",
+    "meta_desc": "Formatieren und minimieren Sie SQL-Abfragen sofort mit einem kostenlosen, datenschutzfreundlichen SQL-Tool.",
+    "placeholder": "SQL hier einfügen...",
+    "btn_format": "SQL formatieren",
+    "btn_minify": "SQL minimieren"
+  },
+  "json_validator": {
+    "h1": "Kostenloser JSON Validator & Beautifier",
+    "meta_title": "Kostenloser JSON Validator & Beautifier Online",
+    "meta_desc": "Überprüfen Sie JSON-Syntax, erkennen Sie Fehler und formatieren Sie JSON-Daten sofort mit diesem browserbasierten Validator.",
+    "placeholder": "Daten eingeben...",
+    "btn_format": "Daten verarbeiten"
+  },
+  "privacy_policy": {
+    "h1": "Datenschutzerklärung",
+    "meta_title": "Datenschutzerklärung | Quick-Fix Tools",
+    "meta_desc": "Erfahren Sie, wie Quick-Fix Tools Datenschutz, browserbasierte Verarbeitung und Cookies handhabt.",
+    "placeholder": "Daten eingeben...",
+    "btn_format": "Daten verarbeiten"
+  },
+  "terms_of_service": {
+    "h1": "Nutzungsbedingungen",
+    "meta_title": "Nutzungsbedingungen | Quick-Fix Tools",
+    "meta_desc": "Lesen Sie die Bedingungen für die Nutzung der Quick-Fix Tools Plattform und ihrer browserbasierten Anwendungen.",
+    "placeholder": "Daten eingeben...",
+    "btn_format": "Daten verarbeiten"
+  },
+  "about": {
+    "h1": "Über Quick-Fix Tools",
+    "meta_title": "Über Quick-Fix Tools",
+    "meta_desc": "Erfahren Sie mehr über Quick-Fix Tools, seine Ziele und die Tool-Sammlung für Entwickler und SEO-Teams.",
+    "placeholder": "Daten eingeben...",
+    "btn_format": "Daten verarbeiten"
+  },
+  "csv_to_json": {
+    "h1": "Kostenloser CSV-zu-JSON-Konverter",
+    "meta_title": "CSV-zu-JSON-Konverter kostenlos online",
+    "meta_desc": "Konvertieren Sie CSV- oder Tabellendaten sofort in JSON für APIs, Anwendungen und Automatisierungsprozesse.",
+    "placeholder": "Daten eingeben...",
+    "btn_format": "Daten verarbeiten"
+  },
+  "css_minify": {
+    "h1": "Kostenloser CSS-Minifier",
+    "meta_title": "Kostenloser CSS-Minifier online",
+    "meta_desc": "Verkleinern Sie CSS-Dateien und verbessern Sie die Ladezeit Ihrer Website mit einem einfachen CSS-Kompressor.",
+    "placeholder": "Daten eingeben...",
+    "btn_format": "Daten verarbeiten"
+  },
+  "hash_generator": {
+    "h1": "Kostenloser Hash-Generator",
+    "meta_title": "Kostenloser Hash-Generator online | MD5 & SHA",
+    "meta_desc": "Erstellen Sie MD5-, SHA-1-, SHA-256- und SHA-512-Hashes für Überprüfung, Speicherung und Debugging.",
+    "placeholder": "Daten eingeben...",
+    "btn_format": "Daten verarbeiten"
+  },
+  "url_encoder_decoder": {
+    "h1": "Kostenloser URL Encoder / Decoder",
+    "meta_title": "URL Encoder Decoder kostenlos online",
+    "meta_desc": "Kodieren oder dekodieren Sie URLs sofort für Query-Strings, APIs und browserfreundliche Links.",
+    "placeholder": "Daten eingeben...",
+    "btn_format": "Daten verarbeiten"
+  },
+  "404": {
+    "h1": "Seite nicht gefunden",
+    "meta_title": "Seite nicht gefunden | Quick-Fix Tools",
+    "meta_desc": "Die angeforderte Seite wurde nicht gefunden. Kehren Sie zur Quick-Fix Tools Startseite zurück.",
+    "placeholder": "Daten eingeben...",
+    "btn_format": "Daten verarbeiten"
+  },
+  "guides": {
+  "title": "Praktische Anleitungen für alltägliche Webaufgaben",
+  "description": "Kurze und praktische Anleitungen, die Ihnen helfen, Quick-Fix Tools effektiv für gängige Entwicklungs- und SEO-Aufgaben zu nutzen.",
+  "items": [
+    {
+      "title": "SQL online formatieren",
+      "summary": "Bereinigen und strukturieren Sie SQL-Abfragen für Debugging, Freigabe und Überprüfung.",
+      "path": "sql-formatter"
+    },
+    {
+      "title": "JSON schnell validieren",
+      "summary": "Erkennen Sie Syntaxfehler und formatieren Sie JSON-Daten für APIs und Frontends.",
+      "path": "json-validator"
+    },
+    {
+      "title": "CSV in JSON konvertieren",
+      "summary": "Wandeln Sie Tabellenexporte in JSON für Anwendungen, Automatisierung und Integrationen um.",
+      "path": "csv-to-json"
+    },
+    {
+      "title": "CSS für das Web minimieren",
+      "summary": "Reduzieren Sie die Größe von Stylesheets und verbessern Sie die Ladegeschwindigkeit mit optimiertem Code.",
+      "path": "css-minify"
+    }
+  ]
+}
+}

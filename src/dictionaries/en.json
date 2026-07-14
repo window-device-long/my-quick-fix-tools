@@ -1,15 +1,93 @@
 {
   "common": {
-    "title": "Quick-Fix Tools",
-    "description": "Free online utilities for developers, analysts, and SEO teams to format, validate, and optimize content instantly."
+    "title": "QuickFix Studio",
+    "description": "Instant utilities to format, validate, and optimize code structures without sending data to any servers."
   },
+  "home_page": {
+    "badge": "✨ Free & 100% Client-Side Privacy",
+    "utilities_title": "Available Utilities",
+    "launch_tool": "Launch Tool",
+    "tools": {
+      "sql_formatter": {
+        "title": "SQL Formatter & Minifier",
+        "desc": "Beautify or compress database queries."
+      },
+      "json_validator": {
+        "title": "JSON Validator & Beautifier",
+        "desc": "Verify, format, and parse JSON syntax."
+      },
+      "csv_to_json": {
+        "title": "CSV to JSON Converter",
+        "desc": "Convert Excel/CSV data structure into JSON array."
+      },
+      "css_minify": {
+        "title": "CSS Code Minifier",
+        "desc": "Strip spaces to optimize stylesheet size."
+      },
+      "hash_generator": {
+        "title": "Crypto Hash Generator",
+        "desc": "Generate MD5, SHA-1, SHA-256 string values."
+      },
+      "url_encoder_decoder": {
+        "title": "URL Encoder / Decoder",
+        "desc": "Encode or decode string characters safely for HTTP."
+      }
+    }
+  },
+  "footer": {
+    "description": "A fast, privacy-first suite of web tools built for developers, SEO teams, and content teams who need reliable results without extra setup.",
+    "featured_tools": "Featured tools",
+    "company_policy": "Company & policy",
+    "about": "About QuickFix Studio",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "operational": "Operational"
+  },
+  
   "sql": {
-    "h1": "Online SQL Formatter & Minifier",
-    "meta_title": "Free Online SQL Formatter & Minifier",
-    "meta_desc": "Format and minify SQL queries instantly with a free, privacy-safe SQL formatter for cleaner database work.",
-    "placeholder": "Paste SQL here...",
-    "btn_format": "Format SQL",
-    "btn_minify": "Minify SQL"
+    "meta_title": "Online SQL Formatter - Beautify & Minify SQL Queries Free",
+    "meta_desc": "Free, secure, and client-side online SQL formatter and beautifier. Supports PostgreSQL, MySQL, SQL Server, Oracle, and Google BigQuery with 100% privacy.",
+    "h1": "Online SQL Formatter & Beautifier",
+    "intro_title": "What is Visual SQL Formatter & Minifier?",
+    "intro_desc": "In modern software development and data analysis, developers frequently encounter messy, unformatted, or single-line raw SQL queries extracted from application logs. Visual SQL Formatter is an enterprise-grade, free online utility designed to instantly beautify nested queries and complex database scripts into clean, structured, and highly readable code layouts.",
+    "why_title": "Why Professional Developers Format SQL",
+    "why_reasons": [
+      {
+        "title": "Accelerate Debugging & Comprehension",
+        "desc": "A deeply nested SELECT query or a query packed with multiple JOIN clauses is a nightmare to read without proper alignment. Clean formatting lets you spot syntax issues, missing brackets, or logic flaws in seconds."
+      },
+      {
+        "title": "Optimize Code Reviews & Git Diffs",
+        "desc": "Enforcing a consistent style across your SQL scripts prevents noisy Git diffs caused by random whitespace changes, keeping your pull request reviews focused purely on functional logic modifications."
+      },
+      {
+        "title": "Uncompromising Client-Side Privacy",
+        "desc": "Our tool processes code entirely inside your local browser. Your confidential database schemas, queries, and business logics are never uploaded to any external server, ensuring maximum enterprise security."
+      }
+    ],
+    "features_title": "Core Technical Capabilities",
+    "features_list": [
+      {
+        "bold": "Advanced SQL Beautifier:",
+        "text": "Automatically capitalizes core SQL keywords (SELECT, FROM, JOIN, WHERE) and applies customizable, structured nesting."
+      },
+      {
+        "bold": "High-Compression Minifier:",
+        "text": "Strips out unnecessary whitespaces, line breaks, and system comments to compress queries for lightweight production execution."
+      },
+      {
+        "bold": "Broad Database Ecosystem:",
+        "text": "Seamlessly parses specific syntaxes for PostgreSQL, MySQL, Oracle Database, Microsoft SQL Server (T-SQL), SQLite, and Google BigQuery."
+      }
+    ],
+    "guide_title": "How to Format Your SQL Code Online",
+    "guide_steps": [
+      "Copy your raw, obfuscated, or poorly formatted SQL query from your IDE, code base, or server log files.",
+      "Paste the query directly into the input editor area located at the top of this page.",
+      "Select your action: click 'Format SQL' to restructure and beautify, or 'Minify SQL' to compress the script.",
+      "Click the clipboard 'Copy' button on the output container to instantly fetch your polished database code."
+    ],
+    "pro_tip": "Pro Tip: Minified SQL queries are ideal for reducing network payload sizes when dynamically executing heavy database queries from backend API services."
   },
   "json_validator": {
     "h1": "Free JSON Validator & Beautifier",
@@ -18,12 +96,34 @@
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
   },
-  "privacy_policy": {
+ "privacy_policy": {
+    "meta_title": "Privacy Policy - Data Security and Cookies Commitment",
+    "meta_desc": "Learn how we collect, handle, and protect your information, cookies usage, and our 100% secure client-side browser tools standard.",
     "h1": "Privacy Policy",
-    "meta_title": "Privacy Policy | Quick-Fix Tools",
-    "meta_desc": "Read how Quick-Fix Tools handles data privacy, browser-side processing, and cookie usage.",
-    "placeholder": "Enter data...",
-    "btn_format": "Process Data"
+    "last_updated": "Last updated: July 14, 2026",
+    "highlights_title": "Privacy Highlights",
+    "highlights": [
+      { "label": "Data Processing", "value": "100% Client-side browser processing. For file-based utilities (such as PDF tools), uploaded files are permanently deleted within 1 hour." },
+      { "label": "Google AdSense", "value": "We use third-party cookies to serve personalized ads via Google AdSense. You can easily opt out at any time." },
+      { "label": "Personal Info", "value": "No registration required. We do not collect, store, or sell your personal identity information to any third party." },
+      { "label": "Analytics Tracking", "value": "We utilize Google Analytics to process completely anonymous network traffic data to optimize performance." }
+    ],
+    "intro_title": "1. Introduction",
+    "intro_text": "Welcome to our online web utility platform. We respect your privacy and are committed to protecting any data you interact with while using our free tools. This Privacy Policy details the types of information we gather and how we maintain security across our services.",
+    "collection_title": "2. Data Collection and Processing",
+    "collection_text_1": "For client-side utilities (e.g., SQL Formatter, decoders, financial calculators): All processing actions happen directly in your browser. Your database schemas, inputs, or queries are never transmitted to our remote servers.",
+    "collection_text_2": "For file-processing utilities (e.g., PDF tools): Files are securely uploaded via SSL encryption solely for temporary backend operations. Upon completion, files are scheduled for absolute, permanent deletion from our cloud infrastructure within 1 hour. No backups are retained.",
+    "adsense_title": "3. Google AdSense & Advertising Cookies Policy",
+    "adsense_text_1": "To fund our free tools, we partner with Google AdSense. Google, as a third-party vendor, uses cookies to serve targeted ads on this website based on your browsing history across the web.",
+    "adsense_text_2": "Google's use of advertising cookies enables it and its partners to serve ads to users based on their visits to this site. You can opt out of personalized advertising by visiting: ",
+    "adsense_link_text": "Google Ads Settings",
+    "cookies_title": "4. Other Third-Party Cookies",
+    "cookies_text": "We also leverage Google Analytics to understand system traffic patterns. This system tracks non-personally identifiable variables (such as browser type, operating system, and page-on-site times) to measure performance and direct UX enhancements.",
+    "rights_title": "5. User Control & Rights",
+    "rights_text": "You maintain full control of your device data. You are free to wipe cookies, restrict tracking scripts, or use active ad-blockers at your discretion without losing access to our tools.",
+    "contact_title": "6. Contact Us",
+    "contact_text": "If you have any questions about this Privacy Policy or local data operations, feel free to contact us via email at: ",
+    "contact_email": "support@findtoolpdf.online"
   },
   "terms_of_service": {
     "h1": "Terms of Service",
@@ -54,11 +154,52 @@
     "btn_format": "Process Data"
   },
   "hash_generator": {
-    "h1": "Free Hash Generator",
-    "meta_title": "Free Hash Generator Online | MD5 & SHA",
-    "meta_desc": "Generate MD5, SHA-1, SHA-256, and SHA-512 hashes instantly for verification, storage, and debugging.",
-    "placeholder": "Enter data...",
-    "btn_format": "Process Data"
+    "h1": "High-Speed Online Hash Generator",
+    "meta_title": "Online Hash Generator - Secure MD5, SHA-1, SHA-256, SHA-512 Checksum",
+    "meta_desc": "Free secure online cryptographic hash generator. Compute MD5, SHA-1, SHA-256, and SHA-512 locally in your browser with 100% data privacy.",
+    "placeholder": "Enter or paste your text here...",
+    "btn_format": "Generate Hash",
+    "seo_landing": {
+      "badge": "100% Client-Side Secure Hashing",
+      "title": "Professional Cryptographic Hashing and Checksum Utility",
+      "intro": "Cryptographic hashing is a robust mathematical function that maps input data of arbitrary size to a fixed-size string of characters. Our online tool provides simultaneous generation of industry-standard cryptographic algorithms: MD5, SHA-1, SHA-256, and SHA-512. Since all calculations are computed entirely inside your browser's sandboxed environment via local JavaScript, your sensitive input payload never crosses the network or touches remote servers, maintaining zero-leak database standards.",
+      "keywords": [
+        "hash generator online",
+        "create hash online",
+        "md5 generator online",
+        "sha256 calculator online",
+        "sha512 checksum tool",
+        "hash password string"
+      ],
+      "use_cases": [
+        "File Integrity Verification: Effortlessly compare a downloaded asset's checksum (hash string) with the official developer signature to confirm the file is free of network errors and malicious injections.",
+        "Secure System Auditing: Generate quick hashes for identification strings or configuration settings to verify system alignment across multiple microservices without logging raw payload values.",
+        "Token and Signature Validation: Create and inspect secure API keys and digital signatures to confirm the authenticity of system-to-system dynamic requests."
+      ],
+      "steps": [
+        "Type or paste your raw text, passphrase, or binary string data into the main input editor block above.",
+        "The application automatically captures your input changes and processes all hash varieties (MD5, SHA-1, SHA-256, SHA-512) in real-time.",
+        "Identify your preferred cryptographic format output and click the Copy icon to store the hash into your device's clipboard."
+      ],
+      "faqs": [
+        {
+          "q": "Is my confidential data sent to external servers for hashing?",
+          "a": "Absolutely not. Unlike generic online utilities that upload your string data to remote backend systems, our cryptographic engine is executed 100% locally inside your web browser. You can even load this utility, disconnect from the internet entirely, and continue generating hashes normally."
+        },
+        {
+          "q": "Which hashing algorithm should I use for general applications?",
+          "a": "For secure verification or critical checksum audits, we highly recommend using SHA-256 or SHA-512. Legacy standards like MD5 (128-bit) and SHA-1 (160-bit) are cryptographically compromised, susceptible to collision attacks, and should strictly be limited to quick error-checking."
+        },
+        {
+          "q": "Can I use this tool to hash production user passwords in databases?",
+          "a": "It is highly discouraged for real-world authentication. Fast hashing algorithms like MD5 or SHA-256 are vulnerable to GPU-based brute-force attacks and rainbow tables. Modern production database systems must employ computationally expensive password-stretching algorithms such as bcrypt, Argon2, or PBKDF2."
+        }
+      ],
+      "related_labels": {
+        "url_tool": "URL Encoder/Decoder Utility",
+        "all_tools": "View All Tools"
+      }
+    }
   },
   "url_encoder_decoder": {
     "h1": "Free URL Encoder / Decoder",
@@ -73,5 +214,191 @@
     "meta_desc": "The requested page could not be found. Return to the Quick-Fix Tools homepage to explore the utility suite.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
+  },
+  
+  "guides": {
+    "title": "Practical guides for everyday web tasks",
+    "description": "Short, practical guides to help you use Quick-Fix Tools effectively for common development and SEO tasks.",
+    "items": [
+      {
+        "title": "How to format SQL online",
+        "summary": "Clean up and structure SQL queries for debugging, sharing, and review.",
+        "path": "sql-formatter"
+      },
+      {
+        "title": "How to validate JSON quickly",
+        "summary": "Catch syntax errors and format JSON payloads for APIs and frontends.",
+        "path": "json-validator"
+      },
+      {
+        "title": "How to convert CSV to JSON",
+        "summary": "Turn spreadsheet exports into JSON for apps, automation, and integrations.",
+        "path": "csv-to-json"
+      },
+      {
+        "title": "How to minify CSS for the web",
+        "summary": "Reduce stylesheet size and improve page speed with cleaner output.",
+        "path": "css-minify"
+      }
+    ]
+  },
+  "faq_page": {
+    "meta_title": "Frequently Asked Questions - Quick-Fix Tools",
+    "meta_desc": "Find answers regarding database security, cookie policies, and how our client-side SQL, JSON, CSS, and PDF tools process your confidential files safely.",
+    "h1": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about safety, data privacy, and optimizing your development workflow with Quick-Fix Tools.",
+    "faqs": [
+      {
+        "q": "Do I need to sign up for an account or pay to use these tools?",
+        "a": "Absolutely not. Every utility on Quick-Fix Tools is 100% free of charge. There are no registration forms, subscription paywalls, or hidden transaction limits required to use our services."
+      },
+      {
+        "q": "Is my data or source code saved on your servers?",
+        "a": "Your digital privacy is our absolute priority. For local developer tools (SQL formatting, CSS/JS minification, JSON validators), all operations execute entirely client-side using JavaScript within your local browser sandbox. No input payloads are uploaded to the internet. For heavy tools that require backend computation (such as PDF editors), your files are uploaded securely via SSL and are strictly scheduled for permanent deletion within 1 hour."
+      },
+      {
+        "q": "Why are there ads on the website and do they track my personal activities?",
+        "a": "To keep our utilities completely free, we display optimized banner ads via Google AdSense to fund server maintenance and development costs. Google may leverage anonymous cookies to display advertisements relevant to your browsing preferences. You can fully customize or opt out of personalized tracking via your official Google Ads Settings panel."
+      },
+      {
+        "q": "How can these tools assist with Technical SEO and page speed optimization?",
+        "a": "We provide dedicated resources for webmasters and developers, including code formatting/minification, URL encoding/decoding, and structured data converter engines (CSV to JSON). Compressing oversized CSS/JS assets and optimizing SQL query logic directly increases page-load speeds, giving your web application a major advantage in Google's Core Web Vitals rankings."
+      },
+      {
+        "q": "Are there any file size or data input limits?",
+        "a": "For text-based inputs (JSON, SQL, HTML templates), there is no hard-coded software cap; processing performance scales with your device's physical CPU and RAM. For file assets like PDFs or images, we support uploads up to 50MB to guarantee speed and prevent bandwidth bottlenecks."
+      },
+      {
+        "q": "Can I use these developer tools while working offline?",
+        "a": "Yes! Because the core computational engine runs locally in your browser environment (Client-Side), once the tool page (such as Hash Generator, SQL Formatter, or JSON parser) has finished loading, you can safely disconnect from the internet and continue using the tool with 100% capability."
+      },
+      {
+        "q": "Which languages are supported, and how do I toggle between them?",
+        "a": "Our site fully supports English (EN), Vietnamese (VI), and Spanish (ES). You can switch locales seamlessly using the dropdown menu on the global Navigation bar, or by typing the preferred language prefix directly into your browser's address bar."
+      }
+    ],
+    "contact_box": {
+      "title": "Still have questions?",
+      "desc": "If you encountered a bug, have feature requests, or want to suggest new micro-utilities, we are happy to help.",
+      "button": "Contact Technical Support"
+    }
+  },
+
+  "about_page": {
+    "meta_title": "About Us - QuickFix Studio",
+    "meta_desc": "Discover the mission behind QuickFix Studio. We provide fast, free, and 100% client-side developers utility tools for SQL formatting, JSON parsing, and CSS minifying.",
+    "h1": "About QuickFix Studio",
+    "subtitle": "A fast, privacy-first, and highly reliable web developer utilities designed to streamline your daily engineering workflows.",
+    "mission_title": "Our Mission",
+    "mission_desc": "QuickFix Studio was created to solve everyday developers, SEO teams, and webmasters' micro-tasks safely. We believe that critical formatting and optimization utilities should be universally accessible without forcing subscription paywalls or risking intellectual property leaks.",
+    "values_title": "Our Uncompromising Standards",
+    "values": [
+      {
+        "title": "🔒 100% Browser-Based Security",
+        "desc": "All computations run inside your local browser sandbox. Your proprietary database schemas, private credentials, or code strings never leave your device."
+      },
+      {
+        "title": "⚡ No Intrusive Ads, Pure Speed",
+        "desc": "We keep banner distributions highly optimized and strictly ban malicious overlay ads. Clean architecture delivers high-speed loading times."
+      },
+      {
+        "title": "🎁 Always Free & Open Access",
+        "desc": "No arbitrary daily task caps, no hidden subscription fees, and absolutely zero log-in constraints to access any utility."
+      }
+    ],
+    "tech_title": "Modern Engineering Foundations",
+    "tech_desc": "Powered by Next.js static generation pipelines and Tailwind CSS frameworks, QuickFix Studio leverages hardware-accelerated local scripts to parse and format mega-sized assets efficiently.",
+    "cta_title": "Ready to streamline your development process?",
+    "cta_desc": "Browse our core dashboard and leverage clean tools that respect your privacy.",
+    "cta_btn": "Go back to Dashboard"
+  },
+  "blog_page": {
+    "meta_title": "Developer Blog & Technical SEO | Quick-Fix Tools",
+    "meta_desc": "Discover structural insights on SQL formatting, JSON syntax validation, CSS minification, and key technical SEO strategies to boost website metrics.",
+    "h1": "Blog & Technical Insights",
+    "subtitle": "Deep-dive tutorials, operational guides, and practical insights designed to help developers clean code syntax, boost performance, and ship faster web applications.",
+    "read_time_prefix": "Read time: ",
+    "read_time_suffix": " min read",
+    "read_article": "Read article",
+    "posts": [
+      {
+        "slug": "why-formatting-sql-matters",
+        "category": "Database",
+        "date": "June 12, 2026",
+        "readTime": "5",
+        "title": "Why Standardizing and Formatting SQL Queries Matters",
+        "summary": "Sharing single-line, unformatted SQL queries heavily slows down peer reviews and increases the risk of logical execution errors. Standardized query layouts not only allow database engines to efficiently cache execution plans but also empower engineers to rapidly debug complex joins and nested subqueries without friction."
+      },
+      {
+        "slug": "validate-json-before-using",
+        "category": "Data Handling",
+        "date": "June 25, 2026",
+        "readTime": "4",
+        "title": "JSON Validation: Stopping Production Crashes at the Syntax Level",
+        "summary": "A single trailing comma or an unescaped double-quote key can freeze entire web applications at runtime. Using visual JSON linting tools allows developers to parse raw streams, pinpoint exactly where formatting broke down, render an interactive tree schema, and guarantee safe payloads for cross-border API endpoints."
+      },
+      {
+        "slug": "css-minification-web-vitals",
+        "category": "Optimization",
+        "date": "July 02, 2026",
+        "readTime": "6",
+        "title": "Does CSS Minification Actually Improve Core Web Vitals?",
+        "summary": "By default, browser engines treat stylesheets as render-blocking assets. Stripping raw tabs, carriage returns, and developer inline comments compresses physical file payloads drastically. This programmatic compression directly boosts critical Lighthouse speed metrics, specifically slashing Largest Contentful Paint (LCP) and First Contentful Paint (FCP) times."
+      },
+      {
+        "slug": "url-encoding-decoded-deep-dive",
+        "category": "Web Security",
+        "date": "July 08, 2026",
+        "readTime": "5",
+        "title": "Demystifying URL Encoding and Safe Parameter Transmission",
+        "summary": "Ever wondered why simple characters like spaces or non-ASCII letters turn into percent-encoded string variants (%) in your address bar? We explore the core specifications of RFC 3986, safe UTF-8 character escaping, and explain why secure URL parameter processing is vital to neutralize dangerous injection exploits."
+      },
+      {
+        "slug": "understanding-hashes-md5-sha256",
+        "category": "Cryptography",
+        "date": "July 12, 2026",
+        "readTime": "7",
+        "title": "MD5 vs. SHA-1 vs. SHA-256: When to Use Cryptographic Hash Utilities",
+        "summary": "One-way cryptographic hash functions form the foundation of secure web architectures. This comprehensive guide compares payload sizes, algorithmic collision rates, standard file checksum practices, and details why obsolete engines like MD5 must be excluded from modern user credential hashing pipelines."
+      }
+    ]
+  },
+  "blog_posts": {
+    "why-formatting-sql-matters": {
+      "title": "Why Standardizing and Formatting SQL Queries Matters",
+      "category": "Database",
+      "date": "June 12, 2026",
+      "readTime": "5",
+      "meta_desc": "Formatting SQL improves code readability, reduces database syntax errors, and speeds up developers code review pipelines.",
+      "related_tool_path": "sql-formatter",
+      "related_tool_label": "Launch SQL Formatter",
+      "content": "<h2>The Chaos of Messy, Unformatted SQL Queries</h2><p>During daily development tasks, we often encounter giant SQL queries stretching hundreds of lines, compacted into single lines or scrambled inside system logs. Reading these strings is a major headache for any software engineer performing code reviews.</p><h3>1. Accelerate Comprehension & Save Developer Energy</h3><p>Standardizing SQL structure by wrapping code after major keywords like <code>SELECT</code>, <code>FROM</code>, <code>WHERE</code>, and <code>JOIN</code> helps your brain instantly isolate query logic. You no longer need to squint to find specific conditional filters.</p><h3>2. Spot Silent Logic Bugs Before Production</h3><p>Scrambled queries hide dangerous logic errors, such as missing join conditions that trigger Cartesian Products on huge tables. Alignment makes join clauses obvious, letting you spot syntax mishaps in seconds.</p>"
+    },
+    "validate-json-before-using": {
+      "title": "JSON Validation: Stopping Production Crashes at the Syntax Level",
+      "category": "Data Handling",
+      "date": "June 25, 2026",
+      "readTime": "4",
+      "meta_desc": "Learn why checking JSON syntax is critical to protect client-side applications from parsing errors.",
+      "related_tool_path": "json-validator",
+      "related_tool_label": "Check JSON Syntax Now",
+      "content": "<h2>How One Trailing Comma Can Take Down Your Production App</h2><p>JSON (JavaScript Object Notation) is the most popular data exchange format between backend nodes and client browsers. However, it enforces strict syntax parser constraints. An extra trailing comma or unquoted key causes <code>JSON.parse()</code> to fail catastrophically.</p><h3>Why Do You Need a Proper JSON Validator?</h3><ul><li><strong>Precise Error Location:</strong> Instantly target the exact line and column character triggering parsing errors.</li><li><strong>Automatic Fixing:</strong> Auto-replaces single quotes and cleans up trailing syntax bloat.</li><li><strong>Interactive Tree Visualization:</strong> Effortlessly navigate deeply nested JSON objects.</li></ul>"
+    },
+    "css-minification-web-vitals": {
+      "title": "Does CSS Minification Actually Improve Core Web Vitals?",
+      "category": "Optimization",
+      "date": "July 02, 2026",
+      "readTime": "6",
+      "meta_desc": "Find out how minifying stylesheets eliminates render-blocking overheads to boost your Google PageSpeed scores.",
+      "related_tool_path": "css-minify",
+      "related_tool_label": "Minify CSS Online",
+      "content": "<h2>CSS and the Render-Blocking Performance Hit</h2><p>Before a browser draws pixels on screen, it must fetch, load, and parse all linked external stylesheets. This process is render-blocking. Heavy CSS files increase the initial loading white screen lag for visitors.</p><h3>Direct Impact on Google's Core Web Vitals Metrics</h3><p>Search engines rank websites based on real-world performance benchmarks:</p><ul><li><strong>FCP (First Contentful Paint):</strong> Shorter CSS processing means visual elements paint faster.</li><li><strong>LCP (Largest Contentful Paint):</strong> Removing redundant layout space releases network streams to load hero images sooner.</li></ul>"
+    }
+  },
+  "blog_detail": {
+    "back_to_blog": "← Back to all posts",
+    "cta_title": "Ready to clean up your datasets?",
+    "cta_desc": "Use our high-speed developer utility suite for instant, secure, and free client-side results.",
+    "not_found": "Oops! This article does not exist or has been relocated."
   }
 }

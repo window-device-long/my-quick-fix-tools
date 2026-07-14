@@ -1,15 +1,92 @@
 {
   "common": {
-    "title": "Quick-Fix Tools",
-    "description": "Bộ công cụ trực tuyến miễn phí cho developer, analyst và đội SEO để định dạng, kiểm tra và tối ưu nội dung tức thì."
+    "title": "QuickFix Studio",
+    "description": "Các tiện ích tức thì để định dạng, xác thực và tối ưu hóa cấu trúc mã nguồn mà không gửi dữ liệu đến bất kỳ máy chủ nào."
   },
-  "sql": {
-    "h1": "Công cụ định dạng & nén SQL",
-    "meta_title": "Công cụ định dạng SQL trực tuyến miễn phí",
-    "meta_desc": "Định dạng và nén câu lệnh SQL tức thì bằng công cụ trực tuyến bảo mật, phù hợp cho developer và DBA.",
-    "placeholder": "Dán SQL tại đây...",
-    "btn_format": "Định dạng SQL",
-    "btn_minify": "Nén SQL"
+  "home_page": {
+    "badge": "✨ Miễn phí & Bảo mật 100% trên Trình duyệt",
+    "utilities_title": "Bảng điều khiển công cụ",
+    "launch_tool": "Khởi chạy",
+    "tools": {
+      "sql_formatter": {
+        "title": "Định dạng & Nén SQL",
+        "desc": "Làm đẹp hoặc nén các truy vấn cơ sở dữ liệu."
+      },
+      "json_validator": {
+        "title": "JSON Validator & Beautifier",
+        "desc": "Xác thực, định dạng và phân tích cú pháp JSON."
+      },
+      "csv_to_json": {
+        "title": "CSV sang JSON Converter",
+        "desc": "Chuyển đổi cấu trúc dữ liệu Excel/CSV thành mảng JSON."
+      },
+      "css_minify": {
+        "title": "Nén mã CSS",
+        "desc": "Loại bỏ khoảng trắng để tối ưu hóa dung lượng stylesheet."
+      },
+      "hash_generator": {
+        "title": "Tạo mã Hash bảo mật",
+        "desc": "Tạo các giá trị chuỗi MD5, SHA-1, SHA-256."
+      },
+      "url_encoder_decoder": {
+        "title": "Mã hóa / Giải mã URL",
+        "desc": "Mã hóa hoặc giải mã các ký tự chuỗi an toàn cho HTTP."
+      }
+    }
+  },
+  "footer": {
+    "description": "Bộ công cụ web nhanh, riêng tư và sẵn sàng cho phát triển, SEO và vận hành nội dung mà không cần cài đặt thêm.",
+    "featured_tools": "Công cụ nổi bật",
+    "company_policy": "Thông tin & chính sách",
+    "about": "Về QuickFix Studio",
+    "privacy": "Chính sách riêng tư",
+    "terms": "Điều khoản dịch vụ",
+    "operational": "Hoạt động ổn định"
+  },
+ "sql": {
+    "meta_title": "Định Dạng SQL Trực Tuyến - Làm Đẹp & Nén Mã SQL Miễn Phí",
+    "meta_desc": "Công cụ định dạng (Beautify) và nén (Minify) SQL trực tuyến, bảo mật 100% trên trình duyệt. Hỗ trợ PostgreSQL, MySQL, SQL Server, Oracle và BigQuery.",
+    "h1": "Trình Định Dạng & Làm Đẹp SQL Trực Tuyến",
+    "intro_title": "Visual SQL Formatter là gì?",
+    "intro_desc": "Trong quá trình phát triển phần mềm và phân tích dữ liệu, việc phải làm việc với các câu lệnh SQL thô (raw SQL), lộn xộn hoặc bị nén thành một dòng từ file log là điều không thể tránh khỏi. Visual SQL Formatter ra đời như một giải pháp trực tuyến miễn phí giúp bạn chuyển đổi những truy vấn phức tạp, rối rắm thành cấu trúc phân cấp rõ ràng, chuẩn hóa và cực kỳ dễ đọc chỉ trong một cú nhấp chuột.",
+    "why_title": "Tại sao bạn cần định dạng SQL chuẩn?",
+    "why_reasons": [
+      {
+        "title": "Tăng tốc độ đọc hiểu & gỡ lỗi (Debugging)",
+        "desc": "Một câu lệnh SELECT lồng nhau (Nested Queries) hoặc chứa quá nhiều mệnh đề JOIN sẽ trở thành nỗi ác mộng nếu không được thụt lề chuẩn. Định dạng rõ ràng giúp bạn phát hiện lỗi cú pháp và logic chỉ trong vài giây."
+      },
+      {
+        "title": "Tối ưu hóa Code Review & Git Diff",
+        "desc": "Khi làm việc nhóm, việc thống nhất một chuẩn định dạng SQL giúp các công cụ kiểm soát phiên bản (như Git) không bị nhiễu bởi các thay đổi về khoảng trắng (whitespace), giúp quá trình review code diễn ra mượt mà hơn."
+      },
+      {
+        "title": "Bảo mật tuyệt đối (100% Client-Side)",
+        "desc": "Công cụ của chúng tôi hoạt động hoàn toàn trên trình duyệt của bạn (Client-Side). Toàn bộ mã nguồn SQL, cấu trúc bảng (schema) hay dữ liệu nhạy cảm của bạn sẽ KHÔNG bao giờ được gửi về máy chủ của chúng tôi. An toàn tối đa cho môi trường doanh nghiệp."
+      }
+    ],
+    "features_title": "Các tính năng kỹ thuật nổi bật",
+    "features_list": [
+      {
+        "bold": "SQL Beautifier (Làm đẹp mã):",
+        "text": "Tự động viết hoa các từ khóa chuẩn (SELECT, FROM, WHERE, GROUP BY, HAVING,...) và thụt lề (indentation) đồng nhất."
+      },
+      {
+        "bold": "SQL Minifier (Nén tối ưu):",
+        "text": "Loại bỏ hoàn toàn các khoảng trắng dư thừa, ký tự xuống dòng và ghi chú (comments) để giảm thiểu dung lượng chuỗi truy vấn trước khi cấu hình vào mã nguồn ứng dụng."
+      },
+      {
+        "bold": "Hỗ trợ đa hệ quản trị (Dialects):",
+        "text": "Xử lý mượt mà cú pháp đặc trưng của PostgreSQL, MySQL, Oracle, Microsoft SQL Server (T-SQL), SQLite, và Google BigQuery."
+      }
+    ],
+    "guide_title": "Hướng dẫn sử dụng bộ định dạng SQL",
+    "guide_steps": [
+      "Sao chép (Copy) đoạn mã SQL thô hoặc bị vỡ cấu trúc từ IDE, file log hoặc mã nguồn của bạn.",
+      "Dán (Paste) đoạn mã đó vào khung nhập liệu (Input Area) lớn ở phía trên.",
+      "Lựa chọn thao tác: Nhấn 'Format SQL' để làm đẹp cấu trúc, hoặc chọn 'Minify SQL' nếu muốn nén gọn mã nguồn.",
+      "Sao chép kết quả đã xử lý từ khung kết quả bằng nút 'Copy' tiện lợi để sử dụng ngay."
+    ],
+    "pro_tip": "Mẹo nhỏ: Bạn có thể sử dụng tính năng nén (Minify) để tối ưu hóa hiệu năng truyền tải khi thực thi các truy vấn động (Dynamic SQL) từ ứng dụng backend lên cơ sở dữ liệu."
   },
   "json_validator": {
     "h1": "Công cụ kiểm tra và làm đẹp JSON",
@@ -19,11 +96,33 @@
     "btn_format": "Xử lý dữ liệu"
   },
   "privacy_policy": {
-    "h1": "Chính sách bảo mật",
-    "meta_title": "Chính sách bảo mật | Quick-Fix Tools",
-    "meta_desc": "Tìm hiểu cách Quick-Fix Tools xử lý dữ liệu riêng tư, xử lý tại trình duyệt và cookie.",
-    "placeholder": "Nhập dữ liệu...",
-    "btn_format": "Xử lý dữ liệu"
+    "meta_title": "Chính Sách Bảo Mật - Cam Kết An Toàn Thông Tin Người Dùng",
+    "meta_desc": "Chính sách bảo mật thông tin, quy định sử dụng cookie và cam kết an toàn dữ liệu trên trình duyệt cho các công cụ trực tuyến của chúng tôi.",
+    "h1": "Chính Sách Bảo Mật",
+    "last_updated": "Cập nhật lần cuối: 14 tháng 7, 2026",
+    "highlights_title": "Tóm tắt nhanh về quyền riêng tư",
+    "highlights": [
+      { "label": "Xử lý dữ liệu", "value": "100% Client-side (trên trình duyệt của bạn). Đối với các công cụ xử lý file (như PDF), file được tự động xóa hoàn toàn khỏi máy chủ sau 1 giờ." },
+      { "label": "Quảng cáo (AdSense)", "value": "Sử dụng cookie của Google AdSense để hiển thị quảng cáo cá nhân hóa. Bạn có thể tắt tính năng này bất kỳ lúc nào." },
+      { "label": "Thông tin cá nhân", "value": "Chúng tôi KHÔNG yêu cầu đăng ký tài khoản, KHÔNG lưu giữ và KHÔNG bán thông tin cá nhân của bạn cho bên thứ ba." },
+      { "label": "Phân tích (Analytics)", "value": "Sử dụng Google Analytics để theo dõi lưu lượng truy cập ẩn danh nhằm cải thiện hiệu năng hệ thống." }
+    ],
+    "intro_title": "1. Giới thiệu chung",
+    "intro_text": "Chào mừng bạn đến với hệ thống công cụ trực tuyến miễn phí của chúng tôi. Chúng tôi hiểu rằng sự riêng tư và an toàn dữ liệu của bạn là cực kỳ quan trọng. Chính sách bảo mật này mô tả cách thức chúng tôi thu thập, sử dụng và bảo vệ thông tin khi bạn tương tác với các ứng dụng web trên trang của chúng tôi.",
+    "collection_title": "2. Thu thập và xử lý dữ liệu",
+    "collection_text_1": "Đối với các công cụ tiện ích cục bộ (ví dụ: SQL Formatter, bộ giải mã, máy tính tài chính): Toàn bộ logic xử lý diễn ra trực tiếp trên trình duyệt của bạn (Client-Side). Mã nguồn hoặc dữ liệu bạn dán vào công cụ không bao giờ được gửi lên máy chủ của chúng tôi.",
+    "collection_text_2": "Đối với các công cụ xử lý tệp tin (ví dụ: công cụ PDF): Tệp của bạn được tải lên tạm thời thông qua kết nối bảo mật mã hóa SSL để xử lý. Ngay sau khi hoàn tất, hệ thống sẽ tự động lên lịch xóa vĩnh viễn tệp tin này khỏi máy chủ trong vòng tối đa 1 giờ. Chúng tôi không giữ bất kỳ bản sao lưu nào.",
+    "adsense_title": "3. Chính sách Cookie & Quảng cáo Google AdSense",
+    "adsense_text_1": "Chúng tôi sử dụng Google AdSense làm đối tác phân phối quảng cáo chính nhằm duy trì kinh phí vận hành các công cụ miễn phí này. Google, với tư cách là nhà cung cấp bên thứ ba, sử dụng cookie để phục vụ quảng cáo dựa trên các lượt truy cập trước đó của bạn vào trang web này hoặc các trang web khác trên Internet.",
+    "adsense_text_2": "Việc Google sử dụng cookie quảng cáo cho phép Google và các đối tác của họ hiển thị quảng cáo cho bạn dựa trên thông tin truy cập của bạn. Bạn có thể chọn tắt tính năng quảng cáo cá nhân hóa bằng cách truy cập vào trang: ",
+    "adsense_link_text": "Cài đặt quảng cáo của Google",
+    "cookies_title": "4. Cookie của bên thứ ba khác",
+    "cookies_text": "Ngoài ra, chúng tôi có thể sử dụng Google Analytics để đo lường hiệu suất trang web. Dịch vụ này thu thập dữ liệu phi cá nhân (như loại trình duyệt, hệ điều hành, thời gian truy cập, nguồn trang) dưới dạng ẩn danh hoàn toàn để giúp chúng tôi tối ưu hóa trải nghiệm người dùng.",
+    "rights_title": "5. Quyền lợi và nghĩa vụ của người dùng",
+    "rights_text": "Bạn hoàn toàn có quyền quyết định việc sử dụng các công cụ của chúng tôi. Bạn có thể chủ động xóa cookie trên trình duyệt hoặc sử dụng các trình chặn quảng cáo nếu không muốn chia sẻ dữ liệu truy cập ẩn danh.",
+    "contact_title": "6. Liên hệ chúng tôi",
+    "contact_text": "Nếu bạn có bất kỳ câu hỏi nào liên quan đến Chính sách bảo mật này hoặc cách xử lý dữ liệu của các công cụ, vui lòng liên hệ với chúng tôi qua email: ",
+    "contact_email": "support@findtoolpdf.online"
   },
   "terms_of_service": {
     "h1": "Điều khoản dịch vụ",
@@ -54,11 +153,52 @@
     "btn_format": "Xử lý dữ liệu"
   },
   "hash_generator": {
-    "h1": "Công cụ tạo hash",
-    "meta_title": "Công cụ tạo hash trực tuyến | MD5 & SHA",
-    "meta_desc": "Tạo hash MD5, SHA-1, SHA-256 và SHA-512 tức thì cho xác minh, lưu trữ và debug.",
-    "placeholder": "Nhập dữ liệu...",
-    "btn_format": "Xử lý dữ liệu"
+    "h1": "Bộ Tạo Mã Hash Trực Tuyến Tốc Độ Cao",
+    "meta_title": "Tạo Mã Hash Online - MD5, SHA-1, SHA-256, SHA-512 Bảo Mật",
+    "meta_desc": "Công cụ tạo mã băm (Cryptographic Hash) trực tuyến miễn phí. Hỗ trợ MD5, SHA-1, SHA-256, SHA-512 hoạt động 100% cục bộ trên trình duyệt, an toàn bảo mật dữ liệu.",
+    "placeholder": "Nhập hoặc dán văn bản cần băm tại đây...",
+    "btn_format": "Tạo Mã Hash",
+    "seo_landing": {
+      "badge": "An Toàn Tuyệt Đối trên Trình Duyệt",
+      "title": "Công cụ mã hóa và băm dữ liệu trực tuyến chuyên sâu",
+      "intro": "Mã hóa một chiều (Hashing) là một kỹ thuật toán học biến đổi bất kỳ dữ liệu đầu vào nào (văn bản, tệp tin, mật mã) thành một chuỗi ký tự có độ dài cố định. Công cụ của chúng tôi tích hợp toàn diện các thuật toán băm tiêu chuẩn quốc tế như MD5, SHA-1, SHA-256 và SHA-512. Điểm đặc biệt là toàn bộ quy trình băm đều được thực thi trực tiếp bằng JavaScript trên máy tính của bạn (Client-Side). Dữ liệu nhạy cảm của bạn sẽ không bao giờ bị tải lên mạng internet, bảo vệ sự riêng tư tối đa.",
+      "keywords": [
+        "hash generator online",
+        "tạo mã hash trực tuyến",
+        "md5 generator online",
+        "sha256 calculator online",
+        "sha512 checksum tool",
+        "băm mật khẩu bảo mật"
+      ],
+      "use_cases": [
+        "Xác minh tính toàn vẹn của tệp tin: So sánh mã Hash (Checksum) của tệp tin vừa tải xuống từ internet với chuỗi mã gốc của nhà phát triển để đảm bảo tệp không bị lỗi hoặc bị chèn mã độc.",
+        "Xác thực khóa chữ ký (API Signatures): Tạo và đối chiếu chữ ký số để xác minh danh tính người gửi trong các kết nối hệ thống và dịch vụ thanh toán trực tuyến.",
+        "So sánh chuỗi dữ liệu nhanh: Sử dụng thuật toán băm để so sánh hai chuỗi văn bản hoặc tệp tin cực lớn một cách nhanh chóng mà không cần tốn tài nguyên đối chiếu từng ký tự thô."
+      ],
+      "steps": [
+        "Nhập hoặc dán đoạn văn bản, mã chuỗi hoặc đoạn mã hóa bạn cần băm vào khung nhập liệu phía trên.",
+        "Hệ thống sẽ tự động bắt sự kiện thay đổi và tính toán đồng thời các dạng mã băm phổ biến (MD5, SHA-1, SHA-256, SHA-512) theo thời gian thực (Real-time).",
+        "Tìm thuật toán bạn cần sử dụng, nhấn vào biểu tượng sao chép (Copy) để lưu ngay chuỗi băm vào khay nhớ tạm (Clipboard)."
+      ],
+      "faqs": [
+        {
+          "q": "Công cụ này có gửi dữ liệu của tôi về máy chủ (Server) không?",
+          "a": "Hoàn toàn không. Trái ngược với các công cụ trực tuyến khác tải chuỗi của bạn về hệ thống server của họ, công cụ tạo Hash của chúng tôi xử lý 100% local trên trình duyệt của bạn. Bạn thậm chí có thể ngắt kết nối internet hoàn toàn sau khi tải trang mà công cụ vẫn hoạt động bình thường."
+        },
+        {
+          "q": "Tôi nên chọn thuật toán băm nào an toàn nhất?",
+          "a": "Nếu mục đích là bảo mật thông tin hoặc kiểm tra tính toàn vẹn quan trọng, bạn nên chọn SHA-256 hoặc SHA-512. Các thuật toán như MD5 (128-bit) và SHA-1 (160-bit) hiện đã lỗi thời, dễ bị tấn công va chạm (collision) và chỉ phù hợp để kiểm tra lỗi truyền dữ liệu cơ bản."
+        },
+        {
+          "q": "Tôi có thể dùng công cụ này để hash mật khẩu người dùng trong cơ sở dữ liệu không?",
+          "a": "Không được khuyến nghị cho môi trường thực tế. Các thuật toán băm nhanh như SHA-256 hay MD5 rất dễ bị tấn công dò mật khẩu bằng phần cứng mạnh (GPU Brute-force/Rainbow Table). Đối với hệ thống đăng nhập, bạn bắt buộc phải dùng các thuật toán băm chậm, có tích hợp cơ chế Salt và độ trễ tính toán như bcrypt, Argon2 hoặc PBKDF2."
+        }
+      ],
+      "related_labels": {
+        "url_tool": "Bộ mã hóa & giải mã URL",
+        "all_tools": "Xem tất cả công cụ"
+      }
+    }
   },
   "url_encoder_decoder": {
     "h1": "Công cụ mã hóa / giải mã URL",
@@ -73,5 +213,190 @@
     "meta_desc": "Trang bạn yêu cầu không tồn tại. Quay lại trang chủ Quick-Fix Tools để khám phá bộ công cụ hữu ích.",
     "placeholder": "Nhập dữ liệu...",
     "btn_format": "Xử lý dữ liệu"
+  },
+  "guides": {
+  "title": "Hướng dẫn thực tế cho các tác vụ web hằng ngày",
+  "description": "Các hướng dẫn ngắn gọn, thực tế giúp bạn sử dụng Quick-Fix Tools hiệu quả cho các công việc phát triển và SEO phổ biến.",
+  "items": [
+    {
+      "title": "Cách định dạng SQL trực tuyến",
+      "summary": "Làm sạch và sắp xếp câu lệnh SQL để dễ debug, chia sẻ và đánh giá.",
+      "path": "sql-formatter"
+    },
+    {
+      "title": "Cách kiểm tra JSON nhanh chóng",
+      "summary": "Phát hiện lỗi cú pháp và định dạng dữ liệu JSON cho API và frontend.",
+      "path": "json-validator"
+    },
+    {
+      "title": "Cách chuyển đổi CSV sang JSON",
+      "summary": "Chuyển dữ liệu bảng tính thành JSON cho ứng dụng, tự động hóa và tích hợp.",
+      "path": "csv-to-json"
+    },
+    {
+      "title": "Cách nén CSS cho website",
+      "summary": "Giảm kích thước stylesheet và cải thiện tốc độ tải trang với mã nguồn tối ưu hơn.",
+      "path": "css-minify"
+    }
+  ]
+},
+"faq_page": {
+    "meta_title": "Câu Hỏi Thường Gặp - Quick-Fix Tools",
+    "meta_desc": "Giải đáp thắc mắc về bảo mật dữ liệu, chính sách quảng cáo và cách hoạt động của các công cụ định dạng SQL, kiểm tra JSON, nén CSS và xử lý PDF.",
+    "h1": "Câu Hỏi Thường Gặp (FAQ)",
+    "subtitle": "Mọi thông tin bạn cần biết về tính an toàn, bảo mật dữ liệu và cách tối ưu hóa hiệu năng làm việc với bộ công cụ Quick-Fix Tools.",
+    "faqs": [
+      {
+        "q": "Tôi có cần đăng ký tài khoản hoặc trả phí để sử dụng các công cụ này không?",
+        "a": "Hoàn toàn không. Toàn bộ các công cụ trên Quick-Fix Tools đều được cung cấp miễn phí 100%. Bạn không cần đăng ký tài khoản, không cần cung cấp email hay liên kết thẻ thanh toán để sử dụng dịch vụ."
+      },
+      {
+        "q": "Dữ liệu và mã nguồn của tôi có bị lưu lại trên máy chủ của các bạn không?",
+        "a": "Chúng tôi đặt quyền riêng tư của bạn lên hàng đầu. Đối với hầu hết các công cụ lập trình (định dạng SQL, nén CSS/JS, kiểm tra JSON...), toàn bộ quá trình xử lý đều diễn ra cục bộ (Client-Side) bằng Javascript trực tiếp trên trình duyệt của bạn. Dữ liệu không hề được gửi lên internet hay bất kỳ máy chủ nào. Đối với các công cụ bắt buộc xử lý trên server (như nén hoặc gộp file PDF), các tệp của bạn sẽ được truyền qua giao thức mã hóa an toàn SSL và tự động xóa vĩnh viễn khỏi hệ thống sau tối đa 1 giờ."
+      },
+      {
+        "q": "Tại sao trang web có quảng cáo và chúng có thu thập thông tin của tôi không?",
+        "a": "Do các công cụ được cung cấp hoàn toàn miễn phí, chúng tôi sử dụng quảng cáo (Google AdSense) để trang trải chi phí duy trì máy chủ và vận hành hệ thống. Google có thể sử dụng các cookie phi cá nhân hóa để hiển thị các quảng cáo phù hợp với bạn dựa trên lịch sử truy cập. Bạn hoàn toàn có thể kiểm soát hoặc tắt tính năng cá nhân hóa quảng cáo này bất cứ lúc nào trong phần Cài đặt tài khoản Google của mình."
+      },
+      {
+        "q": "Các công cụ này hỗ trợ tối ưu hóa SEO kỹ thuật (Technical SEO) như thế nào?",
+        "a": "Hệ thống tích hợp các công cụ chuyên dụng cho nhà phát triển và SEOer như: dọn dẹp mã nguồn (Beautify/Minify), xử lý và làm sạch URL (Encoder/Decoder), định cấu hình sitemap và chuyển đổi dữ liệu cấu trúc (CSV sang JSON). Việc tối ưu hóa kích thước file CSS/JS và dọn dẹp các truy vấn SQL thừa giúp tăng tốc độ phản hồi của trang web, cải thiện trực tiếp chỉ số Core Web Vitals của Google."
+      },
+      {
+        "q": "Có giới hạn kích thước hay dung lượng tệp tin khi sử dụng không?",
+        "a": "Đối với các công cụ xử lý văn bản (JSON, SQL, HTML...), chúng tôi không đặt giới hạn cứng, nhưng hiệu năng sẽ phụ thuộc vào RAM và bộ xử lý trên thiết bị của bạn. Đối với các công cụ xử lý tệp tin (như PDF, hình ảnh), hệ thống cho phép xử lý các tệp có dung lượng lên đến 50MB để đảm bảo trải nghiệm mượt mà và không làm nghẽn băng thông hệ thống."
+      },
+      {
+        "q": "Tôi có thể sử dụng bộ công cụ này khi không có kết nối internet (Offline) không?",
+        "a": "Có! Nhờ cơ chế xử lý hoàn toàn trên trình duyệt (Client-Side), sau khi bạn đã truy cập thành công vào trang công cụ (như bộ tạo mã Hash, Format SQL, JSON validator), bạn có thể ngắt kết nối internet hoàn toàn mà công cụ vẫn tính toán và trả kết quả chính xác 100%."
+      },
+      {
+        "q": "Trang web hỗ trợ những ngôn ngữ nào và làm sao để tôi đổi ngôn ngữ?",
+        "a": "Hệ thống hiện hỗ trợ đầy đủ tiếng Anh (EN), tiếng Việt (VI) và tiếng Tây Ban Nha (ES). Bạn có thể dễ dàng chuyển đổi ngôn ngữ thông qua thanh chọn ở góc trên cùng của thanh điều hướng (Navbar) hoặc chỉnh sửa trực tiếp mã quốc gia trên thanh địa chỉ URL của trình duyệt."
+      }
+    ],
+    "contact_box": {
+      "title": "Bạn vẫn còn thắc mắc khác?",
+      "desc": "Nếu bạn gặp lỗi trong quá trình sử dụng hoặc muốn đóng góp ý kiến phát triển công cụ mới, đừng ngần ngại gửi thư cho chúng tôi.",
+      "button": "Liên hệ hỗ trợ kỹ thuật"
+    }
+  },
+  "about_page": {
+    "meta_title": "Về Chúng Tôi - QuickFix Studio",
+    "meta_desc": "Tìm hiểu sứ mệnh đằng sau QuickFix Studio. Chúng tôi cung cấp các công cụ định dạng SQL, kiểm tra JSON, nén CSS hoàn toàn miễn phí và bảo mật tuyệt đối trên trình duyệt.",
+    "h1": "Về QuickFix Studio",
+    "subtitle": "Hệ sinh thái công cụ lập trình nhanh chóng, an toàn và bảo mật tuyệt đối dành riêng cho lập trình viên và nhà phát triển web.",
+    "mission_title": "Sứ mệnh của chúng tôi",
+    "mission_desc": "QuickFix Studio được phát triển với mục tiêu đơn giản hóa quy trình làm việc hàng ngày của lập trình viên, chuyên viên SEO và người tối ưu hóa nội dung. Chúng tôi tin rằng những công cụ tiện ích nhỏ không nên đi kèm với những rào cản đăng ký rườm rà hay nguy cơ rò rỉ dữ liệu nhạy cảm.",
+    "values_title": "Giá trị cốt lõi làm nên sự khác biệt",
+    "values": [
+      {
+        "title": "🔒 Bảo mật Client-Side 100%",
+        "desc": "Trực tiếp xử lý trên trình duyệt bằng Javascript. Mã nguồn, truy vấn SQL hay tệp tin cấu trúc của bạn không bao giờ được gửi đi bất kỳ đâu trên internet."
+      },
+      {
+        "title": "⚡ Không quảng cáo rác, tốc độ tối đa",
+        "desc": "Nói không với các banner quảng cáo tự động nhảy (popups) gây ức chế. Mã nguồn được tối ưu tối giản nhất để bạn truy cập và nhận kết quả chỉ trong mili-giây."
+      },
+      {
+        "title": "🎁 Tự do & Miễn phí mãi mãi",
+        "desc": "Không giới hạn số lần sử dụng trong ngày, không có tính năng khóa trả phí (premium) và không bắt buộc bạn phải điền email hay đăng ký tài khoản."
+      }
+    ],
+    "tech_title": "Giải pháp công nghệ tối ưu",
+    "tech_desc": "Chúng tôi áp dụng các công nghệ biên dịch và tối ưu hóa hiện đại như Next.js, Tailwind CSS và WebAssembly. Điều này giúp bộ công cụ hoạt động mượt mà ngay cả khi bạn cần định dạng hàng chục nghìn dòng mã JSON hay SQL phức tạp.",
+    "cta_title": "Sẵn sàng tối ưu hóa quy trình làm việc của bạn?",
+    "cta_desc": "Khám phá ngay bảng điều khiển chính để trải nghiệm tốc độ xử lý đỉnh cao.",
+    "cta_btn": "Quay lại Bảng điều khiển"
+  },
+
+  "blog_page": {
+    "meta_title": "Blog Công Cụ & SEO Kỹ Thuật | Quick-Fix Tools",
+    "meta_desc": "Khám phá các bài viết chuyên sâu về định dạng SQL, tối ưu cú pháp JSON, nén CSS/JS và các quy trình SEO kỹ thuật hữu ích nhất cho lập trình viên.",
+    "h1": "Blog & Kiến thức Kỹ thuật",
+    "subtitle": "Tổng hợp các bài viết chuyên môn sâu, hướng dẫn thực tế giúp bạn tối ưu hóa mã nguồn, tăng tốc tải trang và cải thiện năng suất lập trình hàng ngày.",
+    "read_time_prefix": "Thời gian đọc: ",
+    "read_time_suffix": " phút",
+    "read_article": "Đọc bài viết",
+    "posts": [
+      {
+        "slug": "why-formatting-sql-matters",
+        "category": "Cơ sở dữ liệu",
+        "date": "12 Tháng 6, 2026",
+        "readTime": "5",
+        "title": "Tại sao nên định dạng SQL chuẩn hóa trước khi chia sẻ?",
+        "summary": "Việc gửi những đoạn truy vấn SQL viết liền (minified) hoặc lộn xộn không chỉ làm chậm quá trình code review mà còn dễ phát sinh lỗi logic nghiêm trọng. Định dạng SQL đúng chuẩn giúp hệ quản trị cơ sở dữ liệu (DBMS) tối ưu hóa kế hoạch thực thi (execution plan), đồng thời giúp lập trình viên nhanh chóng phát hiện các lỗi cú pháp hoặc các đoạn truy vấn lồng nhau (subqueries) không cần thiết."
+      },
+      {
+        "slug": "validate-json-before-using",
+        "category": "Dữ liệu cấu trúc",
+        "date": "25 Tháng 6, 2026",
+        "readTime": "4",
+        "title": "JSON Validator: Ngăn chặn lỗi Runtime từ những chi tiết nhỏ nhất",
+        "summary": "Chỉ một dấu phẩy thừa (trailing comma) hay thiếu dấu ngoặc kép bọc ngoài key có thể khiến ứng dụng Production của bạn bị sập ngay lập tức. Việc sử dụng các công cụ kiểm tra cú pháp JSON giúp biên dịch, chẩn đoán chi tiết dòng bị lỗi, hiển thị sơ đồ cây trực quan, từ đó tối ưu hóa tốc độ trao đổi dữ liệu qua API giữa hệ thống Frontend và Backend."
+      },
+      {
+        "slug": "css-minification-web-vitals",
+        "category": "Tối ưu hóa web",
+        "date": "02 Tháng 7, 2026",
+        "readTime": "6",
+        "title": "Nén mã CSS (Minify) có thực sự cải thiện chỉ số Core Web Vitals?",
+        "summary": "CSS mặc định là tài nguyên chặn hiển thị (render-blocking resource) đối với trình duyệt. Bằng cách dọn sạch khoảng trắng dư thừa, xóa các ghi chú (comments) và hợp nhất các bộ chọn trùng lặp, tệp CSS nén sẽ giảm dung lượng tải xuống đáng kể. Điều này giúp tối ưu hóa trực tiếp các chỉ số đo lường hiệu năng quan trọng của Google như LCP (Largest Contentful Paint) và FCP (First Contentful Paint)."
+      },
+      {
+        "slug": "url-encoding-decoded-deep-dive",
+        "category": "Bảo mật Web",
+        "date": "08 Tháng 7, 2026",
+        "readTime": "5",
+        "title": "Tìm hiểu chi tiết về URL Encoding và giải mã tham số HTTP",
+        "summary": "Vì sao các ký tự đặc biệt như khoảng trắng hay dấu tiếng Việt lại biến đổi thành các chuỗi ký tự phần trăm (%) kỳ lạ trên trình duyệt? Bài viết này phân tích sâu về đặc tả kỹ thuật RFC 3986, cách chuyển đổi UTF-8 sang bộ mã ASCII an toàn cho HTTP, và lý do tại sao việc mã hóa tham số URL là bắt buộc để ngăn chặn các cuộc tấn công tiêm mã độc nguy hiểm."
+      },
+      {
+        "slug": "understanding-hashes-md5-sha256",
+        "category": "Mật mã học",
+        "date": "12 Tháng 7, 2026",
+        "readTime": "7",
+        "title": "Phân biệt MD5, SHA-1 và SHA-256: Khi nào nên tạo mã Hash?",
+        "summary": "Các hàm băm mật mã học một chiều đóng vai trò cốt lõi trong bảo mật thông tin hiện đại. Chúng ta sẽ cùng so sánh độ dài chuỗi đầu ra, xác suất xung đột (collisions) giữa các giải thuật băm thông dụng, phương pháp kiểm tra tính toàn vẹn của tệp tin tải về (checksums), và lý do tuyệt đối không được dùng MD5 để mã hóa mật khẩu người dùng."
+      }
+    ]
+  },
+  "blog_posts": {
+    "why-formatting-sql-matters": {
+      "title": "Tại sao nên định dạng SQL chuẩn hóa trước khi chia sẻ?",
+      "category": "Cơ sở dữ liệu",
+      "date": "12 Tháng 6, 2026",
+      "readTime": "5",
+      "meta_desc": "Định dạng SQL giúp câu lệnh dễ đọc, giảm lỗi cú pháp và cải thiện chất lượng rà soát mã nguồn trong nhóm phát triển.",
+      "related_tool_path": "sql-formatter",
+      "related_tool_label": "Trải nghiệm SQL Formatter",
+      "content": "<h2>Sự hỗn loạn của những câu truy vấn SQL viết liền</h2><p>Trong quá trình phát triển dự án, chúng ta thường xuyên bắt gặp những câu lệnh SQL dài hàng trăm dòng, được viết liền một mạch không khoảng trắng hoặc bị dính chặt sau khi xuất từ hệ thống logs. Việc đọc những dòng code này giống như một cực hình đối với bất kỳ lập trình viên nào đang thực hiện rà soát mã nguồn (code review).</p><h3>1. Tăng tốc độ đọc hiểu và giảm tải áp lực cho não bộ</h3><p>Định dạng SQL chuẩn hóa bằng cách xuống dòng hợp lý sau các từ khóa chính như <code>SELECT</code>, <code>FROM</code>, <code>WHERE</code>, <code>JOIN</code> giúp não bộ phân tách cấu trúc logic của truy vấn ngay lập tức. Bạn không cần phải căng mắt để tìm xem điều kiện lọc đang nằm ở đâu.</p><h3>2. Phát hiện lỗi logic và tối ưu hóa hiệu năng</h3><p>Một câu lệnh SQL lộn xộn rất dễ che giấu các lỗi logic nguy hiểm, ví dụ như thiếu điều kiện kết nối bảng gây ra phép nhân đề-các (Cartesian Product) làm treo hệ thống dữ liệu lớn. Khi được căn lề thẳng hàng, các liên kết <code>ON</code> của <code>JOIN</code> sẽ hiện ra rõ ràng, giúp bạn phát hiện lỗi chỉ trong vài giây.</p><blockquote><strong>Mẹo nhỏ:</strong> Luôn viết hoa các từ khóa SQL chuẩn như SELECT, UPDATE, DELETE để phân biệt rõ ràng với tên bảng và tên cột dữ liệu của bạn.</blockquote>"
+    },
+    "validate-json-before-using": {
+      "title": "JSON Validator: Ngăn chặn lỗi Runtime từ những chi tiết nhỏ nhất",
+      "category": "Dữ liệu cấu trúc",
+      "date": "25 Tháng 6, 2026",
+      "readTime": "4",
+      "meta_desc": "Kiểm tra cú pháp JSON giúp ứng dụng của bạn không bị sập bất ngờ khi phân tích dữ liệu API từ đối tác.",
+      "related_tool_path": "json-validator",
+      "related_tool_label": "Kiểm tra cú pháp JSON ngay",
+      "content": "<h2>Khi một dấu phẩy phá hỏng cả hệ thống Production</h2><p>JSON (JavaScript Object Notation) là định dạng truyền tải dữ liệu phổ biến nhất hiện nay giữa Backend và Frontend. Tuy nhiên, JSON cực kỳ nghiêm ngặt về mặt cú pháp. Chỉ cần bạn dư một dấu phẩy ở phần tử cuối cùng (trailing comma) hoặc quên bọc khóa (key) trong dấu ngoặc kép, toàn bộ hàm <code>JSON.parse()</code> sẽ ném ra ngoại lệ và có thể làm sập ứng dụng client.</p><h3>Tại sao bạn cần một công cụ Validator chuyên nghiệp?</h3><ul><li><strong>Xác định chính xác vị trí lỗi:</strong> Thay vì chỉ báo lỗi chung chung, công cụ linter sẽ chỉ ra chính xác dòng và ký tự đang bị lỗi cú pháp.</li><li><strong>Tự động sửa lỗi phổ biến:</strong> Các công cụ thông minh tự động thay thế dấu nháy đơn thành nháy kép, dọn dẹp các dấu phẩy thừa.</li><li><strong>Biểu diễn dưới dạng sơ đồ cây trực quan:</strong> Giúp bạn dễ dàng điều hướng qua các đối tượng JSON lồng nhau phức tạp.</li></ul>"
+    },
+    "css-minification-web-vitals": {
+      "title": "Nén mã CSS (Minify) có thực sự cải thiện chỉ số Core Web Vitals?",
+      "category": "Tối ưu hóa web",
+      "date": "02 Tháng 7, 2026",
+      "readTime": "6",
+      "meta_desc": "Tìm hiểu cách nén file CSS giúp giảm thiểu tài nguyên chặn hiển thị và tăng tốc độ phản hồi trang web lên tối đa.",
+      "related_tool_path": "css-minify",
+      "related_tool_label": "Nén CSS của bạn miễn phí",
+      "content": "<h2>CSS và vấn đề chặn hiển thị (Render-Blocking)</h2><p>Khi trình duyệt tải một trang web, nó bắt buộc phải tải xuống và phân tích cú pháp toàn bộ các tệp CSS được liên kết trước khi có thể vẽ những pixel đầu tiên lên màn hình. Đây được gọi là tài nguyên chặn hiển thị. Tệp CSS càng nặng, thời gian người dùng phải nhìn màn hình trắng càng lâu.</p><h3>Tác động trực tiếp lên chỉ số Core Web Vitals của Google</h3><p>Google đánh giá thứ hạng website của bạn dựa trên trải nghiệm thực tế của người dùng qua các chỉ số:</p><ul><li><strong>FCP (First Contentful Paint):</strong> Thời gian xuất hiện phần tử đầu tiên. Nén CSS giúp trình duyệt xử lý nhanh hơn, giảm FCP đáng kể.</li><li><strong>LCP (Largest Contentful Paint):</strong> Thời gian hiển thị phần tử lớn nhất. Giảm dung lượng file CSS giúp giải phóng băng thông để tải các tài nguyên quan trọng như ảnh biểu ngữ (hero image) nhanh hơn.</li></ul>"
+    }
+  },
+  "blog_detail": {
+    "back_to_blog": "← Quay lại danh sách bài viết",
+    "cta_title": "Bạn muốn xử lý dữ liệu của mình ngay bây giờ?",
+    "cta_desc": "Sử dụng công cụ tối ưu hóa chuyên sâu của chúng tôi một cách nhanh chóng, miễn phí và an toàn 100% trên trình duyệt của bạn.",
+    "not_found": "Rất tiếc, bài viết này không tồn tại hoặc đã được chuyển sang địa chỉ mới."
   }
 }

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const locales = ['en', 'es', 'vi'];
+const locales = ['en', 'es', 'vi', 'ja', 'fr', 'de'];
 const defaultLocale = 'en';
 const publicAssetExtensions = ['.png', '.jpg', '.jpeg', '.svg', '.ico', '.webp', '.gif', '.avif', '.txt', '.xml', '.json', '.map'];
 

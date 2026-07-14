@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getDictionary } from '@/dictionaries/get-dictionary';
 
 const toolCatalog = [
   {
@@ -72,7 +71,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ lang: st
           'Quick-Fix Tools là trung tâm công cụ hữu ích cho những người làm phát triển, kiểm thử dữ liệu, tối ưu website và xử lý nội dung nhanh. Mỗi công cụ được thiết kế để hoạt động trực tiếp trên trình duyệt, giữ dữ liệu an toàn và mang lại kết quả tức thì.',
         overviewTitle: 'Tổng quan hệ sinh thái công cụ',
         overviewText:
-          'Thay vì chỉ là một bảng công cụ rời rạc, website này được tổ chức như một hệ thống nội dung SEO, nơi mỗi công cụ có mục đích tìm kiếm riêng, có liên kết nội bộ và có thể phục vụ các nhu cầu khác nhau từ developer đến người quản trị website.',
+          'Thay vì chỉ là một bảng công cụ rời rạc, website này được tổ chức như một hệ thống nội dung SEO chuyên sâu. Mỗi công cụ đều giải quyết một mục tiêu tìm kiếm riêng biệt, tối ưu hóa liên kết nội bộ (internal links) và phục vụ nhu cầu thực tế của cả lập trình viên lẫn người quản trị trang web.',
         useCasesTitle: 'Khi nào nên dùng bộ công cụ này',
         useCases: [
           'Khi cần chuẩn bị dữ liệu cho API, database hoặc frontend.',
@@ -88,8 +87,8 @@ export default async function ToolsPage({ params }: { params: Promise<{ lang: st
         faqTitle: 'Câu hỏi thường gặp',
         faqs: [
           { q: 'Các công cụ có cần đăng nhập không?', a: 'Không. Hầu hết đều hoạt động ngay trên trình duyệt và không yêu cầu tài khoản.' },
-          { q: 'Dữ liệu có được lưu lại không?', a: 'Không. Tất cả xử lý diễn ra cục bộ để giữ quyền riêng tư cho người dùng.' },
-          { q: 'Có thể dùng cho công việc SEO không?', a: 'Có. Các công cụ hỗ trợ tối ưu dữ liệu, URL và mã nguồn phục vụ cho quy trình SEO kỹ thuật.' },
+          { q: 'Dữ liệu có được lưu lại không?', a: 'Không. Tất cả xử lý diễn ra cục bộ tại client-side nhằm đảm bảo tính riêng tư tuyệt đối cho dữ liệu của bạn.' },
+          { q: 'Có thể dùng cho công việc SEO không?', a: 'Có. Các công cụ hỗ trợ tối ưu dữ liệu, nén tệp, chuẩn hóa URL phục vụ cực tốt cho quy trình SEO kỹ thuật.' },
           { q: 'Có hỗ trợ nhiều ngôn ngữ không?', a: 'Có. Website hiện hỗ trợ tiếng Anh, tiếng Việt và tiếng Tây Ban Nha.' },
         ],
       }
@@ -99,7 +98,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ lang: st
           'Quick-Fix Tools is a focused utility hub for developers, QA teams, marketers, and website operators. Each tool runs directly in the browser, keeps your data private, and delivers instant results.',
         overviewTitle: 'A structured toolkit ecosystem',
         overviewText:
-          'Rather than a collection of isolated utilities, this website is designed as an SEO-ready content system where each feature serves a distinct search intent and links to related workflows and tools.',
+          'Rather than a collection of isolated utilities, this website is designed as an SEO-ready content system where each feature serves a distinct search intent, linked contextually to enhance performance and usability.',
         useCasesTitle: 'Best use cases',
         useCases: [
           'Preparing data for APIs, databases, and frontend projects.',
@@ -114,9 +113,9 @@ export default async function ToolsPage({ params }: { params: Promise<{ lang: st
         ],
         faqTitle: 'Frequently asked questions',
         faqs: [
-          { q: 'Do I need to sign in?', a: 'No. Most tools work instantly in the browser without an account.' },
-          { q: 'Is my data stored?', a: 'No. Processing is handled locally to preserve privacy.' },
-          { q: 'Can this help with SEO work?', a: 'Yes. The tools support technical SEO tasks such as URL handling, content cleanup, and data preparation.' },
+          { q: 'Do I need to sign in?', a: 'No. Most tools work instantly in the browser without requiring any account.' },
+          { q: 'Is my data stored?', a: 'No. Processing is handled entirely client-side locally to preserve maximum privacy.' },
+          { q: 'Can this help with SEO work?', a: 'Yes. The tools support technical SEO tasks such as URL handling, CSS minification, and data structure cleaning.' },
           { q: 'Is multilingual support available?', a: 'Yes. The site currently supports English, Vietnamese, and Spanish.' },
         ],
       };
@@ -151,16 +150,17 @@ export default async function ToolsPage({ params }: { params: Promise<{ lang: st
   };
 
   return (
-    <div className="mx-auto flex max-w-6xl flex-col gap-8 py-6">
+    <div className="mx-auto flex max-w-6xl flex-col gap-10 py-8 px-4 sm:px-6">
+      {/* Breadcrumbs */}
       <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
         <ol className="flex flex-wrap items-center gap-2">
           {breadcrumb.map((item, index) => (
             <li key={item.href} className="flex items-center gap-2">
-              {index > 0 && <span>/</span>}
+              {index > 0 && <span className="text-slate-300">/</span>}
               {index === breadcrumb.length - 1 ? (
-                <span className="font-medium text-slate-700">{item.label}</span>
+                <span className="font-semibold text-slate-800">{item.label}</span>
               ) : (
-                <Link href={item.href} className="hover:text-blue-600">
+                <Link href={item.href} className="hover:text-blue-600 transition-colors">
                   {item.label}
                 </Link>
               )}
@@ -169,38 +169,47 @@ export default async function ToolsPage({ params }: { params: Promise<{ lang: st
         </ol>
       </nav>
 
-      <section className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
-        <div className="max-w-3xl space-y-4">
-          <span className="inline-flex rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
-            {isVi ? 'Pillar Page SEO' : 'SEO Pillar Page'}
+      {/* Hero Header Section */}
+      <section className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-12 relative overflow-hidden">
+        <div className="absolute right-0 top-0 -mr-16 -mt-16 h-40 w-40 rounded-full bg-blue-50/50 blur-3xl pointer-events-none" />
+        <div className="max-w-3xl space-y-5">
+          <span className="inline-flex rounded-full bg-blue-50 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-blue-700">
+            {isVi ? 'Hệ sinh thái công cụ' : 'Utility Hub'}
           </span>
-          <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+          <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl !leading-tight">
             {content.title}
           </h1>
-          <p className="text-lg leading-8 text-slate-600">{content.intro}</p>
+          <p className="text-lg leading-relaxed text-slate-600">{content.intro}</p>
           <div className="flex flex-wrap gap-3 pt-2">
-            <Link href={`/${lang}/json-validator`} className="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700">
+            <Link 
+              href={`/${lang}/json-validator`} 
+              className="rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition-all shadow-sm hover:bg-blue-700 hover:shadow"
+            >
               {isVi ? 'Dùng JSON Validator' : 'Try JSON Validator'}
             </Link>
-            <Link href={`/${lang}/css-minify`} className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-blue-500 hover:text-blue-600">
+            <Link 
+              href={`/${lang}/css-minify`} 
+              className="rounded-xl border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition-all hover:border-blue-500 hover:text-blue-600 hover:shadow-sm"
+            >
               {isVi ? 'Tối ưu CSS' : 'Minify CSS'}
             </Link>
           </div>
         </div>
       </section>
 
+      {/* Overview & Use Cases Layout */}
       <section className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-        <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-slate-800">{content.overviewTitle}</h2>
-          <p className="mt-3 text-base leading-8 text-slate-600">{content.overviewText}</p>
+        <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm flex flex-col justify-center">
+          <h2 className="text-2xl font-bold text-slate-900">{content.overviewTitle}</h2>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">{content.overviewText}</p>
         </article>
 
-        <aside className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-slate-800">{content.useCasesTitle}</h2>
-          <ul className="mt-4 space-y-3 text-sm leading-7 text-slate-600">
+        <aside className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+          <h2 className="text-xl font-bold text-slate-900">{content.useCasesTitle}</h2>
+          <ul className="mt-5 space-y-3.5 text-sm leading-relaxed text-slate-600">
             {content.useCases.map((item) => (
-              <li key={item} className="flex gap-2">
-                <span className="text-blue-600">•</span>
+              <li key={item} className="flex items-start gap-3">
+                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-600 font-bold text-xs">✓</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -208,48 +217,72 @@ export default async function ToolsPage({ params }: { params: Promise<{ lang: st
         </aside>
       </section>
 
-      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <h2 className="text-2xl font-bold text-slate-800">{isVi ? 'Danh sách công cụ' : 'Featured tools'}</h2>
-            <p className="mt-2 text-sm text-slate-600">{isVi ? 'Mỗi mục đều có mục đích tìm kiếm riêng và có thể dùng như một cluster page.' : 'Each tool targets a distinct search intent and can serve as a cluster page for a specific workflow.'}</p>
-          </div>
+      {/* Tools Catalog Directory Grid */}
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-10">
+        <div className="border-b border-slate-100 pb-6">
+          <h2 className="text-2xl font-bold text-slate-900">{isVi ? 'Danh sách công cụ' : 'Featured tools'}</h2>
+          <p className="mt-2 text-sm text-slate-500">
+            {isVi 
+              ? 'Mỗi công cụ được tối ưu cho một nhu cầu tìm kiếm cụ thể và hoạt động tối đa hiệu năng.' 
+              : 'Each utility targets a distinct search intent and delivers highly efficient browser performance.'}
+          </p>
         </div>
 
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
           {toolCatalog.map((tool) => (
-            <Link key={tool.path} href={`/${lang}/${tool.path}`} className="rounded-2xl border border-slate-200 p-5 transition hover:-translate-y-0.5 hover:border-blue-500 hover:shadow-md">
-              <div className="flex items-center justify-between gap-3">
-                <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-slate-400">{tool.category}</span>
-                <span className="text-sm font-medium text-blue-600">{tool.keyword}</span>
+            <Link 
+              key={tool.path} 
+              href={`/${lang}/${tool.path}`} 
+              className="group rounded-2xl border border-slate-200 p-6 transition-all duration-200 hover:-translate-y-1 hover:border-blue-500 hover:shadow-lg flex flex-col justify-between bg-white"
+            >
+              <div>
+                <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 bg-slate-100 px-2.5 py-1 rounded">
+                    {tool.category}
+                  </span>
+                  <span className="text-xs font-semibold text-blue-500 bg-blue-50/50 px-2.5 py-1 rounded-full group-hover:bg-blue-100 group-hover:text-blue-700 transition-colors">
+                    #{tool.keyword}
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                  {tool.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-500">
+                  {tool.description}
+                </p>
               </div>
-              <h3 className="mt-3 text-lg font-semibold text-slate-800">{tool.title}</h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">{tool.description}</p>
+              <div className="mt-5 flex items-center text-xs font-bold text-blue-600 gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                <span>{isVi ? 'Trải nghiệm ngay' : 'Try it now'}</span>
+                <span>&rarr;</span>
+              </div>
             </Link>
           ))}
         </div>
       </section>
 
+      {/* Instructions & FAQs Section */}
       <section className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-        <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-slate-800">{content.stepsTitle}</h2>
-          <ol className="mt-4 space-y-3 text-sm leading-7 text-slate-600">
+        <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-2xl font-bold text-slate-900">{content.stepsTitle}</h2>
+          <ol className="mt-6 space-y-4 text-sm leading-relaxed text-slate-600">
             {content.steps.map((step, index) => (
-              <li key={step} className="flex gap-3">
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-600 text-sm font-semibold text-white">{index + 1}</span>
-                <span>{step}</span>
+              <li key={step} className="flex gap-4 items-start">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-xl bg-blue-600 text-sm font-bold text-white shadow-sm">
+                  {index + 1}
+                </span>
+                <span className="pt-0.5">{step}</span>
               </li>
             ))}
           </ol>
         </article>
 
-        <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-slate-800">{content.faqTitle}</h2>
-          <div className="mt-4 space-y-4">
+        <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-2xl font-bold text-slate-900">{content.faqTitle}</h2>
+          <div className="mt-6 space-y-4">
             {content.faqs.map((item) => (
-              <div key={item.q} className="rounded-2xl bg-slate-50 p-4">
-                <p className="font-semibold text-slate-800">{item.q}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{item.a}</p>
+              <div key={item.q} className="rounded-2xl bg-slate-50 p-5 border border-slate-100">
+                <p className="font-bold text-slate-900 text-base">{item.q}</p>
+                <p className="mt-2.5 text-sm leading-relaxed text-slate-500">{item.a}</p>
               </div>
             ))}
           </div>

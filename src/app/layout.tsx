@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from 'next/script';
-
+import './globals.css';
 export const metadata: Metadata = {
   title: {
     default: 'QuickFix Studio',
@@ -21,17 +21,20 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
+       <head>
+       <script
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5107605542667246"
+  crossOrigin="anonymous"
+/>
+<GoogleAnalytics gaId="G-T5JBG9XC69" />
+      </head>
+      <body className="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col">
       
         {children}
 
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5107605542667246"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
-        <GoogleAnalytics gaId="G-T5JBG9XC69" />
+       
+        
       </body>
     </html>
   );

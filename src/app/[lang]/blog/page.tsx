@@ -1,47 +1,96 @@
+import React from 'react';
+import Link from 'next/link';
+import { getDictionary } from '@/dictionaries/get-dictionary';
 import type { Metadata } from 'next';
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+interface PageProps {
+  params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { lang } = await params;
-  const isVi = lang === 'vi';
+  const dict = await getDictionary(lang);
+  const blogDict = dict['blog_page'] || {};
+
   return {
-    title: isVi ? 'Blog công cụ và SEO | Quick-Fix Tools' : 'Blog for tools and SEO | Quick-Fix Tools',
-    description: isVi
-      ? 'Bài viết về định dạng SQL, kiểm tra JSON, tối ưu CSS và các quy trình SEO kỹ thuật hữu ích cho developers.'
-      : 'Articles about SQL formatting, JSON validation, CSS optimization, and useful technical SEO workflows.',
+    title: blogDict.meta_title || 'Blog | Quick-Fix Tools',
+    description: blogDict.meta_desc || 'Technical blog posts and web guides.',
   };
 }
 
-export default async function BlogPage({ params }: { params: Promise<{ lang: string }> }) {
+export default async function BlogPage({ params }: PageProps) {
   const { lang } = await params;
-  const isVi = lang === 'vi';
+  const dict = await getDictionary(lang);
+  const blogDict = dict['blog_page'];
 
-  const posts = isVi
-    ? [
-        { title: 'Tại sao nên định dạng SQL trước khi chia sẻ?', summary: 'Định dạng SQL giúp câu lệnh dễ đọc, giảm lỗi và cải thiện chất lượng review.' },
-        { title: 'JSON là gì và vì sao cần kiểm tra trước khi dùng?', summary: 'JSON là định dạng dữ liệu phổ biến cho API và frontend; kiểm tra đúng cấu trúc giúp tránh lỗi runtime.' },
-        { title: 'CSS minify có thực sự giúp tăng tốc website?', summary: 'Việc giảm khoảng trắng và ký tự thừa có thể giúp file nhẹ hơn và tải nhanh hơn.' },
-      ]
-    : [
-        { title: 'Why formatting SQL before sharing matters', summary: 'Clean SQL is easier to review, debug, and hand off across teams.' },
-        { title: 'Why you should validate JSON before using it', summary: 'Valid JSON prevents runtime issues in APIs, apps, and integrations.' },
-        { title: 'Does CSS minification actually improve performance?', summary: 'Removing unnecessary characters can reduce payload size and improve page speed.' },
-      ];
+  if (!blogDict) {
+    return (
+      <div className="mx-auto max-w-5xl py-12 text-center text-slate-500">
+        Blog dictionary not found.
+      </div>
+    );
+  }
 
   return (
-    <div className="mx-auto max-w-5xl space-y-8 py-6">
-      <div className="space-y-3">
-        <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">{isVi ? 'Blog và bài viết hữu ích' : 'Useful blog posts and practical insights'}</h1>
-        <p className="max-w-3xl text-lg text-slate-600">{isVi ? 'Những bài viết ngắn giúp bạn hiểu cách các công cụ này hỗ trợ phát triển, kiểm thử và tối ưu website.' : 'Short articles showing how these tools support development, testing, and website optimization.'}</p>
+    <div className="mx-auto max-w-5xl space-y-12 py-10 px-4 sm:px-6">
+      
+      {/* Blog Title & Subtitle */}
+      <div className="space-y-4 text-center sm:text-left">
+        <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl bg-gradient-to-r from-slate-950 via-indigo-950 to-slate-900 bg-clip-text text-transparent">
+          {blogDict.h1}
+        </h1>
+        <p className="max-w-3xl text-base sm:text-lg text-slate-600 leading-relaxed">
+          {blogDict.subtitle}
+        </p>
       </div>
 
-      <div className="space-y-4">
-        {posts.map((post) => (
-          <article key={post.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-semibold text-slate-800">{post.title}</h2>
-            <p className="mt-2 text-sm leading-7 text-slate-600">{post.summary}</p>
+      <hr className="border-slate-200" />
+
+      {/* Structured Blog Card List */}
+      <div className="space-y-8">
+        {blogDict.posts.map((post: { slug: string; category: string; date: string; readTime: string; title: string; summary: string }) => (
+          <article 
+            key={post.slug} 
+            className="group relative flex flex-col justify-between p-6 sm:p-8 bg-white border border-slate-200/80 rounded-3xl shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-300"
+          >
+            {/* Post Metadata Header */}
+            <div className="flex flex-wrap items-center gap-3 text-xs font-semibold text-slate-400">
+              <span className="inline-flex items-center rounded-lg bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-700">
+                {post.category}
+              </span>
+              <span className="text-slate-300 select-none">•</span>
+              <time dateTime={post.date}>{post.date}</time>
+              <span className="text-slate-300 select-none">•</span>
+              <span>
+                {blogDict.read_time_prefix}
+                {post.readTime}
+                {blogDict.read_time_suffix}
+              </span>
+            </div>
+
+            {/* Post Content */}
+            <div className="mt-4 space-y-3">
+              <h2 className="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors duration-200 leading-snug">
+                <Link href={`/${lang}/blog/${post.slug}`} className="focus:outline-none">
+                  {/* Sử dụng absolute overlay để mở rộng vùng click chuột ra toàn bộ thẻ */}
+                  <span className="absolute inset-0 rounded-3xl" aria-hidden="true" />
+                  {post.title}
+                </Link>
+              </h2>
+              <p className="text-sm leading-7 text-slate-600 line-clamp-3">
+                {post.summary}
+              </p>
+            </div>
+
+            {/* Micro Interaction Indicator */}
+            <div className="mt-6 flex items-center gap-1.5 text-xs font-bold text-indigo-600 group-hover:gap-2.5 transition-all duration-200">
+              <span>{blogDict.read_article}</span>
+              <span className="text-sm">&rarr;</span>
+            </div>
           </article>
         ))}
       </div>
+
     </div>
   );
 }
