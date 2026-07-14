@@ -1,103 +1,401 @@
 {
   "common": {
-    "title": "Quick-Fix Tools",
-    "description": "Kostenlose Online-Tools für Entwickler, Analysten und SEO-Teams zum sofortigen Formatieren, Validieren und Optimieren von Inhalten."
+    "title": "QuickFix Studio",
+    "description": "Sofort-Hilfsprogramme zum Formatieren, Validieren und Optimieren Ihrer Quellcode-Struktur, ohne dass Daten an einen Server gesendet werden."
+  },
+  "home_page": {
+    "badge": "✨ 100% Kostenlos & Sicher im Browser",
+    "utilities_title": "Tool-Dashboard",
+    "launch_tool": "Starten",
+    "tools": {
+      "sql_formatter": {
+        "title": "SQL-Formatierer & Minifier",
+        "desc": "Verschönern oder komprimieren Sie Ihre Datenbankabfragen."
+      },
+      "json_validator": {
+        "title": "JSON-Validator & -Formatierer",
+        "desc": "Validieren, formatieren und analysieren Sie Ihre JSON-Daten."
+      },
+      "csv_to_json": {
+        "title": "CSV-zu-JSON-Konverter",
+        "desc": "Konvertieren Sie Excel/CSV-Datenstrukturen in JSON-Arrays."
+      },
+      "css_minify": {
+        "title": "CSS-Minifier",
+        "desc": "Entfernen Sie unnötige Leerzeichen, um die Größe Ihrer Stylesheets zu optimieren."
+      },
+      "hash_generator": {
+        "title": "Sicherer Hash-Generator",
+        "desc": "Erzeugen Sie MD5-, SHA-1- und SHA-256-Hashwerte."
+      },
+      "url_encoder_decoder": {
+        "title": "URL-Encoder / -Decoder",
+        "desc": "Kodieren oder dekodieren Sie Zeichenfolgen für HTTP-Kompatibilität."
+      }
+    }
+  },
+  "footer": {
+    "description": "Eine Suite schneller, privater und einsatzbereiter Web-Tools für Entwicklung, SEO und Content-Management, ohne Installation.",
+    "featured_tools": "Top-Tools",
+    "company_policy": "Informationen & Richtlinien",
+    "about": "Über QuickFix Studio",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "operational": "Betriebsbereit"
   },
   "sql": {
-    "h1": "Online SQL Formatter & Minifier",
-    "meta_title": "Kostenloser Online SQL Formatter & Minifier",
-    "meta_desc": "Formatieren und minimieren Sie SQL-Abfragen sofort mit einem kostenlosen, datenschutzfreundlichen SQL-Tool.",
-    "placeholder": "SQL hier einfügen...",
-    "btn_format": "SQL formatieren",
-    "btn_minify": "SQL minimieren"
+    "meta_title": "SQL-Formatierer online - SQL-Code kostenlos verschönern & minimieren",
+    "meta_desc": "Online-Tool zum Formatieren (Beautify) und Minimieren (Minify) von SQL, 100% sicher in Ihrem Browser. Unterstützt PostgreSQL, MySQL, SQL Server, Oracle und BigQuery.",
+    "h1": "SQL-Formatierer & -Verschönerer online",
+    "intro_title": "Was ist der Visual SQL Formatter?",
+    "intro_desc": "In der Softwareentwicklung und Datenanalyse müssen Sie zwangsläufig mit rohen, ungeordneten oder auf eine Zeile komprimierten SQL-Anweisungen aus Logdateien arbeiten. Der Visual SQL Formatter wurde als kostenlose Online-Lösung entwickelt, um Ihnen zu helfen, diese komplexen und unübersichtlichen Abfragen mit nur einem Klick in eine klare, standardisierte und extrem lesbare Struktur zu konvertieren.",
+    "why_title": "Warum benötigen Sie eine Standard-SQL-Formatierung?",
+    "why_reasons": [
+      {
+        "title": "Lesen & Debugging beschleunigen",
+        "desc": "Eine verschachtelte SELECT-Anweisung (Subqueries) oder Abfragen mit zu vielen JOIN-Klauseln werden ohne Standard-Einrückung zum Albtraum. Eine klare Formatierung hilft Ihnen, Syntax- und Logikfehler in Sekunden zu erkennen."
+      },
+      {
+        "title": "Code Reviews & Git Diff optimieren",
+        "desc": "Im Team verhindert die Vereinheitlichung des SQL-Formats, dass Versionskontrollsysteme (wie Git) durch Änderungen an Leerzeichen (whitespace) verschmutzt werden, was den Review-Prozess wesentlich flüssiger macht."
+      },
+      {
+        "title": "Absolute Sicherheit (100% Client-Side)",
+        "desc": "Unser Tool läuft vollständig in Ihrem Browser (Client-seitig). Ihr gesamter SQL-Code, Ihre Tabellenstrukturen (Schemas) oder sensiblen Daten werden NIEMALS an unsere Server gesendet. Maximale Sicherheit für Unternehmen."
+      }
+    ],
+    "features_title": "Wichtige technische Funktionen",
+    "features_list": [
+      {
+        "bold": "SQL Beautifier (Verschönerer):",
+        "text": "Automatische Großschreibung von Standard-Schlüsselwörtern (SELECT, FROM, WHERE, GROUP BY, HAVING,...) und einheitliche Einrückung."
+      },
+      {
+        "bold": "SQL Minifier (Minifizierer):",
+        "text": "Vollständige Entfernung redundanter Leerzeichen, Zeilenumbrüche und Kommentare, um die Größe der Abfrage vor der Integration in den Anwendungscode zu minimieren."
+      },
+      {
+        "bold": "Multi-Dialekt-Unterstützung:",
+        "text": "Verarbeitet nahtlos die syntaktischen Besonderheiten von PostgreSQL, MySQL, Oracle, Microsoft SQL Server (T-SQL), SQLite und Google BigQuery."
+      }
+    ],
+    "guide_title": "Anleitung zur Verwendung des SQL-Formatierers",
+    "guide_steps": [
+      "Kopieren Sie den rohen oder schlecht strukturierten SQL-Code aus Ihrer IDE, Logdatei oder Quellcode.",
+      "Fügen Sie den Code in das große Eingabefeld (Input Area) oben ein.",
+      "Wählen Sie die Aktion: Klicken Sie auf 'Format SQL', um die Struktur zu verschönern, oder auf 'Minify SQL', um den Code zu komprimieren.",
+      "Kopieren Sie das verarbeitete Ergebnis über die Schaltfläche 'Copy', um es sofort zu verwenden."
+    ],
+    "pro_tip": "Tipp: Sie können die Minifizierungsfunktion (Minify) verwenden, um die Übertragungsleistung bei der Ausführung von dynamischen Abfragen (Dynamic SQL) von Ihrer Backend-Anwendung zur Datenbank zu optimieren."
   },
   "json_validator": {
-    "h1": "Kostenloser JSON Validator & Beautifier",
-    "meta_title": "Kostenloser JSON Validator & Beautifier Online",
-    "meta_desc": "Überprüfen Sie JSON-Syntax, erkennen Sie Fehler und formatieren Sie JSON-Daten sofort mit diesem browserbasierten Validator.",
+    "h1": "JSON-Validierungs- und Verschönerungstool",
+    "meta_title": "Kostenloses Online-JSON-Validierungstool",
+    "meta_desc": "Überprüfen Sie die JSON-Syntax, erkennen Sie Fehler und formatieren Sie Ihre JSON-Payload direkt in Ihrem Browser.",
     "placeholder": "Daten eingeben...",
     "btn_format": "Daten verarbeiten"
   },
   "privacy_policy": {
+    "meta_title": "Datenschutzerklärung - Engagement für die Sicherheit von Nutzerinformationen",
+    "meta_desc": "Datenschutzerklärung, Verwendung von Cookies und Engagement für die Sicherheit lokaler Browserdaten für unsere Online-Tools.",
     "h1": "Datenschutzerklärung",
-    "meta_title": "Datenschutzerklärung | Quick-Fix Tools",
-    "meta_desc": "Erfahren Sie, wie Quick-Fix Tools Datenschutz, browserbasierte Verarbeitung und Cookies handhabt.",
-    "placeholder": "Daten eingeben...",
-    "btn_format": "Daten verarbeiten"
+    "last_updated": "Zuletzt aktualisiert: 14. Juli 2026",
+    "highlights_title": "Datenschutz-Kurzfassung",
+    "highlights": [
+      { "label": "Datenverarbeitung", "value": "100% Client-seitig (in Ihrem Browser). Bei Dateiverarbeitungstools (wie PDF) werden die Dateien automatisch nach maximal 1 Stunde dauerhaft vom Server gelöscht." },
+      { "label": "Werbung (AdSense)", "value": "Verwendet Google AdSense-Cookies, um personalisierte Anzeigen zu schalten. Sie können diese Option jederzeit deaktivieren." },
+      { "label": "Persönliche Daten", "value": "Wir verlangen KEINE Registrierung, speichern KEINE persönlichen Daten und verkaufen KEINE Informationen an Dritte." },
+      { "label": "Analysen (Analytics)", "value": "Verwendet Google Analytics, um den Datenverkehr anonym zu verfolgen und die Systemleistung zu verbessern." }
+    ],
+    "intro_title": "1. Allgemeine Einführung",
+    "intro_text": "Willkommen bei unserem System für kostenlose Online-Tools. Wir verstehen, dass der Schutz und die Sicherheit Ihrer Daten extrem wichtig sind. Diese Datenschutzerklärung beschreibt, wie wir Ihre Informationen sammeln, verwenden und schützen, wenn Sie mit den Webanwendungen unserer Website interagieren.",
+    "collection_title": "2. Datensammlung und -verarbeitung",
+    "collection_text_1": "Für lokale Dienstprogramm-Tools (z.B. SQL-Formatierer, Decoder, Finanzrechner): Die gesamte Verarbeitungslogik läuft direkt in Ihrem Browser ab (Client-seitig). Der Quellcode oder die Daten, die Sie in das Tool einfügen, werden niemals an unsere Server gesendet.",
+    "collection_text_2": "Für Dateiverarbeitungstools (z.B. PDF-Tools): Ihre Dateien werden vorübergehend über eine sichere SSL-Verbindung zur Verarbeitung hochgeladen. Nach Abschluss des Prozesses plant das System automatisch die dauerhafte Löschung der Datei innerhalb von maximal 1 Stunde. Wir bewahren keine Sicherheitskopien auf.",
+    "adsense_title": "3. Richtlinie zu Cookies & Google AdSense-Werbung",
+    "adsense_text_1": "Wir nutzen Google AdSense als primären Werbepartner, um den Betrieb dieser kostenlosen Tools zu finanzieren. Google verwendet als Drittanbieter Cookies, um Anzeigen basierend auf Ihren vorherigen Besuchen auf dieser oder anderen Websites im Internet zu schalten.",
+    "adsense_text_2": "Die Verwendung von Werbe-Cookies durch Google ermöglicht es ihnen und ihren Partnern, Ihnen Anzeigen basierend auf Ihren Besuchen anzuzeigen. Sie können personalisierte Anzeigen deaktivieren, indem Sie die Seite besuchen: ",
+    "adsense_link_text": "Google Anzeigeneinstellungen",
+    "cookies_title": "4. Andere Drittanbieter-Cookies",
+    "cookies_text": "Darüber hinaus können wir Google Analytics verwenden, um die Leistung der Website zu messen. Dieser Dienst sammelt nicht-personenbezogene Daten (wie Browsertyp, Betriebssystem, Besuchszeit, Quelle) auf vollständig anonyme Weise, um uns bei der Optimierung der Benutzererfahrung zu unterstützen.",
+    "rights_title": "5. Rechte und Pflichten der Nutzer",
+    "rights_text": "Sie haben das absolute Recht, über die Nutzung unserer Tools zu entscheiden. Sie können Cookies in Ihrem Browser aktiv löschen oder Werbeblocker verwenden, wenn Sie Ihre anonymen Nutzungsdaten nicht teilen möchten.",
+    "contact_title": "6. Kontaktieren Sie uns",
+    "contact_text": "Wenn Sie Fragen zu dieser Datenschutzerklärung oder der Datenverarbeitung durch unsere Tools haben, kontaktieren Sie uns bitte per E-Mail unter der folgenden Adresse: ",
+    "contact_email": "support@findtoolpdf.online"
   },
   "terms_of_service": {
     "h1": "Nutzungsbedingungen",
     "meta_title": "Nutzungsbedingungen | Quick-Fix Tools",
-    "meta_desc": "Lesen Sie die Bedingungen für die Nutzung der Quick-Fix Tools Plattform und ihrer browserbasierten Anwendungen.",
+    "meta_desc": "Lesen Sie die Nutzungsbedingungen der Plattform Quick-Fix Tools und ihrer Online-Tools.",
     "placeholder": "Daten eingeben...",
     "btn_format": "Daten verarbeiten"
   },
   "about": {
     "h1": "Über Quick-Fix Tools",
     "meta_title": "Über Quick-Fix Tools",
-    "meta_desc": "Erfahren Sie mehr über Quick-Fix Tools, seine Ziele und die Tool-Sammlung für Entwickler und SEO-Teams.",
+    "meta_desc": "Erfahren Sie mehr über die Plattform Quick-Fix Tools, ihr Ziel und ihre Suite von Tools für Entwickler und SEO-Teams.",
     "placeholder": "Daten eingeben...",
     "btn_format": "Daten verarbeiten"
   },
   "csv_to_json": {
-    "h1": "Kostenloser CSV-zu-JSON-Konverter",
-    "meta_title": "CSV-zu-JSON-Konverter kostenlos online",
-    "meta_desc": "Konvertieren Sie CSV- oder Tabellendaten sofort in JSON für APIs, Anwendungen und Automatisierungsprozesse.",
+    "h1": "CSV-zu-JSON-Konverter",
+    "meta_title": "Kostenloser Online-CSV-zu-JSON-Konverter",
+    "meta_desc": "Konvertieren Sie sofort CSV-Daten oder Tabellenkalkulationen in JSON für Ihre APIs, Anwendungen und Automatisierungsprozesse.",
     "placeholder": "Daten eingeben...",
     "btn_format": "Daten verarbeiten"
   },
   "css_minify": {
-    "h1": "Kostenloser CSS-Minifier",
-    "meta_title": "Kostenloser CSS-Minifier online",
-    "meta_desc": "Verkleinern Sie CSS-Dateien und verbessern Sie die Ladezeit Ihrer Website mit einem einfachen CSS-Kompressor.",
+    "h1": "CSS-Minifizierungs-Tool",
+    "meta_title": "Kostenloses Online-CSS-Minifizierungs-Tool",
+    "meta_desc": "Minifizieren Sie Ihr CSS und reduzieren Sie die Größe Ihrer Dateien, um das Laden Ihrer Website mit diesem sicheren Tool zu beschleunigen.",
     "placeholder": "Daten eingeben...",
     "btn_format": "Daten verarbeiten"
   },
   "hash_generator": {
-    "h1": "Kostenloser Hash-Generator",
-    "meta_title": "Kostenloser Hash-Generator online | MD5 & SHA",
-    "meta_desc": "Erstellen Sie MD5-, SHA-1-, SHA-256- und SHA-512-Hashes für Überprüfung, Speicherung und Debugging.",
-    "placeholder": "Daten eingeben...",
-    "btn_format": "Daten verarbeiten"
+    "h1": "Ultraschneller Online-Hash-Generator",
+    "meta_title": "Online-Hash generieren - Sichere MD5, SHA-1, SHA-256, SHA-512",
+    "meta_desc": "Kostenloses Online-Tool zur Generierung kryptografischer Hashes. Unterstützt MD5, SHA-1, SHA-256 und SHA-512, funktioniert zu 100% lokal im Browser für absolute Sicherheit.",
+    "placeholder": "Geben Sie den zu hashenden Text hier ein oder fügen Sie ihn ein...",
+    "btn_format": "Hash generieren",
+    "seo_landing": {
+      "badge": "Absolute Sicherheit in Ihrem Browser",
+      "title": "Umfassendes Online-Tool zum Hashing und zur Datenverschlüsselung",
+      "intro": "Einweg-Hashing ist ein mathematisches Verfahren, das jede Eingabe (Text, Datei, Passwort) in eine Zeichenkette fester Länge umwandelt. Unser Tool integriert umfassend internationale Standard-Hash-Algorithmen wie MD5, SHA-1, SHA-256 und SHA-512. Die Besonderheit ist, dass der gesamte Prozess direkt durch JavaScript auf Ihrem Computer (Client-seitig) ausgeführt wird. Ihre sensiblen Daten werden niemals ins Internet hochgeladen, was Ihre Privatsphäre optimal schützt.",
+      "keywords": [
+        "hash generator online",
+        "online hash generator",
+        "md5 generator online",
+        "sha256 calculator online",
+        "sha512 checksum tool",
+        "sicheres passwort hashing"
+      ],
+      "use_cases": [
+        "Überprüfung der Dateiintegrität: Vergleichen Sie den Hash-Code (Checksumme) der Datei, die Sie gerade heruntergeladen haben, mit der vom Entwickler bereitgestellten Original-Checksumme, um sicherzustellen, dass die Datei nicht beschädigt oder mit Malware infiziert ist.",
+        "Signatur-Authentifizierung (API-Signaturen): Generieren und vergleichen Sie digitale Signaturen, um die Identität des Absenders bei der Verbindung von Systemen und Online-Zahlungsdiensten zu verifizieren.",
+        "Schneller Datenvergleich: Verwenden Sie Hash-Algorithmen, um zwei Textzeichenfolgen oder große Dateien schnell zu vergleichen, ohne die für den zeichenweisen Vergleich erforderlichen Ressourcen zu verbrauchen."
+      ],
+      "steps": [
+        "Geben Sie den Text, die Zeichenfolge oder den verschlüsselten Code, der gehasht werden soll, in das obige Eingabefeld ein oder fügen Sie ihn ein.",
+        "Das System erkennt Änderungen automatisch und berechnet gleichzeitig in Echtzeit die gängigen Hash-Formate (MD5, SHA-1, SHA-256, SHA-512).",
+        "Suchen Sie den gewünschten Algorithmus und klicken Sie dann auf das Kopiersymbol (Copy), um den Hash sofort in Ihrer Zwischenablage (Clipboard) zu speichern."
+      ],
+      "faqs": [
+        {
+          "q": "Sendet dieses Tool meine Daten an einen Server?",
+          "a": "Auf keinen Fall. Im Gegensatz zu anderen Online-Tools, die Ihre Daten auf ihre Server hochladen, verarbeitet unser Hash-Generator die Informationen zu 100% lokal in Ihrem Browser. Sie können sogar die Internetverbindung trennen, nachdem die Seite geladen wurde – das Tool funktioniert weiterhin normal."
+        },
+        {
+          "q": "Welcher Hash-Algorithmus ist am sichersten?",
+          "a": "Wenn es um Sicherheit oder kritische Integritätsprüfungen geht, sollten Sie SHA-256 oder SHA-512 wählen. Algorithmen wie MD5 (128-Bit) und SHA-1 (160-Bit) sind veraltet, anfällig für Kollisionen und nur für einfache Fehlerprüfungen bei der Datenübertragung geeignet."
+        },
+        {
+          "q": "Kann ich dieses Tool verwenden, um Benutzerpasswörter in einer Datenbank zu hashen?",
+          "a": "Dies wird für eine Produktionsumgebung nicht empfohlen. Schnelle Algorithmen wie SHA-256 oder MD5 sind mittels leistungsstarker Hardware sehr leicht durch Brute-Force-Angriffe (GPU Brute-force/Rainbow Table) zu knacken. Für ein Authentifizierungssystem müssen Sie zwingend langsame Hash-Algorithmen mit Salt-Mechanismus und Rechenverzögerung wie bcrypt, Argon2 oder PBKDF2 verwenden."
+        }
+      ],
+      "related_labels": {
+        "url_tool": "URL-Encoder & -Decoder",
+        "all_tools": "Alle Tools ansehen"
+      }
+    }
   },
   "url_encoder_decoder": {
-    "h1": "Kostenloser URL Encoder / Decoder",
-    "meta_title": "URL Encoder Decoder kostenlos online",
-    "meta_desc": "Kodieren oder dekodieren Sie URLs sofort für Query-Strings, APIs und browserfreundliche Links.",
+    "h1": "URL-Encoder / -Decoder-Tool",
+    "meta_title": "Kostenloses Online-URL-Kodierungstool",
+    "meta_desc": "Kodieren oder dekodieren Sie sofort Ihre URLs für Query-Strings, APIs und Links auf sichere Weise.",
     "placeholder": "Daten eingeben...",
     "btn_format": "Daten verarbeiten"
   },
   "404": {
     "h1": "Seite nicht gefunden",
     "meta_title": "Seite nicht gefunden | Quick-Fix Tools",
-    "meta_desc": "Die angeforderte Seite wurde nicht gefunden. Kehren Sie zur Quick-Fix Tools Startseite zurück.",
+    "meta_desc": "Die angeforderte Seite existiert nicht. Kehren Sie zur Startseite von Quick-Fix Tools zurück, um unsere Tools zu erkunden.",
     "placeholder": "Daten eingeben...",
     "btn_format": "Daten verarbeiten"
   },
   "guides": {
-  "title": "Praktische Anleitungen für alltägliche Webaufgaben",
-  "description": "Kurze und praktische Anleitungen, die Ihnen helfen, Quick-Fix Tools effektiv für gängige Entwicklungs- und SEO-Aufgaben zu nutzen.",
-  "items": [
-    {
-      "title": "SQL online formatieren",
-      "summary": "Bereinigen und strukturieren Sie SQL-Abfragen für Debugging, Freigabe und Überprüfung.",
-      "path": "sql-formatter"
-    },
-    {
-      "title": "JSON schnell validieren",
-      "summary": "Erkennen Sie Syntaxfehler und formatieren Sie JSON-Daten für APIs und Frontends.",
-      "path": "json-validator"
-    },
-    {
-      "title": "CSV in JSON konvertieren",
-      "summary": "Wandeln Sie Tabellenexporte in JSON für Anwendungen, Automatisierung und Integrationen um.",
-      "path": "csv-to-json"
-    },
-    {
-      "title": "CSS für das Web minimieren",
-      "summary": "Reduzieren Sie die Größe von Stylesheets und verbessern Sie die Ladegeschwindigkeit mit optimiertem Code.",
-      "path": "css-minify"
+    "title": "Praktische Anleitungen für Ihre täglichen Web-Aufgaben",
+    "description": "Prägnante und praktische Anleitungen, die Ihnen helfen, Quick-Fix Tools effektiv für Ihre gängigen Entwicklungs- und SEO-Aufgaben zu nutzen.",
+    "items": [
+      {
+        "title": "Wie man SQL online formatiert",
+        "summary": "Bereinigen und organisieren Sie Ihre SQL-Abfragen, um das Debugging, Teilen und Auswerten zu erleichtern.",
+        "path": "sql-formatter"
+      },
+      {
+        "title": "Wie man JSON schnell validiert",
+        "summary": "Erkennen Sie Syntaxfehler und formatieren Sie JSON-Daten für Ihre APIs und Frontend-Entwicklung.",
+        "path": "json-validator"
+      },
+      {
+        "title": "Wie man CSV in JSON konvertiert",
+        "summary": "Konvertieren Sie Tabellendaten in JSON für Ihre Anwendungen, Automatisierungen und Integrationen.",
+        "path": "csv-to-json"
+      },
+      {
+        "title": "Wie man CSS für Ihre Website minimiert",
+        "summary": "Reduzieren Sie die Größe Ihrer Stylesheets und verbessern Sie die Ladezeit durch optimierten Code.",
+        "path": "css-minify"
+      }
+    ]
+  },
+  "faq_page": {
+    "meta_title": "Häufig gestellte Fragen - Quick-Fix Tools",
+    "meta_desc": "Antworten auf Fragen zur Datensicherheit, Werberichtlinien und Funktionsweise unserer Tools (SQL-Formatierung, JSON-Validierung, CSS-Minifizierung und PDF-Verarbeitung).",
+    "h1": "Häufig gestellte Fragen (FAQ)",
+    "subtitle": "Alle Informationen zu Sicherheit, Datenschutz und wie Sie Ihre Effizienz mit der Quick-Fix Tools-Suite optimieren können.",
+    "faqs": [
+      {
+        "q": "Muss ich ein Konto erstellen oder bezahlen, um diese Tools zu nutzen?",
+        "a": "Auf keinen Fall. Alle Tools bei Quick-Fix Tools sind 100% kostenlos. Sie müssen kein Konto erstellen, keine E-Mail-Adresse angeben und keine Kreditkarte verknüpfen, um unsere Dienste zu nutzen."
+      },
+      {
+        "q": "Werden meine Daten und mein Quellcode auf Ihren Servern gespeichert?",
+        "a": "Ihre Privatsphäre hat für uns oberste Priorität. Bei den meisten Entwicklungstools (SQL-Formatierung, CSS/JS-Minifizierung, JSON-Validierung...) erfolgt die gesamte Verarbeitung lokal (Client-seitig) via JavaScript direkt in Ihrem Browser. Die Daten werden nicht ins Internet gesendet. Bei Tools, die eine Serververarbeitung erfordern (wie PDF-Komprimierung oder -Zusammenführung), werden Ihre Dateien über ein sicheres SSL-Protokoll übertragen und nach maximal 1 Stunde automatisch dauerhaft gelöscht."
+      },
+      {
+        "q": "Warum gibt es Werbung und sammelt diese meine Daten?",
+        "a": "Da die Tools vollständig kostenlos angeboten werden, nutzen wir Werbung (Google AdSense), um die Hosting- und Betriebskosten des Systems zu decken. Google kann nicht-personalisierte Cookies verwenden, um relevante Anzeigen basierend auf Ihrem Besucherverlauf anzuzeigen. Sie können die Anzeigenpersonalisierung jederzeit in Ihren Google-Kontoeinstellungen steuern oder deaktivieren."
+      },
+      {
+        "q": "Wie helfen diese Tools bei technischem SEO?",
+        "a": "Unser System integriert spezialisierte Tools für Entwickler und SEO-Experten: Bereinigung des Quellcodes (Beautify/Minify), URL-Verarbeitung (Encoder/Decoder), Sitemap-Konfiguration und Konvertierung strukturierter Daten (CSV zu JSON). Die Optimierung der CSS/JS-Dateigröße und die Verbesserung von SQL-Abfragen beschleunigen die Ladezeit der Seiten, was direkt die Core Web Vitals-Indikatoren von Google verbessert."
+      },
+      {
+        "q": "Gibt es ein Größenlimit oder Kapazitätslimit für Dateien?",
+        "a": "Für Texttools (JSON, SQL, HTML...) setzen wir kein striktes Limit, aber die Leistung hängt vom RAM und Prozessor Ihres Geräts ab. Für Tools, die Dateien verarbeiten (wie PDFs oder Bilder), ermöglicht das System die Verarbeitung von Dateien bis zu 50 MB, um eine flüssige Erfahrung zu gewährleisten."
+      },
+      {
+        "q": "Kann ich diese Tool-Suite offline verwenden?",
+        "a": "Ja! Dank des vollständig lokalen Verarbeitungsmechanismus (Client-seitig) können Sie, sobald Sie die Seite des Tools geladen haben (wie Hash-Generator, SQL-Formatierer, JSON-Validator), die Internetverbindung trennen. Das Tool funktioniert weiterhin zu 100%."
+      },
+      {
+        "q": "Welche Sprachen werden unterstützt und wie kann ich die Sprache ändern?",
+        "a": "Das System unterstützt derzeit Englisch (EN), Vietnamesisch (VI) und Spanisch (ES). Sie können die Sprache einfach über die Auswahl oben in der Navigationsleiste (Navbar) ändern oder den Ländercode direkt in der URL Ihres Browsers anpassen."
+      }
+    ],
+    "contact_box": {
+      "title": "Haben Sie weitere Fragen?",
+      "desc": "Wenn Sie einen Fehler finden oder eine neue Funktion vorschlagen möchten, senden Sie uns bitte eine E-Mail.",
+      "button": "Technischen Support kontaktieren"
     }
-  ]
-}
+  },
+  "about_page": {
+    "meta_title": "Über uns - QuickFix Studio",
+    "meta_desc": "Entdecken Sie die Mission von QuickFix Studio. Wir bieten kostenlose und 100% sichere Tools für SQL-Formatierung, JSON-Validierung und CSS-Minifizierung.",
+    "h1": "Über QuickFix Studio",
+    "subtitle": "Ein Ökosystem schneller, sicherer und absolut privater Entwicklungstools, das speziell für Entwickler und Webmaster entwickelt wurde.",
+    "mission_title": "Unsere Mission",
+    "mission_desc": "QuickFix Studio wurde mit dem Ziel entwickelt, die tägliche Arbeit von Entwicklern, SEO-Experten und Content-Erstellern zu vereinfachen. Wir glauben, dass kleine Hilfsprogramme nicht mit umständlichen Registrierungsprozessen oder dem Risiko sensibler Datenlecks verbunden sein sollten.",
+    "values_title": "Grundwerte, die den Unterschied machen",
+    "values": [
+      {
+        "title": "🔒 100% Client-seitige Sicherheit",
+        "desc": "Direkte Verarbeitung in Ihrem Browser via JavaScript. Ihr Quellcode, Ihre SQL-Abfragen oder strukturierten Dateien werden niemals irgendwo ins Internet gesendet."
+      },
+      {
+        "title": "⚡ Keine aufdringliche Werbung, maximale Geschwindigkeit",
+        "desc": "Keine aufdringlichen Werbebanner (Pop-ups). Der Quellcode ist maximal optimiert, damit Sie innerhalb von Millisekunden darauf zugreifen und Ergebnisse erhalten können."
+      },
+      {
+        "title": "🎁 Kostenlos & für immer frei",
+        "desc": "Kein tägliches Nutzungslimit, keine kostenpflichtigen Funktionen (Premium) und keine Verpflichtung, Ihre E-Mail-Adresse einzugeben oder sich zu registrieren."
+      }
+    ],
+    "tech_title": "Optimierte Technologielösung",
+    "tech_desc": "Wir verwenden moderne Kompilierungs- und Optimierungstechnologien wie Next.js, Tailwind CSS und WebAssembly. Dies ermöglicht es unserer Tool-Suite, flüssig zu funktionieren, selbst wenn Sie Zehntausende von Zeilen komplexen JSON- oder SQL-Codes formatieren müssen.",
+    "cta_title": "Bereit, Ihre Arbeitsprozesse zu optimieren?",
+    "cta_desc": "Entdecken Sie jetzt das Haupt-Dashboard, um eine außergewöhnliche Verarbeitungsgeschwindigkeit zu erleben.",
+    "cta_btn": "Zurück zum Dashboard"
+  },
+  "blog_page": {
+    "meta_title": "Blog Tools & Technisches SEO | Quick-Fix Tools",
+    "meta_desc": "Entdecken Sie fundierte Artikel über SQL-Formatierung, JSON-Syntax-Optimierung, CSS/JS-Minifizierung und die nützlichsten technischen SEO-Prozesse für Entwickler.",
+    "h1": "Blog & Technisches Wissen",
+    "subtitle": "Fachartikel und praktische Anleitungen, die Ihnen helfen, Ihren Quellcode zu optimieren, das Laden der Seiten zu beschleunigen und Ihre tägliche Produktivität zu verbessern.",
+    "read_time_prefix": "Lesezeit: ",
+    "read_time_suffix": " Minuten",
+    "read_article": "Artikel lesen",
+    "posts": [
+      {
+        "slug": "why-formatting-sql-matters",
+        "category": "Datenbank",
+        "date": "12. Juni 2026",
+        "readTime": "5",
+        "title": "Warum sollten Sie Ihr SQL normalisieren und formatieren, bevor Sie es teilen?",
+        "summary": "Das Senden von kompakten (minifizierten) oder ungeordneten SQL-Abfragen verlangsamt den Code-Review-Prozess und begünstigt Logikfehler. Eine gute Formatierung hilft dem Datenbankmanagementsystem (DBMS), den Ausführungsplan (execution plan) zu optimieren, während sie gleichzeitig hilft, Syntaxfehler oder überflüssige Unterabfragen (subqueries) schnell zu erkennen."
+      },
+      {
+        "slug": "validate-json-before-using",
+        "category": "Strukturierte Daten",
+        "date": "25. Juni 2026",
+        "readTime": "4",
+        "title": "JSON-Validator: Laufzeitfehler bis ins kleinste Detail verhindern",
+        "summary": "Ein einziges überflüssiges Komma (trailing comma) oder fehlende Anführungszeichen um einen Schlüssel können Ihre Anwendung in der Produktion zum Absturz bringen. Die Verwendung eines JSON-Validators ermöglicht es, die Syntax zu analysieren, die fehlerhafte Zeile präzise zu identifizieren und die Baumstruktur anzuzeigen, wodurch der API-Datenaustausch optimiert wird."
+      },
+      {
+        "slug": "css-minification-web-vitals",
+        "category": "Web-Optimierung",
+        "date": "2. Juli 2026",
+        "readTime": "6",
+        "title": "Verbessert CSS-Minifizierung wirklich die Core Web Vitals-Indikatoren?",
+        "summary": "CSS ist standardmäßig eine renderblockierende Ressource für den Browser. Durch das Bereinigen unnötiger Leerzeichen, das Entfernen von Kommentaren und das Zusammenführen doppelter Selektoren wird die komprimierte Datei wesentlich leichter. Dies verbessert direkt die LCP- und FCP-Indikatoren von Google."
+      },
+      {
+        "slug": "url-encoding-decoded-deep-dive",
+        "category": "Web-Sicherheit",
+        "date": "8. Juli 2026",
+        "readTime": "5",
+        "title": "Alles über URL-Encoding und die Dekodierung von HTTP-Parametern",
+        "summary": "Warum verwandeln sich Sonderzeichen oder akzentuierte Zeichen in Browsern in seltsame Zeichenfolgen mit Prozentzeichen (%)? Dieser Artikel analysiert die Spezifikation RFC 3986, die UTF-8- zu ASCII-Konvertierung für HTTP und warum URL-Encoding erforderlich ist, um Injektionsangriffe zu blockieren."
+      },
+      {
+        "slug": "understanding-hashes-md5-sha256",
+        "category": "Kryptografie",
+        "date": "12. Juli 2026",
+        "readTime": "7",
+        "title": "Unterschiede zwischen MD5, SHA-1 und SHA-256: Wann sollten Sie einen Hash verwenden?",
+        "summary": "Einweg-Hash-Funktionen sind das Herzstück der modernen IT-Sicherheit. Wir vergleichen hier Zeichenkettenlängen, Kollisionsrisiken gängiger Algorithmen, die Integritätsprüfung heruntergeladener Dateien (Checksummen) und warum man MD5 niemals für Passwörter verwenden sollte."
+      }
+    ]
+  },
+  "blog_posts": {
+    "why-formatting-sql-matters": {
+      "title": "Warum sollten Sie Ihr SQL normalisieren und formatieren, bevor Sie es teilen?",
+      "category": "Datenbank",
+      "date": "12. Juni 2026",
+      "readTime": "5",
+      "meta_desc": "SQL-Formatierung macht den Code lesbar, reduziert Syntaxfehler und verbessert die Qualität von Code-Reviews in Entwicklungsteams.",
+      "related_tool_path": "sql-formatter",
+      "related_tool_label": "SQL-Formatierer testen",
+      "content": "<h2>Das Chaos komprimierter SQL-Abfragen</h2><p>Während der Entwicklung eines Projekts begegnen wir oft SQL-Anweisungen mit hunderten von Zeilen, die in einem Block geschrieben, ohne Leerzeichen oder extrem komprimiert in Logdateien stehen. Das Lesen einer solchen Art von Code ist eine Qual für jeden Entwickler, der ein Code-Review durchführt.</p><h3>1. Lesen beschleunigen und das Gehirn entlasten</h3><p>Eine standardisierte SQL-Formatierung mit relevanten Zeilenumbrüchen nach Haupt-Schlüsselwörtern wie <code>SELECT</code>, <code>FROM</code>, <code>WHERE</code> und <code>JOIN</code> ermöglicht es dem Gehirn, die logische Struktur der Abfrage sofort zu verstehen. Sie müssen Ihre Augen nicht mehr anstrengen, um zu suchen, wo sich Ihre Filter verbergen.</p><h3>2. Logikfehler erkennen und Leistung optimieren</h3><p>Eine ungeordnete SQL-Abfrage verbirgt leicht kritische Logikfehler, zum Beispiel das Vergessen einer Join-Bedingung, was zu einem kartesischen Produkt (Cartesian Product) führt, das Ihre Produktionsdatenbanken zum Einfrieren bringen kann. Sobald der Code ausgerichtet und eingerückt ist, erscheinen die <code>ON</code>-Verknüpfungen der <code>JOIN</code>-Klauseln klar und ermöglichen es, den Fehler auf einen Blick zu erkennen.</p><blockquote><strong>Tipp:</strong> Schreiben Sie SQL-Standard-Schlüsselwörter wie SELECT, UPDATE, DELETE immer in Großbuchstaben, um sie klar von Ihren Tabellen und Datenspalten zu unterscheiden.</blockquote>"
+    },
+    "validate-json-before-using": {
+      "title": "JSON-Validator: Laufzeitfehler bis ins kleinste Detail verhindern",
+      "category": "Strukturierte Daten",
+      "date": "25. Juni 2026",
+      "readTime": "4",
+      "meta_desc": "Das Überprüfen der JSON-Syntax verhindert, dass Ihre Anwendung beim Analysieren von Partner-API-Daten unerwartet abstürzt.",
+      "related_tool_path": "json-validator",
+      "related_tool_label": "JSON jetzt validieren",
+      "content": "<h2>Wenn ein einziges Komma ein ganzes System in der Produktion lahmlegt</h2><p>JSON (JavaScript Object Notation) ist das beliebteste Datenübertragungsformat zwischen Backend und Frontend. Dennoch ist JSON bei seiner Syntax extrem streng. Ein überflüssiges Komma am Ende des letzten Elements (trailing comma) oder das Vergessen, einen Schlüssel (key) in Anführungszeichen zu setzen, reicht aus, damit die Methode <code>JSON.parse()</code> eine Ausnahme auslöst und das Risiko birgt, die Client-Anwendung zum Absturz zu bringen.</p><h3>Warum ein professionelles Validierungstool verwenden?</h3><ul><li><strong>Präzise Identifizierung des Fehlers:</strong> Anstatt einen allgemeinen Fehler zurückzugeben, zeigt das Linter-Tool genau die Zeile und das Zeichen an, die Probleme verursachen.</li><li><strong>Automatische Korrektur häufiger Fehler:</strong> Intelligente Validatoren ersetzen automatisch Apostrophe durch Anführungszeichen und bereinigen nachgestellte Kommas.</li><li><strong>Baumdarstellung:</strong> Ermöglicht eine einfache Navigation innerhalb komplexer und verschachtelter JSON-Objekte.</li></ul>"
+    },
+    "css-minification-web-vitals": {
+      "title": "Verbessert CSS-Minifizierung wirklich die Core Web Vitals-Indikatoren?",
+      "category": "Web-Optimierung",
+      "date": "2. Juli 2026",
+      "readTime": "6",
+      "meta_desc": "Entdecken Sie, wie das Minifizieren von CSS-Dateien dazu beiträgt, renderblockierende Ressourcen zu begrenzen und die Antwortzeit der Website zu beschleunigen.",
+      "related_tool_path": "css-minify",
+      "related_tool_label": "CSS kostenlos minifizieren",
+      "content": "<h2>CSS und Render-Blockierung</h2><p>Wenn ein Browser eine Webseite lädt, muss er zwingend alle zugehörigen CSS-Dateien herunterladen und analysieren, bevor er die ersten Pixel auf dem Bildschirm zeichnen kann. Dies wird als eine renderblockierende Ressource bezeichnet. Je schwerer die CSS-Datei ist, desto länger wartet der Benutzer vor einem weißen Bildschirm.</p><h3>Direkte Auswirkung auf Googles Core Web Vitals</h3><p>Google bewertet die Platzierung Ihrer Website basierend auf der tatsächlichen Erfahrung der Benutzer anhand dieser Metriken:</p><ul><li><strong>FCP (First Contentful Paint):</strong> Zeit, die für die Anzeige des allerersten Elements benötigt wird. Das Komprimieren von CSS beschleunigt die Arbeit des Browsers und reduziert den FCP signifikant.</li><li><strong>LCP (Largest Contentful Paint):</strong> Zeit für die Anzeige der größten Komponente. Die Reduzierung der CSS-Datei setzt Bandbreite frei, um wichtige Ressourcen wie das Hauptbild (Hero Image) schneller zu laden.</li></ul>"
+    }
+  },
+  "blog_detail": {
+    "back_to_blog": "← Zurück zur Artikel-Liste",
+    "cta_title": "Möchten Sie Ihre Daten jetzt verarbeiten?",
+    "cta_desc": "Verwenden Sie unser spezialisiertes Optimierungstool schnell, kostenlos und 100% sicher in Ihrem Browser.",
+    "not_found": "Entschuldigung, dieser Artikel existiert nicht oder wurde an eine neue Adresse verschoben."
+  }
 }
