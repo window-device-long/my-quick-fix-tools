@@ -16,12 +16,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   return { 
     title: hashDict.meta_title || 'Cryptographic Hash Generator', 
-<<<<<<< HEAD
-    description: hashDict.meta_desc || 'Generate secure MD5, SHA-1, SHA-256, and SHA-512 hashes locally.' 
-=======
     description: hashDict.meta_desc || 'Generate secure MD5, SHA-1, SHA-256, and SHA-512 hashes locally.',
     alternates: { canonical: `/${lang}/hash-generator`, languages: languageAlternates('hash-generator') },
->>>>>>> 922e231 (Commit)
   };
 }
 

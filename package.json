@@ -2,13 +2,13 @@
   "name": "my-quick-fix-tools",
   "version": "0.1.0",
   "private": true,
-"scripts": {
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "next start -p ${PORT:-3000}",
     "lint": "eslint"
   },
-   "engines": {
+  "engines": {
     "node": "22.x"
   },
   "packageManager": "npm@10.9.3",

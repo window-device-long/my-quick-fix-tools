@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getDictionary } from '@/dictionaries/get-dictionary';
 
 interface FooterProps {
@@ -18,17 +19,10 @@ export default async function Footer({ lang }: FooterProps) {
         <div className="space-y-4">
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10">
-<<<<<<< HEAD
-              <img src="/favicon-32x32.png" alt="QuickFix Studio" className="h-6 w-6" />
-            </div>
-            <div>
-              <div className="text-lg font-semibold text-white">QuickFix Studio</div>
-=======
-              <img src="/favicon-32x32.png" alt="JSNify" className="h-6 w-6" />
+              <Image src="/favicon-32x32.png" alt="JSNify" width={24} height={24} />
             </div>
             <div>
               <div className="text-lg font-semibold text-white">JSNify</div>
->>>>>>> 922e231 (Commit)
               <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">
                 Fast, private, production-ready
               </div>
@@ -73,11 +67,7 @@ export default async function Footer({ lang }: FooterProps) {
 
       {/* Bottom Bar */}
       <div className="mt-8 flex flex-col gap-2 border-t border-white/10 pt-6 text-[11px] text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-<<<<<<< HEAD
-        <div>&copy; {new Date().getFullYear()} QuickFix Studio. Designed for modern web workflows.</div>
-=======
         <div>&copy; {new Date().getFullYear()} JSNify. Designed for modern web workflows.</div>
->>>>>>> 922e231 (Commit)
         <div className="flex items-center gap-3">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-1 text-emerald-400">
             <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />

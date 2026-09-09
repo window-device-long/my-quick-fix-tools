@@ -12,24 +12,17 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { lang, slug } = await params;
   const dict = await getDictionary(lang);
-  const post = dict.blog_posts?.[slug];
+  const posts = dict.blog_posts as Record<string, (typeof dict.blog_posts)[keyof typeof dict.blog_posts]>;
+  const post = posts[slug];
 
   if (!post) {
     return {
-<<<<<<< HEAD
-      title: 'Article Not Found | Quick-Fix Tools',
-=======
       title: 'Article Not Found | JSNify',
->>>>>>> 922e231 (Commit)
     };
   }
 
   return {
-<<<<<<< HEAD
-    title: `${post.title} | Quick-Fix Tools`,
-=======
     title: `${post.title} | JSNify`,
->>>>>>> 922e231 (Commit)
     description: post.meta_desc,
   };
 }
@@ -54,7 +47,8 @@ export async function generateStaticParams() {
 export default async function BlogPostDetailPage({ params }: PageProps) {
   const { lang, slug } = await params;
   const dict = await getDictionary(lang);
-  const post = dict.blog_posts?.[slug];
+  const posts = dict.blog_posts as Record<string, (typeof dict.blog_posts)[keyof typeof dict.blog_posts]>;
+  const post = posts[slug];
   const detailDict = dict.blog_detail;
 
   // Nếu bài viết không tồn tại trong file cấu hình dịch thuật, chuyển hướng về trang 404

@@ -12,11 +12,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const faqDict = dict['faq_page'] || {};
 
   return {
-<<<<<<< HEAD
-    title: faqDict.meta_title || 'FAQ | Quick-Fix Tools',
-=======
     title: faqDict.meta_title || 'FAQ | JSNify',
->>>>>>> 922e231 (Commit)
     description: faqDict.meta_desc || 'Common questions about online web tools.',
   };
 }

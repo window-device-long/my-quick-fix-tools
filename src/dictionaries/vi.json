@@ -1,10 +1,6 @@
 {
   "common": {
-<<<<<<< HEAD
-    "title": "QuickFix Studio",
-=======
     "title": "JSNify",
->>>>>>> 922e231 (Commit)
     "description": "Các tiện ích tức thì để định dạng, xác thực và tối ưu hóa cấu trúc mã nguồn mà không gửi dữ liệu đến bất kỳ máy chủ nào."
   },
   "home_page": {
@@ -42,16 +38,12 @@
     "description": "Bộ công cụ web nhanh, riêng tư và sẵn sàng cho phát triển, SEO và vận hành nội dung mà không cần cài đặt thêm.",
     "featured_tools": "Công cụ nổi bật",
     "company_policy": "Thông tin & chính sách",
-<<<<<<< HEAD
-    "about": "Về QuickFix Studio",
-=======
     "about": "Về JSNify",
->>>>>>> 922e231 (Commit)
     "privacy": "Chính sách riêng tư",
     "terms": "Điều khoản dịch vụ",
     "operational": "Hoạt động ổn định"
   },
- "sql": {
+  "sql": {
     "meta_title": "Định Dạng SQL Trực Tuyến - Làm Đẹp & Nén Mã SQL Miễn Phí",
     "meta_desc": "Công cụ định dạng (Beautify) và nén (Minify) SQL trực tuyến, bảo mật 100% trên trình duyệt. Hỗ trợ PostgreSQL, MySQL, SQL Server, Oracle và BigQuery.",
     "h1": "Trình Định Dạng & Làm Đẹp SQL Trực Tuyến",
@@ -94,7 +86,10 @@
       "Lựa chọn thao tác: Nhấn 'Format SQL' để làm đẹp cấu trúc, hoặc chọn 'Minify SQL' nếu muốn nén gọn mã nguồn.",
       "Sao chép kết quả đã xử lý từ khung kết quả bằng nút 'Copy' tiện lợi để sử dụng ngay."
     ],
-    "pro_tip": "Mẹo nhỏ: Bạn có thể sử dụng tính năng nén (Minify) để tối ưu hóa hiệu năng truyền tải khi thực thi các truy vấn động (Dynamic SQL) từ ứng dụng backend lên cơ sở dữ liệu."
+    "pro_tip": "Mẹo nhỏ: Bạn có thể sử dụng tính năng nén (Minify) để tối ưu hóa hiệu năng truyền tải khi thực thi các truy vấn động (Dynamic SQL) từ ứng dụng backend lên cơ sở dữ liệu.",
+    "placeholder": "Dán truy vấn SQL của bạn vào đây...",
+    "btn_format": "Định dạng SQL",
+    "btn_minify": "Nén SQL"
   },
   "json_validator": {
     "h1": "Công cụ kiểm tra và làm đẹp JSON",
@@ -110,10 +105,22 @@
     "last_updated": "Cập nhật lần cuối: 14 tháng 7, 2026",
     "highlights_title": "Tóm tắt nhanh về quyền riêng tư",
     "highlights": [
-      { "label": "Xử lý dữ liệu", "value": "100% Client-side (trên trình duyệt của bạn). Đối với các công cụ xử lý file (như PDF), file được tự động xóa hoàn toàn khỏi máy chủ sau 1 giờ." },
-      { "label": "Quảng cáo (AdSense)", "value": "Sử dụng cookie của Google AdSense để hiển thị quảng cáo cá nhân hóa. Bạn có thể tắt tính năng này bất kỳ lúc nào." },
-      { "label": "Thông tin cá nhân", "value": "Chúng tôi KHÔNG yêu cầu đăng ký tài khoản, KHÔNG lưu giữ và KHÔNG bán thông tin cá nhân của bạn cho bên thứ ba." },
-      { "label": "Phân tích (Analytics)", "value": "Sử dụng Google Analytics để theo dõi lưu lượng truy cập ẩn danh nhằm cải thiện hiệu năng hệ thống." }
+      {
+        "label": "Xử lý dữ liệu",
+        "value": "100% Client-side (trên trình duyệt của bạn). Đối với các công cụ xử lý file (như PDF), file được tự động xóa hoàn toàn khỏi máy chủ sau 1 giờ."
+      },
+      {
+        "label": "Quảng cáo (AdSense)",
+        "value": "Sử dụng cookie của Google AdSense để hiển thị quảng cáo cá nhân hóa. Bạn có thể tắt tính năng này bất kỳ lúc nào."
+      },
+      {
+        "label": "Thông tin cá nhân",
+        "value": "Chúng tôi KHÔNG yêu cầu đăng ký tài khoản, KHÔNG lưu giữ và KHÔNG bán thông tin cá nhân của bạn cho bên thứ ba."
+      },
+      {
+        "label": "Phân tích (Analytics)",
+        "value": "Sử dụng Google Analytics để theo dõi lưu lượng truy cập ẩn danh nhằm cải thiện hiệu năng hệ thống."
+      }
     ],
     "intro_title": "1. Giới thiệu chung",
     "intro_text": "Chào mừng bạn đến với hệ thống công cụ trực tuyến miễn phí của chúng tôi. Chúng tôi hiểu rằng sự riêng tư và an toàn dữ liệu của bạn là cực kỳ quan trọng. Chính sách bảo mật này mô tả cách thức chúng tôi thu thập, sử dụng và bảo vệ thông tin khi bạn tương tác với các ứng dụng web trên trang của chúng tôi.",
@@ -223,46 +230,32 @@
     "btn_format": "Xử lý dữ liệu"
   },
   "guides": {
-  "title": "Hướng dẫn thực tế cho các tác vụ web hằng ngày",
-<<<<<<< HEAD
-  "description": "Các hướng dẫn ngắn gọn, thực tế giúp bạn sử dụng Quick-Fix Tools hiệu quả cho các công việc phát triển và SEO phổ biến.",
-=======
-  "description": "Các hướng dẫn ngắn gọn, thực tế giúp bạn sử dụng JSNify hiệu quả cho các công việc phát triển và SEO phổ biến.",
->>>>>>> 922e231 (Commit)
-  "items": [
-    {
-      "title": "Cách định dạng SQL trực tuyến",
-      "summary": "Làm sạch và sắp xếp câu lệnh SQL để dễ debug, chia sẻ và đánh giá.",
-      "path": "sql-formatter"
-    },
-    {
-      "title": "Cách kiểm tra JSON nhanh chóng",
-      "summary": "Phát hiện lỗi cú pháp và định dạng dữ liệu JSON cho API và frontend.",
-      "path": "json-validator"
-    },
-    {
-      "title": "Cách chuyển đổi CSV sang JSON",
-      "summary": "Chuyển dữ liệu bảng tính thành JSON cho ứng dụng, tự động hóa và tích hợp.",
-      "path": "csv-to-json"
-    },
-    {
-      "title": "Cách nén CSS cho website",
-      "summary": "Giảm kích thước stylesheet và cải thiện tốc độ tải trang với mã nguồn tối ưu hơn.",
-      "path": "css-minify"
-    }
-  ]
-},
-"faq_page": {
-<<<<<<< HEAD
-    "meta_title": "Câu Hỏi Thường Gặp - Quick-Fix Tools",
-    "meta_desc": "Giải đáp thắc mắc về bảo mật dữ liệu, chính sách quảng cáo và cách hoạt động của các công cụ định dạng SQL, kiểm tra JSON, nén CSS và xử lý PDF.",
-    "h1": "Câu Hỏi Thường Gặp (FAQ)",
-    "subtitle": "Mọi thông tin bạn cần biết về tính an toàn, bảo mật dữ liệu và cách tối ưu hóa hiệu năng làm việc với bộ công cụ Quick-Fix Tools.",
-    "faqs": [
+    "title": "Hướng dẫn thực tế cho các tác vụ web hằng ngày",
+    "description": "Các hướng dẫn ngắn gọn, thực tế giúp bạn sử dụng JSNify hiệu quả cho các công việc phát triển và SEO phổ biến.",
+    "items": [
       {
-        "q": "Tôi có cần đăng ký tài khoản hoặc trả phí để sử dụng các công cụ này không?",
-        "a": "Hoàn toàn không. Toàn bộ các công cụ trên Quick-Fix Tools đều được cung cấp miễn phí 100%. Bạn không cần đăng ký tài khoản, không cần cung cấp email hay liên kết thẻ thanh toán để sử dụng dịch vụ."
-=======
+        "title": "Cách định dạng SQL trực tuyến",
+        "summary": "Làm sạch và sắp xếp câu lệnh SQL để dễ debug, chia sẻ và đánh giá.",
+        "path": "sql-formatter"
+      },
+      {
+        "title": "Cách kiểm tra JSON nhanh chóng",
+        "summary": "Phát hiện lỗi cú pháp và định dạng dữ liệu JSON cho API và frontend.",
+        "path": "json-validator"
+      },
+      {
+        "title": "Cách chuyển đổi CSV sang JSON",
+        "summary": "Chuyển dữ liệu bảng tính thành JSON cho ứng dụng, tự động hóa và tích hợp.",
+        "path": "csv-to-json"
+      },
+      {
+        "title": "Cách nén CSS cho website",
+        "summary": "Giảm kích thước stylesheet và cải thiện tốc độ tải trang với mã nguồn tối ưu hơn.",
+        "path": "css-minify"
+      }
+    ]
+  },
+  "faq_page": {
     "meta_title": "Câu Hỏi Thường Gặp - JSNify",
     "meta_desc": "Giải đáp thắc mắc về bảo mật dữ liệu, chính sách quảng cáo và cách hoạt động của các công cụ định dạng SQL, kiểm tra JSON, nén CSS và xử lý PDF.",
     "h1": "Câu Hỏi Thường Gặp (FAQ)",
@@ -271,7 +264,6 @@
       {
         "q": "Tôi có cần đăng ký tài khoản hoặc trả phí để sử dụng các công cụ này không?",
         "a": "Hoàn toàn không. Toàn bộ các công cụ trên JSNify đều được cung cấp miễn phí 100%. Bạn không cần đăng ký tài khoản, không cần cung cấp email hay liên kết thẻ thanh toán để sử dụng dịch vụ."
->>>>>>> 922e231 (Commit)
       },
       {
         "q": "Dữ liệu và mã nguồn của tôi có bị lưu lại trên máy chủ của các bạn không?",
@@ -305,21 +297,12 @@
     }
   },
   "about_page": {
-<<<<<<< HEAD
-    "meta_title": "Về Chúng Tôi - QuickFix Studio",
-    "meta_desc": "Tìm hiểu sứ mệnh đằng sau QuickFix Studio. Chúng tôi cung cấp các công cụ định dạng SQL, kiểm tra JSON, nén CSS hoàn toàn miễn phí và bảo mật tuyệt đối trên trình duyệt.",
-    "h1": "Về QuickFix Studio",
-    "subtitle": "Hệ sinh thái công cụ lập trình nhanh chóng, an toàn và bảo mật tuyệt đối dành riêng cho lập trình viên và nhà phát triển web.",
-    "mission_title": "Sứ mệnh của chúng tôi",
-    "mission_desc": "QuickFix Studio được phát triển với mục tiêu đơn giản hóa quy trình làm việc hàng ngày của lập trình viên, chuyên viên SEO và người tối ưu hóa nội dung. Chúng tôi tin rằng những công cụ tiện ích nhỏ không nên đi kèm với những rào cản đăng ký rườm rà hay nguy cơ rò rỉ dữ liệu nhạy cảm.",
-=======
     "meta_title": "Về Chúng Tôi - JSNify",
     "meta_desc": "Tìm hiểu sứ mệnh đằng sau JSNify. Chúng tôi cung cấp các công cụ định dạng SQL, kiểm tra JSON, nén CSS hoàn toàn miễn phí và bảo mật tuyệt đối trên trình duyệt.",
     "h1": "Về JSNify",
     "subtitle": "Hệ sinh thái công cụ lập trình nhanh chóng, an toàn và bảo mật tuyệt đối dành riêng cho lập trình viên và nhà phát triển web.",
     "mission_title": "Sứ mệnh của chúng tôi",
     "mission_desc": "JSNify được phát triển với mục tiêu đơn giản hóa quy trình làm việc hàng ngày của lập trình viên, chuyên viên SEO và người tối ưu hóa nội dung. Chúng tôi tin rằng những công cụ tiện ích nhỏ không nên đi kèm với những rào cản đăng ký rườm rà hay nguy cơ rò rỉ dữ liệu nhạy cảm.",
->>>>>>> 922e231 (Commit)
     "values_title": "Giá trị cốt lõi làm nên sự khác biệt",
     "values": [
       {
@@ -341,13 +324,8 @@
     "cta_desc": "Khám phá ngay bảng điều khiển chính để trải nghiệm tốc độ xử lý đỉnh cao.",
     "cta_btn": "Quay lại Bảng điều khiển"
   },
-
   "blog_page": {
-<<<<<<< HEAD
-    "meta_title": "Blog Công Cụ & SEO Kỹ Thuật | Quick-Fix Tools",
-=======
     "meta_title": "Blog Công Cụ & SEO Kỹ Thuật | JSNify",
->>>>>>> 922e231 (Commit)
     "meta_desc": "Khám phá các bài viết chuyên sâu về định dạng SQL, tối ưu cú pháp JSON, nén CSS/JS và các quy trình SEO kỹ thuật hữu ích nhất cho lập trình viên.",
     "h1": "Blog & Kiến thức Kỹ thuật",
     "subtitle": "Tổng hợp các bài viết chuyên môn sâu, hướng dẫn thực tế giúp bạn tối ưu hóa mã nguồn, tăng tốc tải trang và cải thiện năng suất lập trình hàng ngày.",

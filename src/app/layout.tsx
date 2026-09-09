@@ -1,13 +1,8 @@
 import type { Metadata } from 'next';
 import { GoogleAnalytics } from '@next/third-parties/google';
-<<<<<<< HEAD
-import Script from 'next/script';
-import './globals.css';
-=======
 import './globals.css';
 import { siteDescription, siteName, siteUrl } from '@/lib/site';
 
->>>>>>> 922e231 (Commit)
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -47,22 +42,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-<<<<<<< HEAD
-       <head>
-       <script
-  async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5107605542667246"
-  crossOrigin="anonymous"
-/>
-<GoogleAnalytics gaId="G-T5JBG9XC69" />
-      </head>
-      <body className="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col">
-      
-        {children}
-
-       
-        
-=======
       <head>
         <script
           async
@@ -73,7 +52,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col">
         {children}
         <GoogleAnalytics gaId="G-T5JBG9XC69" />
->>>>>>> 922e231 (Commit)
       </body>
     </html>
   );

@@ -1,10 +1,6 @@
 {
   "common": {
-<<<<<<< HEAD
-    "title": "QuickFix Studio",
-=======
     "title": "JSNify",
->>>>>>> 922e231 (Commit)
     "description": "Des utilitaires instantanés pour formater, valider et optimiser la structure de votre code source, sans envoyer aucune donnée à un serveur."
   },
   "home_page": {
@@ -42,11 +38,7 @@
     "description": "Une suite d'outils web rapides, privés et prêts à l'emploi pour le développement, le SEO et la gestion de contenu, sans aucune installation.",
     "featured_tools": "Outils phares",
     "company_policy": "Informations & Politiques",
-<<<<<<< HEAD
-    "about": "À propos de QuickFix Studio",
-=======
     "about": "À propos de JSNify",
->>>>>>> 922e231 (Commit)
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
     "operational": "Opérationnel"
@@ -94,7 +86,10 @@
       "Sélectionnez l'action : Cliquez sur 'Format SQL' pour embellir la structure, ou sur 'Minify SQL' pour compresser le code.",
       "Copiez le résultat traité depuis la zone de résultats à l'aide du bouton 'Copy' pour l'utiliser immédiatement."
     ],
-    "pro_tip": "Astuce : Vous pouvez utiliser la fonction de minification (Minify) pour optimiser les performances de transfert lors de l'exécution de requêtes dynamiques (Dynamic SQL) depuis votre application backend vers la base de données."
+    "pro_tip": "Astuce : Vous pouvez utiliser la fonction de minification (Minify) pour optimiser les performances de transfert lors de l'exécution de requêtes dynamiques (Dynamic SQL) depuis votre application backend vers la base de données.",
+    "placeholder": "Collez votre requête SQL ici...",
+    "btn_format": "Formater SQL",
+    "btn_minify": "Minifier SQL"
   },
   "json_validator": {
     "h1": "Outil de validation et d'embellissement JSON",
@@ -110,10 +105,22 @@
     "last_updated": "Dernière mise à jour : 14 juillet 2026",
     "highlights_title": "Résumé rapide de la confidentialité",
     "highlights": [
-      { "label": "Traitement des données", "value": "100% côté client (dans votre navigateur). Pour les outils de traitement de fichiers (comme le PDF), les fichiers sont automatiquement supprimés définitivement du serveur après 1 heure." },
-      { "label": "Publicité (AdSense)", "value": "Utilise des cookies Google AdSense pour diffuser des annonces personnalisées. Vous pouvez désactiver cette option à tout moment." },
-      { "label": "Informations personnelles", "value": "Nous ne demandons AUCUNE inscription, ne conservons AUCUNE donnée personnelle et ne vendons AUCUNE information à des tiers." },
-      { "label": "Analyses (Analytics)", "value": "Utilise Google Analytics pour suivre le trafic de manière anonyme afin d'améliorer les performances du système." }
+      {
+        "label": "Traitement des données",
+        "value": "100% côté client (dans votre navigateur). Pour les outils de traitement de fichiers (comme le PDF), les fichiers sont automatiquement supprimés définitivement du serveur après 1 heure."
+      },
+      {
+        "label": "Publicité (AdSense)",
+        "value": "Utilise des cookies Google AdSense pour diffuser des annonces personnalisées. Vous pouvez désactiver cette option à tout moment."
+      },
+      {
+        "label": "Informations personnelles",
+        "value": "Nous ne demandons AUCUNE inscription, ne conservons AUCUNE donnée personnelle et ne vendons AUCUNE information à des tiers."
+      },
+      {
+        "label": "Analyses (Analytics)",
+        "value": "Utilise Google Analytics pour suivre le trafic de manière anonyme afin d'améliorer les performances du système."
+      }
     ],
     "intro_title": "1. Introduction générale",
     "intro_text": "Bienvenue sur notre système d'outils en ligne gratuits. Nous comprenons que la confidentialité et la sécurité de vos données sont extrêmement importantes. Cette politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos informations lorsque vous interagissez avec les applications web de notre site.",
@@ -134,26 +141,15 @@
   },
   "terms_of_service": {
     "h1": "Conditions d'utilisation",
-<<<<<<< HEAD
-    "meta_title": "Conditions d'utilisation | Quick-Fix Tools",
-    "meta_desc": "Consultez les conditions d'utilisation de la plateforme Quick-Fix Tools et de ses outils en ligne.",
-=======
     "meta_title": "Conditions d'utilisation | JSNify",
     "meta_desc": "Consultez les conditions d'utilisation de la plateforme JSNify et de ses outils en ligne.",
->>>>>>> 922e231 (Commit)
     "placeholder": "Saisissez les données...",
     "btn_format": "Traiter les données"
   },
   "about": {
-<<<<<<< HEAD
-    "h1": "À propos de Quick-Fix Tools",
-    "meta_title": "À propos de Quick-Fix Tools",
-    "meta_desc": "En savoir plus sur la plateforme Quick-Fix Tools, son but et sa suite d'outils pour les développeurs et équipes SEO.",
-=======
     "h1": "À propos de JSNify",
     "meta_title": "À propos de JSNify",
     "meta_desc": "En savoir plus sur la plateforme JSNify, son but et sa suite d'outils pour les développeurs et équipes SEO.",
->>>>>>> 922e231 (Commit)
     "placeholder": "Saisissez les données...",
     "btn_format": "Traiter les données"
   },
@@ -228,23 +224,14 @@
   },
   "404": {
     "h1": "Page non trouvée",
-<<<<<<< HEAD
-    "meta_title": "Page non trouvée | Quick-Fix Tools",
-    "meta_desc": "La page demandée n'existe pas. Retournez sur la page d'accueil de Quick-Fix Tools pour explorer nos outils.",
-=======
     "meta_title": "Page non trouvée | JSNify",
     "meta_desc": "La page demandée n'existe pas. Retournez sur la page d'accueil de JSNify pour explorer nos outils.",
->>>>>>> 922e231 (Commit)
     "placeholder": "Saisissez les données...",
     "btn_format": "Traiter les données"
   },
   "guides": {
     "title": "Guides pratiques pour vos tâches web quotidiennes",
-<<<<<<< HEAD
-    "description": "Des guides concis et pratiques pour vous aider à utiliser efficacement Quick-Fix Tools pour vos tâches courantes de développement et de SEO.",
-=======
     "description": "Des guides concis et pratiques pour vous aider à utiliser efficacement JSNify pour vos tâches courantes de développement et de SEO.",
->>>>>>> 922e231 (Commit)
     "items": [
       {
         "title": "Comment formater du SQL en ligne",
@@ -269,16 +256,6 @@
     ]
   },
   "faq_page": {
-<<<<<<< HEAD
-    "meta_title": "Foire aux questions - Quick-Fix Tools",
-    "meta_desc": "Réponses aux questions sur la sécurité des données, les politiques publicitaires et le fonctionnement de nos outils (formatage SQL, validation JSON, minification CSS et traitement PDF).",
-    "h1": "Foire Aux Questions (FAQ)",
-    "subtitle": "Toutes les informations sur la sécurité, la confidentialité des données et la manière d'optimiser votre efficacité avec la suite d'outils Quick-Fix Tools.",
-    "faqs": [
-      {
-        "q": "Dois-je créer un compte ou payer pour utiliser ces outils ?",
-        "a": "Absolument pas. Tous les outils sur Quick-Fix Tools sont fournis 100% gratuitement. Vous n'avez pas besoin de créer de compte, de fournir d'adresse e-mail ou de lier une carte bancaire pour utiliser nos services."
-=======
     "meta_title": "Foire aux questions - JSNify",
     "meta_desc": "Réponses aux questions sur la sécurité des données, les politiques publicitaires et le fonctionnement de nos outils (formatage SQL, validation JSON, minification CSS et traitement PDF).",
     "h1": "Foire Aux Questions (FAQ)",
@@ -287,7 +264,6 @@
       {
         "q": "Dois-je créer un compte ou payer pour utiliser ces outils ?",
         "a": "Absolument pas. Tous les outils sur JSNify sont fournis 100% gratuitement. Vous n'avez pas besoin de créer de compte, de fournir d'adresse e-mail ou de lier une carte bancaire pour utiliser nos services."
->>>>>>> 922e231 (Commit)
       },
       {
         "q": "Mes données et mon code source sont-ils conservés sur vos serveurs ?",
@@ -321,21 +297,12 @@
     }
   },
   "about_page": {
-<<<<<<< HEAD
-    "meta_title": "À propos de nous - QuickFix Studio",
-    "meta_desc": "Découvrez la mission de QuickFix Studio. Nous fournissons des outils gratuits et 100% sécurisés de formatage SQL, validation JSON et minification CSS.",
-    "h1": "À propos de QuickFix Studio",
-    "subtitle": "Un éco-système d'outils de développement rapides, sûrs et totalement privés, conçus spécialement pour les développeurs et webmasters.",
-    "mission_title": "Notre mission",
-    "mission_desc": "QuickFix Studio a été développé avec pour objectif de simplifier le travail quotidien des développeurs, experts SEO et créateurs de contenu. Nous pensons que les petits outils utilitaires ne devraient pas s'accompagner de processus d'inscription fastidieux ou de risques de fuites de données sensibles.",
-=======
     "meta_title": "À propos de nous - JSNify",
     "meta_desc": "Découvrez la mission de JSNify. Nous fournissons des outils gratuits et 100% sécurisés de formatage SQL, validation JSON et minification CSS.",
     "h1": "À propos de JSNify",
     "subtitle": "Un éco-système d'outils de développement rapides, sûrs et totalement privés, conçus spécialement pour les développeurs et webmasters.",
     "mission_title": "Notre mission",
     "mission_desc": "JSNify a été développé avec pour objectif de simplifier le travail quotidien des développeurs, experts SEO et créateurs de contenu. Nous pensons que les petits outils utilitaires ne devraient pas s'accompagner de processus d'inscription fastidieux ou de risques de fuites de données sensibles.",
->>>>>>> 922e231 (Commit)
     "values_title": "Valeurs fondamentales qui font la différence",
     "values": [
       {
@@ -358,11 +325,7 @@
     "cta_btn": "Retour au tableau de bord"
   },
   "blog_page": {
-<<<<<<< HEAD
-    "meta_title": "Blog Outils & Référencement Technique | Quick-Fix Tools",
-=======
     "meta_title": "Blog Outils & Référencement Technique | JSNify",
->>>>>>> 922e231 (Commit)
     "meta_desc": "Découvrez des articles de fond sur le formatage SQL, l'optimisation de syntaxe JSON, la minification CSS/JS et les processus de SEO technique les plus utiles pour les développeurs.",
     "h1": "Blog & Connaissances techniques",
     "subtitle": "Articles spécialisés et guides pratiques pour vous aider à optimiser votre code source, accélérer le chargement des pages et améliorer votre productivité quotidienne.",

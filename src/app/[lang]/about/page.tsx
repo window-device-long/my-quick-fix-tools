@@ -13,11 +13,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const aboutDict = dict['about_page'] || {};
   
   return {
-<<<<<<< HEAD
-    title: aboutDict.meta_title || 'About Us - QuickFix Studio',
-=======
     title: aboutDict.meta_title || 'About Us - JSNify',
->>>>>>> 922e231 (Commit)
     description: aboutDict.meta_desc || 'Learn more about our tools.',
   };
 }

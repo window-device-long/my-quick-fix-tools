@@ -2,6 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getDictionary } from '@/dictionaries/get-dictionary';
 
+type GuideItem = { path: string; title: string; summary: string };
+
 
 export async function generateMetadata({
   params,
@@ -12,11 +14,7 @@ export async function generateMetadata({
   const dictionary = await getDictionary(lang);
 
   return {
-<<<<<<< HEAD
-    title: `${dictionary.guides.title} | Quick-Fix Tools`,
-=======
     title: `${dictionary.guides.title} | JSNify`,
->>>>>>> 922e231 (Commit)
     description: dictionary.guides.description,
   };
 }
@@ -45,7 +43,7 @@ export default async function GuidesPage({
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
-        {guides.map((guide: any) => (
+        {(guides as GuideItem[]).map((guide) => (
           <Link
             key={guide.path}
             href={`/${lang}/${guide.path}`}

@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 
 interface HeaderProps {
@@ -76,7 +77,7 @@ const handleLangChange = (newLang: string) => {
         {/* LOGO */}
         <Link href={`/${lang}`} className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-slate-200 bg-slate-900 shadow-sm">
-            <img src="/favicon-32x32.png" alt="JSNify logo" className="h-5 w-5" />
+            <Image src="/favicon-32x32.png" alt="JSNify logo" width={20} height={20} priority />
           </div>
           <div className="leading-tight">
             <div className="text-base font-semibold tracking-tight text-slate-900">JSNify</div>
