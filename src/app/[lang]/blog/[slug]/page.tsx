@@ -12,7 +12,8 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { lang, slug } = await params;
   const dict = await getDictionary(lang);
-  const posts = dict.blog_posts as Record<string, (typeof dict.blog_posts)[keyof typeof dict.blog_posts]>;
+  type BlogPost = (typeof dict.blog_posts)[keyof typeof dict.blog_posts];
+  const posts = dict.blog_posts as Record<string, BlogPost>;
   const post = posts[slug];
 
   if (!post) {
@@ -47,7 +48,8 @@ export async function generateStaticParams() {
 export default async function BlogPostDetailPage({ params }: PageProps) {
   const { lang, slug } = await params;
   const dict = await getDictionary(lang);
-  const posts = dict.blog_posts as Record<string, (typeof dict.blog_posts)[keyof typeof dict.blog_posts]>;
+  type BlogPost = (typeof dict.blog_posts)[keyof typeof dict.blog_posts];
+  const posts = dict.blog_posts as Record<string, BlogPost>;
   const post = posts[slug];
   const detailDict = dict.blog_detail;
 

@@ -1,75 +1,103 @@
 'use client';
 
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
+import ToolActions from '@/components/ToolActions';
+import { downloadText } from '@/lib/download';
+import { toolUi } from '@/lib/tool-ui';
 
 interface Props {
+  lang: string;
   dict: { placeholder: string; btn_format: string };
 }
 
-function parseCsvLine(line: string): string[] {
-  const values: string[] = [];
-  let current = '';
-  let inQuotes = false;
+type DelimiterMode = 'auto' | ',' | ';' | '\t';
+const SAMPLE = 'name,email,note\nAlice,alice@example.com,"Hello, world"\nBob,bob@example.com,"Line one\nLine two"';
 
-  for (let i = 0; i < line.length; i += 1) {
-    const char = line[i];
-
-    if (char === '"') {
-      if (inQuotes && line[i + 1] === '"') {
-        current += '"';
-        i += 1;
-      } else {
-        inQuotes = !inQuotes;
-      }
-    } else if (char === ',' && !inQuotes) {
-      values.push(current);
-      current = '';
-    } else {
-      current += char;
-    }
-  }
-
-  values.push(current);
-  return values;
+function detectDelimiter(input: string): ',' | ';' | '\t' {
+  const firstRecord = input.split(/\r?\n/, 1)[0] ?? '';
+  const candidates: Array<',' | ';' | '\t'> = [',', ';', '\t'];
+  return candidates
+    .map((delimiter) => ({ delimiter, count: firstRecord.split(delimiter).length - 1 }))
+    .sort((a, b) => b.count - a.count)[0]?.delimiter ?? ',';
 }
 
-export default function CsvToJsonClient({ dict }: Props) {
-  const [input, setInput] = useState('name,email\nAlice,alice@example.com\nBob,bob@example.com');
-  const [output, setOutput] = useState('');
-  const [error, setError] = useState('');
-  const [copied, setCopied] = useState(false);
+function parseCsv(input: string, delimiter: string): string[][] {
+  const rows: string[][] = [];
+  let row: string[] = [];
+  let field = '';
+  let quoted = false;
 
-  const handleConvert = () => {
-    const rows = input
-      .split(/\r?\n/)
-      .map((row) => row.trimEnd())
-      .filter((row) => row.length > 0);
+  for (let i = 0; i < input.length; i += 1) {
+    const char = input[i];
+    const next = input[i + 1];
 
-    if (rows.length === 0) {
-      setError('Please enter CSV data.');
-      setOutput('');
-      return;
+    if (char === '"') {
+      if (quoted && next === '"') {
+        field += '"';
+        i += 1;
+      } else {
+        quoted = !quoted;
+      }
+      continue;
     }
 
+    if (char === delimiter && !quoted) {
+      row.push(field);
+      field = '';
+      continue;
+    }
+
+    if ((char === '\n' || char === '\r') && !quoted) {
+      if (char === '\r' && next === '\n') i += 1;
+      row.push(field);
+      field = '';
+      if (row.some((cell) => cell.length > 0)) rows.push(row);
+      row = [];
+      continue;
+    }
+
+    field += char;
+  }
+
+  if (quoted) throw new Error('Unclosed quoted field.');
+  row.push(field);
+  if (row.some((cell) => cell.length > 0)) rows.push(row);
+  return rows;
+}
+
+export default function CsvToJsonClient({ lang, dict }: Props) {
+  const labels = toolUi(lang);
+  const [input, setInput] = useState(SAMPLE);
+  const [output, setOutput] = useState('');
+  const [error, setError] = useState('');
+  const [delimiterMode, setDelimiterMode] = useState<DelimiterMode>('auto');
+  const [copied, setCopied] = useState(false);
+  const detected = useMemo(() => detectDelimiter(input), [input]);
+
+  const convert = () => {
+    setCopied(false);
+    if (!input.trim()) {
+      setOutput('');
+      setError(labels.empty);
+      return;
+    }
     try {
-      const headers = parseCsvLine(rows[0]).map((header) => header.trim());
-      const data = rows.slice(1).map((row) => {
-        const values = parseCsvLine(row);
-        if (values.length !== headers.length) {
-          throw new Error('The number of columns is inconsistent.');
-        }
+      const delimiter = delimiterMode === 'auto' ? detected : delimiterMode;
+      const rows = parseCsv(input, delimiter);
+      if (rows.length < 2) throw new Error('CSV needs a header row and at least one data row.');
+      const headers = rows[0].map((header) => header.trim());
+      if (headers.some((header) => !header)) throw new Error('CSV header contains an empty column name.');
+      if (new Set(headers).size !== headers.length) throw new Error('CSV header contains duplicate column names.');
 
-        return headers.reduce<Record<string, string>>((acc, header, index) => {
-          acc[header] = values[index] ?? '';
-          return acc;
-        }, {});
+      const data = rows.slice(1).map((values, rowIndex) => {
+        if (values.length !== headers.length) throw new Error(`Row ${rowIndex + 2} has ${values.length} columns; expected ${headers.length}.`);
+        return Object.fromEntries(headers.map((header, index) => [header, values[index] ?? '']));
       });
-
       setOutput(JSON.stringify(data, null, 2));
       setError('');
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Unable to convert CSV.');
       setOutput('');
+      setError(err instanceof Error ? err.message : 'Unable to convert CSV.');
     }
   };
 
@@ -77,46 +105,35 @@ export default function CsvToJsonClient({ dict }: Props) {
     if (!output) return;
     await navigator.clipboard.writeText(output);
     setCopied(true);
-    setTimeout(() => setCopied(false), 1800);
+    window.setTimeout(() => setCopied(false), 1600);
   };
 
   return (
     <div className="grid gap-6 lg:grid-cols-2">
-      <div className="rounded-3xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
-        <div className="mb-3 flex items-center justify-between">
-          <label className="text-sm font-semibold text-slate-700">CSV Input</label>
-          <span className="rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-amber-700">Table data</span>
+      <section className="space-y-3 rounded-3xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <label className="text-sm font-semibold text-slate-700">{labels.input} CSV</label>
+          <ToolActions labels={labels} onSample={() => { setInput(SAMPLE); setOutput(''); setError(''); }} onClear={() => { setInput(''); setOutput(''); setError(''); }} />
         </div>
-        <textarea
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder={dict.placeholder}
-          className="h-80 w-full rounded-2xl border border-slate-200 bg-white p-4 font-mono text-sm text-slate-800 shadow-inner focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
-        />
-        <button
-          onClick={handleConvert}
-          className="mt-4 w-full rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-md transition hover:opacity-95"
-        >
-          {dict.btn_format}
-        </button>
-      </div>
+        <textarea value={input} onChange={(e) => setInput(e.target.value)} placeholder={dict.placeholder} spellCheck={false} className="h-80 w-full rounded-2xl border border-slate-200 bg-white p-4 font-mono text-sm text-slate-800 shadow-inner focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200" />
+        <div className="grid grid-cols-[1fr_auto] gap-3">
+          <button type="button" onClick={convert} className="rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-md hover:opacity-95">{dict.btn_format}</button>
+          <select value={delimiterMode} onChange={(e) => setDelimiterMode(e.target.value as DelimiterMode)} className="rounded-2xl border border-slate-200 bg-white px-3 text-sm text-slate-700">
+            <option value="auto">Auto ({detected === '\t' ? 'Tab' : detected})</option>
+            <option value=",">Comma</option>
+            <option value=";">Semicolon</option>
+            <option value={'\t'}>Tab</option>
+          </select>
+        </div>
+      </section>
 
-      <div className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
-        <div className="mb-3 flex items-center justify-between">
-          <label className="text-sm font-semibold text-slate-700">JSON Output</label>
-          {output && (
-            <button
-              onClick={handleCopy}
-              className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-blue-400 hover:bg-blue-50 hover:text-blue-600"
-            >
-              {copied ? '✓ Copied' : 'Copy'}
-            </button>
-          )}
+      <section className="space-y-3 rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <label className="text-sm font-semibold text-slate-700">JSON</label>
+          <ToolActions labels={labels} onSample={() => { setInput(SAMPLE); setOutput(''); setError(''); }} onClear={() => { setOutput(''); setError(''); }} onCopy={handleCopy} onDownload={() => downloadText('converted.json', output, 'application/json;charset=utf-8')} copied={copied} hasOutput={Boolean(output)} />
         </div>
-        <div className={`min-h-80 rounded-2xl border p-4 font-mono text-sm shadow-inner ${error ? 'border-rose-200 bg-rose-50 text-rose-700' : 'border-slate-200 bg-slate-50 text-slate-700'}`}>
-          {error ? error : output || 'Your JSON array will appear here.'}
-        </div>
-      </div>
+        <pre className={`min-h-80 overflow-auto whitespace-pre-wrap break-words rounded-2xl border p-4 font-mono text-sm shadow-inner ${error ? 'border-rose-200 bg-rose-50 text-rose-700' : 'border-slate-200 bg-slate-50 text-slate-700'}`}>{error || output || labels.output}</pre>
+      </section>
     </div>
   );
 }

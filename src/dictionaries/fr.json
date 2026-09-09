@@ -87,7 +87,7 @@
       "Copiez le résultat traité depuis la zone de résultats à l'aide du bouton 'Copy' pour l'utiliser immédiatement."
     ],
     "pro_tip": "Astuce : Vous pouvez utiliser la fonction de minification (Minify) pour optimiser les performances de transfert lors de l'exécution de requêtes dynamiques (Dynamic SQL) depuis votre application backend vers la base de données.",
-    "placeholder": "Collez votre requête SQL ici...",
+    "placeholder": "Collez votre SQL ici...",
     "btn_format": "Formater SQL",
     "btn_minify": "Minifier SQL"
   },

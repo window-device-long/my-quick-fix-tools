@@ -87,7 +87,7 @@
       "Sao chép kết quả đã xử lý từ khung kết quả bằng nút 'Copy' tiện lợi để sử dụng ngay."
     ],
     "pro_tip": "Mẹo nhỏ: Bạn có thể sử dụng tính năng nén (Minify) để tối ưu hóa hiệu năng truyền tải khi thực thi các truy vấn động (Dynamic SQL) từ ứng dụng backend lên cơ sở dữ liệu.",
-    "placeholder": "Dán truy vấn SQL của bạn vào đây...",
+    "placeholder": "Dán câu lệnh SQL vào đây...",
     "btn_format": "Định dạng SQL",
     "btn_minify": "Nén SQL"
   },

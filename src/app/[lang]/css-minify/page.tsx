@@ -22,7 +22,7 @@ export default async function ToolPage({ params }: { params: Promise<{ lang: str
       </div>
 
       <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-        <CssMinifyClient dict={toolDict} />
+        <CssMinifyClient lang={lang} dict={toolDict} />
       </div>
 
       <SeoToolLanding

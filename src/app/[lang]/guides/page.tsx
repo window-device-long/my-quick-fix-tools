@@ -2,8 +2,6 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getDictionary } from '@/dictionaries/get-dictionary';
 
-type GuideItem = { path: string; title: string; summary: string };
-
 
 export async function generateMetadata({
   params,
@@ -43,7 +41,7 @@ export default async function GuidesPage({
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
-        {(guides as GuideItem[]).map((guide) => (
+        {guides.map((guide) => (
           <Link
             key={guide.path}
             href={`/${lang}/${guide.path}`}

@@ -29,7 +29,7 @@ export default async function ToolPage({ params }: PageProps) {
       </div>
 
       {/* Giao diện chính của Tool */}
-      <SqlClientTool dict={sqlDict} />
+      <SqlClientTool lang={lang} dict={sqlDict} />
 
       <hr className="border-slate-200 my-12" />
 

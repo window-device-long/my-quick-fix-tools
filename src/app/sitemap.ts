@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
-import { seoClusterPages } from '@/lib/seo-cluster-pages';
 import { languageAlternates, locales, siteUrl } from '@/lib/site';
+import { getSeoLandings, isSeoLandingIndexable } from '@/lib/seo-landings';
 
 const coreRoutes = [
   '',
@@ -34,20 +34,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Cluster pages currently contain original localized copy only for EN and VI.
-  // Do not expose fallback-English versions under ES/JA/FR/DE to the sitemap.
-  for (const lang of ['en', 'vi'] as const) {
-    for (const page of seoClusterPages) {
+  for (const lang of locales) {
+    for (const { tool, intent } of getSeoLandings()) {
+      if (!isSeoLandingIndexable(tool, intent.slug)) continue;
+      const route = `tools/${tool}/${intent.slug}`;
       entries.push({
-        url: `${siteUrl}/${lang}/tools/${page.slug}`,
+        url: `${siteUrl}/${lang}/${route}`,
         changeFrequency: 'monthly',
-        priority: 0.55,
-        alternates: {
-          languages: {
-            en: `${siteUrl}/en/tools/${page.slug}`,
-            vi: `${siteUrl}/vi/tools/${page.slug}`,
-          },
-        },
+        priority: 0.65,
+        alternates: { languages: languageAlternates(route) },
       });
     }
   }

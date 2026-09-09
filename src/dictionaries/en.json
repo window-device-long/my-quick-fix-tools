@@ -87,7 +87,7 @@
       "Click the clipboard 'Copy' button on the output container to instantly fetch your polished database code."
     ],
     "pro_tip": "Pro Tip: Minified SQL queries are ideal for reducing network payload sizes when dynamically executing heavy database queries from backend API services.",
-    "placeholder": "Paste your SQL query here...",
+    "placeholder": "Paste SQL here...",
     "btn_format": "Format SQL",
     "btn_minify": "Minify SQL"
   },

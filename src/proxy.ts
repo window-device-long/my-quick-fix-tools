@@ -18,11 +18,23 @@ export function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // URLs that already start with a supported locale continue normally.
+  // 1. Tách các phân đoạn của URL ra thành mảng để kiểm tra (Bỏ các khoảng trống)
+  const segments = pathname.split('/').filter(Boolean);
+
+  // 2. BẪY LỖI: Kiểm tra nếu URL có từ 2 phân đoạn trở lên VÀ cả 2 đều là locale hợp lệ (Ví dụ: /en/vi/abc hoặc /vi/es)
+  if (segments.length >= 2 && locales.includes(segments[0]) && locales.includes(segments[1])) {
+    const correctLang = segments[0]; // Giữ lại ngôn ngữ đầu tiên người dùng chọn
+    
+    // Ép hướng trình duyệt về trang 404 thực tế của ngôn ngữ đó
+    request.nextUrl.pathname = `/${correctLang}/__invalid_locale_path__`;
+    return NextResponse.rewrite(request.nextUrl);
+  }
+
+  // 3. Logic gốc của bạn: Kiểm tra xem URL đã có sẵn mã locale hợp lệ chưa
   const pathnameHasLocale = locales.some(locale => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`);
   if (pathnameHasLocale) return NextResponse.next();
 
-  // Detect a preferred locale for URLs that do not include one.
+  // 4. Logic gốc của bạn: Tự động bắt ngôn ngữ từ trình duyệt nếu truy cập URL không có locale (Ví dụ: truy cập thẳng /)
   const acceptLanguage = request.headers.get('accept-language') || '';
   const detected = locales.find(locale => acceptLanguage.includes(locale)) || defaultLocale;
   

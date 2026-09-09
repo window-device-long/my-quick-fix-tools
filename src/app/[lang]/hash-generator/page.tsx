@@ -70,7 +70,7 @@ export default async function ToolPage({ params }: PageProps) {
 
       {/* Main Feature Component Client-Side */}
       <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-        <HashGeneratorClient dict={toolDict} />
+        <HashGeneratorClient lang={lang} dict={toolDict} />
       </div>
 
       {/* SEO Landing Page Component */}

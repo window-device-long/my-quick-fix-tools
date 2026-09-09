@@ -87,7 +87,7 @@
       "Kopieren Sie das verarbeitete Ergebnis über die Schaltfläche 'Copy', um es sofort zu verwenden."
     ],
     "pro_tip": "Tipp: Sie können die Minifizierungsfunktion (Minify) verwenden, um die Übertragungsleistung bei der Ausführung von dynamischen Abfragen (Dynamic SQL) von Ihrer Backend-Anwendung zur Datenbank zu optimieren.",
-    "placeholder": "SQL-Abfrage hier einfügen...",
+    "placeholder": "SQL hier einfügen...",
     "btn_format": "SQL formatieren",
     "btn_minify": "SQL minimieren"
   },
