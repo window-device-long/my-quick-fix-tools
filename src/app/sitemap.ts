@@ -1,35 +1,56 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 import { seoClusterPages } from '@/lib/seo-cluster-pages';
+import { languageAlternates, locales, siteUrl } from '@/lib/site';
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://jsnify.online'; // Thay bằng domain thật khi deploy
-  const locales = ['en', 'es', 'vi'];
+const coreRoutes = [
+  '',
+  'tools',
+  'sql-formatter',
+  'json-validator',
+  'csv-to-json',
+  'css-minify',
+  'hash-generator',
+  'url-encoder-decoder',
+  'guides',
+  'faq',
+  'blog',
+  'about',
+  'privacy-policy',
+  'terms-of-service',
+];
 
-  const tools = ['404', 'tools', 'url-encoder-decoder', 'hash-generator', 'css-minify', 'csv-to-json', 'about', 'terms-of-service', 'privacy-policy', 'json-validator', '', 'sql-formatter'];
-  const clusterRoutes = seoClusterPages.map((page) => `/tools/${page.slug}`);
+export default function sitemap(): MetadataRoute.Sitemap {
+  const entries: MetadataRoute.Sitemap = [];
 
-  const routes: MetadataRoute.Sitemap = [];
-
-  locales.forEach((lang) => {
-    tools.forEach((tool) => {
-      const path = tool ? `/${tool}` : '';
-      routes.push({
-        url: `${baseUrl}/${lang}${path}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: tool ? 0.8 : 1.0,
+  for (const lang of locales) {
+    for (const route of coreRoutes) {
+      const suffix = route ? `/${route}` : '';
+      entries.push({
+        url: `${siteUrl}/${lang}${suffix}`,
+        changeFrequency: route === '' ? 'weekly' : 'monthly',
+        priority: route === '' ? 1 : route === 'tools' ? 0.9 : 0.8,
+        alternates: { languages: languageAlternates(route) },
       });
-    });
+    }
+  }
 
-    clusterRoutes.forEach((path) => {
-      routes.push({
-        url: `${baseUrl}/${lang}${path}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.72,
+  // Cluster pages currently contain original localized copy only for EN and VI.
+  // Do not expose fallback-English versions under ES/JA/FR/DE to the sitemap.
+  for (const lang of ['en', 'vi'] as const) {
+    for (const page of seoClusterPages) {
+      entries.push({
+        url: `${siteUrl}/${lang}/tools/${page.slug}`,
+        changeFrequency: 'monthly',
+        priority: 0.55,
+        alternates: {
+          languages: {
+            en: `${siteUrl}/en/tools/${page.slug}`,
+            vi: `${siteUrl}/vi/tools/${page.slug}`,
+          },
+        },
       });
-    });
-  });
+    }
+  }
 
-  return routes;
+  return entries;
 }

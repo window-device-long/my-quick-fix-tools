@@ -3,10 +3,11 @@ import { getDictionary } from '@/dictionaries/get-dictionary';
 import { Metadata } from 'next';
 import JsonValidatorClient from './JsonValidatorClient';
 import SeoToolLanding from '@/components/SeoToolLanding';
+import { languageAlternates } from '@/lib/site';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params; const dict = await getDictionary(lang);
-  return { title: dict['json_validator']?.meta_title || 'json-validator', description: dict['json_validator']?.meta_desc || 'json-validator tool' };
+  return { title: dict['json_validator']?.meta_title || 'json-validator', description: dict['json_validator']?.meta_desc || 'json-validator tool', alternates: { canonical: `/${lang}/json-validator`, languages: languageAlternates('json-validator') } };
 }
 
 export default async function ToolPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -25,6 +26,7 @@ export default async function ToolPage({ params }: { params: Promise<{ lang: str
       </div>
 
       <SeoToolLanding
+        toolPath="json-validator"
         lang={lang}
         badge={lang === 'vi' ? 'SEO Landing Page' : 'SEO Landing Page'}
         title={lang === 'vi' ? 'Công cụ kiểm tra JSON trực tuyến' : 'JSON Validator Online'}

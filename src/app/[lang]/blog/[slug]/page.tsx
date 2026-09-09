@@ -16,12 +16,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!post) {
     return {
+<<<<<<< HEAD
       title: 'Article Not Found | Quick-Fix Tools',
+=======
+      title: 'Article Not Found | JSNify',
+>>>>>>> 922e231 (Commit)
     };
   }
 
   return {
+<<<<<<< HEAD
     title: `${post.title} | Quick-Fix Tools`,
+=======
+    title: `${post.title} | JSNify`,
+>>>>>>> 922e231 (Commit)
     description: post.meta_desc,
   };
 }

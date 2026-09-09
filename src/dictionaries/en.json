@@ -1,6 +1,10 @@
 {
   "common": {
+<<<<<<< HEAD
     "title": "QuickFix Studio",
+=======
+    "title": "JSNify",
+>>>>>>> 922e231 (Commit)
     "description": "Instant utilities to format, validate, and optimize code structures without sending data to any servers."
   },
   "home_page": {
@@ -38,7 +42,11 @@
     "description": "A fast, privacy-first suite of web tools built for developers, SEO teams, and content teams who need reliable results without extra setup.",
     "featured_tools": "Featured tools",
     "company_policy": "Company & policy",
+<<<<<<< HEAD
     "about": "About QuickFix Studio",
+=======
+    "about": "About JSNify",
+>>>>>>> 922e231 (Commit)
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "operational": "Operational"
@@ -127,15 +135,15 @@
   },
   "terms_of_service": {
     "h1": "Terms of Service",
-    "meta_title": "Terms of Service | Quick-Fix Tools",
-    "meta_desc": "Review the terms for using the Quick-Fix Tools platform and its browser-based utilities.",
+    "meta_title": "Terms of Service | JSNify",
+    "meta_desc": "Review the terms for using the JSNify platform and its browser-based utilities.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
   },
   "about": {
-    "h1": "About Quick-Fix Tools",
-    "meta_title": "About Quick-Fix Tools",
-    "meta_desc": "Learn about the Quick-Fix Tools platform, its purpose, and the utility suite built for developers and SEO teams.",
+    "h1": "About JSNify",
+    "meta_title": "About JSNify",
+    "meta_desc": "Learn about the JSNify platform, its purpose, and the utility suite built for developers and SEO teams.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
   },
@@ -210,15 +218,19 @@
   },
   "404": {
     "h1": "Page Not Found",
-    "meta_title": "Page Not Found | Quick-Fix Tools",
-    "meta_desc": "The requested page could not be found. Return to the Quick-Fix Tools homepage to explore the utility suite.",
+    "meta_title": "Page Not Found | JSNify",
+    "meta_desc": "The requested page could not be found. Return to the JSNify homepage to explore the utility suite.",
     "placeholder": "Enter data...",
     "btn_format": "Process Data"
   },
   
   "guides": {
     "title": "Practical guides for everyday web tasks",
+<<<<<<< HEAD
     "description": "Short, practical guides to help you use Quick-Fix Tools effectively for common development and SEO tasks.",
+=======
+    "description": "Short, practical guides to help you use JSNify effectively for common development and SEO tasks.",
+>>>>>>> 922e231 (Commit)
     "items": [
       {
         "title": "How to format SQL online",
@@ -243,6 +255,7 @@
     ]
   },
   "faq_page": {
+<<<<<<< HEAD
     "meta_title": "Frequently Asked Questions - Quick-Fix Tools",
     "meta_desc": "Find answers regarding database security, cookie policies, and how our client-side SQL, JSON, CSS, and PDF tools process your confidential files safely.",
     "h1": "Frequently Asked Questions",
@@ -251,6 +264,16 @@
       {
         "q": "Do I need to sign up for an account or pay to use these tools?",
         "a": "Absolutely not. Every utility on Quick-Fix Tools is 100% free of charge. There are no registration forms, subscription paywalls, or hidden transaction limits required to use our services."
+=======
+    "meta_title": "Frequently Asked Questions - JSNify",
+    "meta_desc": "Find answers regarding database security, cookie policies, and how our client-side SQL, JSON, CSS, and PDF tools process your confidential files safely.",
+    "h1": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about safety, data privacy, and optimizing your development workflow with JSNify.",
+    "faqs": [
+      {
+        "q": "Do I need to sign up for an account or pay to use these tools?",
+        "a": "Absolutely not. Every utility on JSNify is 100% free of charge. There are no registration forms, subscription paywalls, or hidden transaction limits required to use our services."
+>>>>>>> 922e231 (Commit)
       },
       {
         "q": "Is my data or source code saved on your servers?",
@@ -285,12 +308,21 @@
   },
 
   "about_page": {
+<<<<<<< HEAD
     "meta_title": "About Us - QuickFix Studio",
     "meta_desc": "Discover the mission behind QuickFix Studio. We provide fast, free, and 100% client-side developers utility tools for SQL formatting, JSON parsing, and CSS minifying.",
     "h1": "About QuickFix Studio",
     "subtitle": "A fast, privacy-first, and highly reliable web developer utilities designed to streamline your daily engineering workflows.",
     "mission_title": "Our Mission",
     "mission_desc": "QuickFix Studio was created to solve everyday developers, SEO teams, and webmasters' micro-tasks safely. We believe that critical formatting and optimization utilities should be universally accessible without forcing subscription paywalls or risking intellectual property leaks.",
+=======
+    "meta_title": "About Us - JSNify",
+    "meta_desc": "Discover the mission behind JSNify. We provide fast, free, and 100% client-side developers utility tools for SQL formatting, JSON parsing, and CSS minifying.",
+    "h1": "About JSNify",
+    "subtitle": "A fast, privacy-first, and highly reliable web developer utilities designed to streamline your daily engineering workflows.",
+    "mission_title": "Our Mission",
+    "mission_desc": "JSNify was created to solve everyday developers, SEO teams, and webmasters' micro-tasks safely. We believe that critical formatting and optimization utilities should be universally accessible without forcing subscription paywalls or risking intellectual property leaks.",
+>>>>>>> 922e231 (Commit)
     "values_title": "Our Uncompromising Standards",
     "values": [
       {
@@ -307,13 +339,21 @@
       }
     ],
     "tech_title": "Modern Engineering Foundations",
+<<<<<<< HEAD
     "tech_desc": "Powered by Next.js static generation pipelines and Tailwind CSS frameworks, QuickFix Studio leverages hardware-accelerated local scripts to parse and format mega-sized assets efficiently.",
+=======
+    "tech_desc": "Powered by Next.js static generation pipelines and Tailwind CSS frameworks, JSNify leverages hardware-accelerated local scripts to parse and format mega-sized assets efficiently.",
+>>>>>>> 922e231 (Commit)
     "cta_title": "Ready to streamline your development process?",
     "cta_desc": "Browse our core dashboard and leverage clean tools that respect your privacy.",
     "cta_btn": "Go back to Dashboard"
   },
   "blog_page": {
+<<<<<<< HEAD
     "meta_title": "Developer Blog & Technical SEO | Quick-Fix Tools",
+=======
+    "meta_title": "Developer Blog & Technical SEO | JSNify",
+>>>>>>> 922e231 (Commit)
     "meta_desc": "Discover structural insights on SQL formatting, JSON syntax validation, CSS minification, and key technical SEO strategies to boost website metrics.",
     "h1": "Blog & Technical Insights",
     "subtitle": "Deep-dive tutorials, operational guides, and practical insights designed to help developers clean code syntax, boost performance, and ship faster web applications.",

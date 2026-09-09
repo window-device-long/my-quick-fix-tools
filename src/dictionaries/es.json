@@ -1,6 +1,10 @@
 {
   "common": {
+<<<<<<< HEAD
     "title": "QuickFix Studio",
+=======
+    "title": "JSNify",
+>>>>>>> 922e231 (Commit)
     "description": "Utilidades instantáneas para formatear, validar y optimizar la estructura de tu código fuente sin enviar ningún dato a ningún servidor."
   },
   "home_page": {
@@ -38,7 +42,11 @@
     "description": "Un conjunto de herramientas web rápidas, privadas y listas para el desarrollo, SEO y gestión de contenidos, sin necesidad de instalación.",
     "featured_tools": "Herramientas destacadas",
     "company_policy": "Información y políticas",
+<<<<<<< HEAD
     "about": "Acerca de QuickFix Studio",
+=======
+    "about": "Acerca de JSNify",
+>>>>>>> 922e231 (Commit)
     "privacy": "Política de privacidad",
     "terms": "Términos de servicio",
     "operational": "Operativo"
@@ -126,15 +134,26 @@
   },
   "terms_of_service": {
     "h1": "Términos de servicio",
+<<<<<<< HEAD
     "meta_title": "Términos de servicio | Quick-Fix Tools",
     "meta_desc": "Consulta los términos de uso de la plataforma Quick-Fix Tools y sus herramientas en línea.",
+=======
+    "meta_title": "Términos de servicio | JSNify",
+    "meta_desc": "Consulta los términos de uso de la plataforma JSNify y sus herramientas en línea.",
+>>>>>>> 922e231 (Commit)
     "placeholder": "Ingresa los datos...",
     "btn_format": "Procesar datos"
   },
   "about": {
+<<<<<<< HEAD
     "h1": "Acerca de Quick-Fix Tools",
     "meta_title": "Acerca de Quick-Fix Tools",
     "meta_desc": "Obtén información sobre la plataforma Quick-Fix Tools, su propósito y el conjunto de herramientas para desarrolladores y equipos de SEO.",
+=======
+    "h1": "Acerca de JSNify",
+    "meta_title": "Acerca de JSNify",
+    "meta_desc": "Obtén información sobre la plataforma JSNify, su propósito y el conjunto de herramientas para desarrolladores y equipos de SEO.",
+>>>>>>> 922e231 (Commit)
     "placeholder": "Ingresa los datos...",
     "btn_format": "Procesar datos"
   },
@@ -209,14 +228,23 @@
   },
   "404": {
     "h1": "Página no encontrada",
+<<<<<<< HEAD
     "meta_title": "Página no encontrada | Quick-Fix Tools",
     "meta_desc": "La página solicitada no existe. Regresa al inicio de Quick-Fix Tools para explorar nuestras herramientas.",
+=======
+    "meta_title": "Página no encontrada | JSNify",
+    "meta_desc": "La página solicitada no existe. Regresa al inicio de JSNify para explorar nuestras herramientas.",
+>>>>>>> 922e231 (Commit)
     "placeholder": "Ingresa los datos...",
     "btn_format": "Procesar datos"
   },
   "guides": {
     "title": "Guías prácticas para tareas web diarias",
+<<<<<<< HEAD
     "description": "Guías concisas y prácticas para ayudarte a utilizar Quick-Fix Tools eficazmente en tareas de desarrollo y SEO comunes.",
+=======
+    "description": "Guías concisas y prácticas para ayudarte a utilizar JSNify eficazmente en tareas de desarrollo y SEO comunes.",
+>>>>>>> 922e231 (Commit)
     "items": [
       {
         "title": "Cómo formatear SQL en línea",
@@ -241,6 +269,7 @@
     ]
   },
   "faq_page": {
+<<<<<<< HEAD
     "meta_title": "Preguntas frecuentes - Quick-Fix Tools",
     "meta_desc": "Respuestas a preguntas sobre seguridad de datos, políticas de publicidad y cómo funcionan nuestras herramientas para SQL, JSON, CSS y PDF.",
     "h1": "Preguntas Frecuentes (FAQ)",
@@ -249,6 +278,16 @@
       {
         "q": "¿Necesito registrar una cuenta o pagar para usar estas herramientas?",
         "a": "Absolutamente no. Todas las herramientas en Quick-Fix Tools se ofrecen de manera 100% gratuita. No necesitas registrar una cuenta, proporcionar tu correo electrónico ni vincular tarjetas de pago para utilizar el servicio."
+=======
+    "meta_title": "Preguntas frecuentes - JSNify",
+    "meta_desc": "Respuestas a preguntas sobre seguridad de datos, políticas de publicidad y cómo funcionan nuestras herramientas para SQL, JSON, CSS y PDF.",
+    "h1": "Preguntas Frecuentes (FAQ)",
+    "subtitle": "Toda la información que necesitas sobre la seguridad, privacidad de datos y cómo optimizar la productividad con el conjunto de herramientas de JSNify.",
+    "faqs": [
+      {
+        "q": "¿Necesito registrar una cuenta o pagar para usar estas herramientas?",
+        "a": "Absolutamente no. Todas las herramientas en JSNify se ofrecen de manera 100% gratuita. No necesitas registrar una cuenta, proporcionar tu correo electrónico ni vincular tarjetas de pago para utilizar el servicio."
+>>>>>>> 922e231 (Commit)
       },
       {
         "q": "¿Mis datos y código fuente se guardan en sus servidores?",
@@ -282,12 +321,21 @@
     }
   },
   "about_page": {
+<<<<<<< HEAD
     "meta_title": "Sobre nosotros - QuickFix Studio",
     "meta_desc": "Conoce la misión detrás de QuickFix Studio. Ofrecemos herramientas de formato SQL, validación JSON y minificación CSS gratis y 100% seguras.",
     "h1": "Acerca de QuickFix Studio",
     "subtitle": "Un ecosistema de herramientas de programación rápido, seguro y totalmente privado, diseñado especialmente para desarrolladores y creadores web.",
     "mission_title": "Nuestra misión",
     "mission_desc": "QuickFix Studio se desarrolló con el objetivo de simplificar el flujo de trabajo diario de desarrolladores, especialistas de SEO y optimizadores de contenido. Creemos que las pequeñas herramientas de utilidad no deberían implicar registros engorrosos ni riesgos de filtración de datos confidenciales.",
+=======
+    "meta_title": "Sobre nosotros - JSNify",
+    "meta_desc": "Conoce la misión detrás de JSNify. Ofrecemos herramientas de formato SQL, validación JSON y minificación CSS gratis y 100% seguras.",
+    "h1": "Acerca de JSNify",
+    "subtitle": "Un ecosistema de herramientas de programación rápido, seguro y totalmente privado, diseñado especialmente para desarrolladores y creadores web.",
+    "mission_title": "Nuestra misión",
+    "mission_desc": "JSNify se desarrolló con el objetivo de simplificar el flujo de trabajo diario de desarrolladores, especialistas de SEO y optimizadores de contenido. Creemos que las pequeñas herramientas de utilidad no deberían implicar registros engorrosos ni riesgos de filtración de datos confidenciales.",
+>>>>>>> 922e231 (Commit)
     "values_title": "Valores fundamentales que marcan la diferencia",
     "values": [
       {
@@ -310,7 +358,11 @@
     "cta_btn": "Volver al panel de control"
   },
   "blog_page": {
+<<<<<<< HEAD
     "meta_title": "Blog de herramientas y SEO técnico | Quick-Fix Tools",
+=======
+    "meta_title": "Blog de herramientas y SEO técnico | JSNify",
+>>>>>>> 922e231 (Commit)
     "meta_desc": "Explora artículos detallados sobre formato SQL, optimización JSON, compresión CSS/JS y procesos SEO técnicos útiles para programadores.",
     "h1": "Blog y conocimiento técnico",
     "subtitle": "Recopilación de artículos especializados y guías prácticas para ayudarte a optimizar el código fuente, acelerar la carga de páginas y mejorar la productividad diaria.",

@@ -94,8 +94,8 @@ const buildEntry = (
     'url-encoder-decoder': { en: 'URL Encoder Decoder', vi: 'Mã hóa URL' },
   }[tool] || { en: 'Tool', vi: 'Công cụ' };
 
-  const titleEn = `${keyword.en.replace(/\bonline\b/gi, '').trim()} | ${toolLabel.en} | Quick-Fix Tools`;
-  const titleVi = `${keyword.vi} | ${toolLabel.vi} | Quick-Fix Tools`;
+  const titleEn = `${keyword.en.replace(/\bonline\b/gi, '').trim()} | ${toolLabel.en} | JSNify`;
+  const titleVi = `${keyword.vi} | ${toolLabel.vi} | JSNify`;
   const descriptionEn = (() => {
     switch (tool) {
       case 'sql-formatter':

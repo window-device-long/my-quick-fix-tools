@@ -3,10 +3,11 @@ import { getDictionary } from '@/dictionaries/get-dictionary';
 import { Metadata } from 'next';
 import UrlEncoderDecoderClient from './UrlEncoderDecoderClient';
 import SeoToolLanding from '@/components/SeoToolLanding';
+import { languageAlternates } from '@/lib/site';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params; const dict = await getDictionary(lang);
-  return { title: dict['url_encoder_decoder']?.meta_title || 'url-encoder-decoder', description: dict['url_encoder_decoder']?.meta_desc || 'url-encoder-decoder tool' };
+  return { title: dict['url_encoder_decoder']?.meta_title || 'url-encoder-decoder', description: dict['url_encoder_decoder']?.meta_desc || 'url-encoder-decoder tool', alternates: { canonical: `/${lang}/url-encoder-decoder`, languages: languageAlternates('url-encoder-decoder') } };
 }
 
 export default async function ToolPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -25,6 +26,7 @@ export default async function ToolPage({ params }: { params: Promise<{ lang: str
       </div>
 
       <SeoToolLanding
+        toolPath="url-encoder-decoder"
         lang={lang}
         badge={lang === 'vi' ? 'SEO Landing Page' : 'SEO Landing Page'}
         title={lang === 'vi' ? 'Công cụ mã hóa / giải mã URL' : 'URL Encoder / Decoder'}

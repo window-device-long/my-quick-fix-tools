@@ -76,10 +76,10 @@ const handleLangChange = (newLang: string) => {
         {/* LOGO */}
         <Link href={`/${lang}`} className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-slate-200 bg-slate-900 shadow-sm">
-            <img src="/favicon-32x32.png" alt="QuickFix Studio logo" className="h-5 w-5" />
+            <img src="/favicon-32x32.png" alt="JSNify logo" className="h-5 w-5" />
           </div>
           <div className="leading-tight">
-            <div className="text-base font-semibold tracking-tight text-slate-900">QuickFix Studio</div>
+            <div className="text-base font-semibold tracking-tight text-slate-900">JSNify</div>
             <div className="hidden text-[10px] font-semibold uppercase tracking-[0.24em] text-slate-500 sm:block">Online utilities</div>
           </div>
         </Link>

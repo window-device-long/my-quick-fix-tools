@@ -56,7 +56,11 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const description = getLocalizedField(page.description, lang);
 
   return {
+<<<<<<< HEAD
     title: `${title} | Quick-Fix Tools`,
+=======
+    title: `${title} | JSNify`,
+>>>>>>> 922e231 (Commit)
     description: description,
     keywords: [page.keyword?.en, page.keyword?.vi, page.tool].filter(Boolean) as string[],
     alternates: { canonical: `https://jsnify.online/${lang}/tools/${slug}` },
@@ -113,8 +117,13 @@ export default async function ToolClusterPage({ params }: { params: Promise<{ la
     keywords: [page.keyword?.en, page.keyword?.vi, page.tool].filter(Boolean),
     inLanguage: lang,
     mainEntityOfPage: `https://jsnify.online/${lang}/tools/${slug}`,
+<<<<<<< HEAD
     author: { '@type': 'Organization', name: 'Quick-Fix Tools' },
     publisher: { '@type': 'Organization', name: 'Quick-Fix Tools' },
+=======
+    author: { '@type': 'Organization', name: 'JSNify' },
+    publisher: { '@type': 'Organization', name: 'JSNify' },
+>>>>>>> 922e231 (Commit)
     articleSection: lang === 'vi' ? 'Công cụ trực tuyến' : 'Online tools',
   };
 

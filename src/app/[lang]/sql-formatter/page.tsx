@@ -1,6 +1,10 @@
 import React from 'react';
 import { getDictionary } from '@/dictionaries/get-dictionary';
 import SqlClientTool from './SqlClientTool';
+<<<<<<< HEAD
+=======
+import { languageAlternates } from '@/lib/site';
+>>>>>>> 922e231 (Commit)
 
 interface PageProps {
   params: Promise<{ lang: string }>;
@@ -12,6 +16,10 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title: dict.sql.meta_title,
     description: dict.sql.meta_desc,
+<<<<<<< HEAD
+=======
+    alternates: { canonical: `/${lang}/sql-formatter`, languages: languageAlternates('sql-formatter') },
+>>>>>>> 922e231 (Commit)
   };
 }
 

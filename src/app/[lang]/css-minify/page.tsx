@@ -3,10 +3,11 @@ import { getDictionary } from '@/dictionaries/get-dictionary';
 import { Metadata } from 'next';
 import CssMinifyClient from './CssMinifyClient';
 import SeoToolLanding from '@/components/SeoToolLanding';
+import { languageAlternates } from '@/lib/site';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params; const dict = await getDictionary(lang);
-  return { title: dict['css_minify']?.meta_title || 'css-minify', description: dict['css_minify']?.meta_desc || 'css-minify tool' };
+  return { title: dict['css_minify']?.meta_title || 'css-minify', description: dict['css_minify']?.meta_desc || 'css-minify tool', alternates: { canonical: `/${lang}/css-minify`, languages: languageAlternates('css-minify') } };
 }
 
 export default async function ToolPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -25,6 +26,7 @@ export default async function ToolPage({ params }: { params: Promise<{ lang: str
       </div>
 
       <SeoToolLanding
+        toolPath="css-minify"
         lang={lang}
         badge={lang === 'vi' ? 'SEO Landing Page' : 'SEO Landing Page'}
         title={lang === 'vi' ? 'Công cụ nén CSS trực tuyến' : 'CSS Minifier Online'}

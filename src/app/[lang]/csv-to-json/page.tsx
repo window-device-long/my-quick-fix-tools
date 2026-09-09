@@ -3,10 +3,11 @@ import { getDictionary } from '@/dictionaries/get-dictionary';
 import { Metadata } from 'next';
 import CsvToJsonClient from './CsvToJsonClient';
 import SeoToolLanding from '@/components/SeoToolLanding';
+import { languageAlternates } from '@/lib/site';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params; const dict = await getDictionary(lang);
-  return { title: dict['csv_to_json']?.meta_title || 'csv-to-json', description: dict['csv_to_json']?.meta_desc || 'csv-to-json tool' };
+  return { title: dict['csv_to_json']?.meta_title || 'csv-to-json', description: dict['csv_to_json']?.meta_desc || 'csv-to-json tool', alternates: { canonical: `/${lang}/csv-to-json`, languages: languageAlternates('csv-to-json') } };
 }
 
 export default async function ToolPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -25,6 +26,7 @@ export default async function ToolPage({ params }: { params: Promise<{ lang: str
       </div>
 
       <SeoToolLanding
+        toolPath="csv-to-json"
         lang={lang}
         badge={lang === 'vi' ? 'SEO Landing Page' : 'SEO Landing Page'}
         title={lang === 'vi' ? 'Công cụ chuyển CSV sang JSON' : 'CSV to JSON Converter'}

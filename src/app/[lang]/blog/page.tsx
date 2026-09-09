@@ -13,7 +13,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const blogDict = dict['blog_page'] || {};
 
   return {
+<<<<<<< HEAD
     title: blogDict.meta_title || 'Blog | Quick-Fix Tools',
+=======
+    title: blogDict.meta_title || 'Blog | JSNify',
+>>>>>>> 922e231 (Commit)
     description: blogDict.meta_desc || 'Technical blog posts and web guides.',
   };
 }

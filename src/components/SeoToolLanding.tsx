@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { siteUrl } from '@/lib/site';
 
 interface FaqItem {
   q: string;
@@ -20,6 +21,7 @@ interface SeoToolLandingProps {
   steps: string[];
   faqs: FaqItem[];
   relatedTools: RelatedTool[];
+  toolPath?: string;
 }
 
 export default function SeoToolLanding({
@@ -32,6 +34,7 @@ export default function SeoToolLanding({
   steps,
   faqs,
   relatedTools,
+  toolPath,
 }: SeoToolLandingProps) {
   const isVi = lang === 'vi';
 
@@ -41,28 +44,35 @@ export default function SeoToolLanding({
     { label: title, href: '#' },
   ];
 
-  const schema = {
+  const pageUrl = `${siteUrl}/${lang}/${toolPath || ''}`.replace(/\/$/, '');
+  const softwareSchema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: title,
     description: intro,
     applicationCategory: 'DeveloperApplication',
     operatingSystem: 'Web',
-    url: `https://jsnify.online/${lang}${typeof window !== 'undefined' ? window.location.pathname : ''}`,
-    potentialAction: {
-      '@type': 'UseAction',
-      target: `https://jsnify.online/${lang}/tools`,
-    },
-    faq: faqs.map((item) => ({ '@type': 'Question', name: item.q, acceptedAnswer: { '@type': 'Answer', text: item.a } })),
-    breadcrumb: {
-      '@type': 'BreadcrumbList',
-      itemListElement: breadcrumb.map((item, index) => ({
-        '@type': 'ListItem',
-        position: index + 1,
-        name: item.label,
-        item: `https://jsnify.online${item.href}`,
-      })),
-    },
+    url: pageUrl,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  };
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumb.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.label,
+      item: index === breadcrumb.length - 1 ? pageUrl : `${siteUrl}${item.href}`,
+    })),
   };
 
   return (
@@ -138,7 +148,9 @@ export default function SeoToolLanding({
         </div>
       </section>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     </article>
   );
 }

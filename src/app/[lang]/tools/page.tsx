@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const isVi = lang === 'vi';
 
   return {
-    title: isVi ? 'Công cụ trực tuyến SEO-friendly | Quick-Fix Tools' : 'SEO-friendly web tools hub | Quick-Fix Tools',
+    title: isVi ? 'Công cụ trực tuyến SEO-friendly | JSNify' : 'SEO-friendly web tools hub | JSNify',
     description: isVi
       ? 'Khám phá bộ công cụ trực tuyến giúp định dạng SQL, kiểm tra JSON, chuyển CSV sang JSON, tối ưu CSS và tạo hash nhanh chóng.'
       : 'Explore a complete toolkit for formatting SQL, validating JSON, converting CSV to JSON, minifying CSS, and generating hashes online.',
@@ -68,7 +68,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ lang: st
     ? {
         title: 'Bộ công cụ trực tuyến cho developers và marketer',
         intro:
-          'Quick-Fix Tools là trung tâm công cụ hữu ích cho những người làm phát triển, kiểm thử dữ liệu, tối ưu website và xử lý nội dung nhanh. Mỗi công cụ được thiết kế để hoạt động trực tiếp trên trình duyệt, giữ dữ liệu an toàn và mang lại kết quả tức thì.',
+          'JSNify là trung tâm công cụ hữu ích cho những người làm phát triển, kiểm thử dữ liệu, tối ưu website và xử lý nội dung nhanh. Mỗi công cụ được thiết kế để hoạt động trực tiếp trên trình duyệt, giữ dữ liệu an toàn và mang lại kết quả tức thì.',
         overviewTitle: 'Tổng quan hệ sinh thái công cụ',
         overviewText:
           'Thay vì chỉ là một bảng công cụ rời rạc, website này được tổ chức như một hệ thống nội dung SEO chuyên sâu. Mỗi công cụ đều giải quyết một mục tiêu tìm kiếm riêng biệt, tối ưu hóa liên kết nội bộ (internal links) và phục vụ nhu cầu thực tế của cả lập trình viên lẫn người quản trị trang web.',
@@ -95,7 +95,7 @@ export default async function ToolsPage({ params }: { params: Promise<{ lang: st
     : {
         title: 'A practical toolkit for developers and SEO teams',
         intro:
-          'Quick-Fix Tools is a focused utility hub for developers, QA teams, marketers, and website operators. Each tool runs directly in the browser, keeps your data private, and delivers instant results.',
+          'JSNify is a focused utility hub for developers, QA teams, marketers, and website operators. Each tool runs directly in the browser, keeps your data private, and delivers instant results.',
         overviewTitle: 'A structured toolkit ecosystem',
         overviewText:
           'Rather than a collection of isolated utilities, this website is designed as an SEO-ready content system where each feature serves a distinct search intent, linked contextually to enhance performance and usability.',

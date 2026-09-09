@@ -3,6 +3,7 @@ import { getDictionary } from '@/dictionaries/get-dictionary';
 import { Metadata } from 'next';
 import HashGeneratorClient from './HashGeneratorClient';
 import SeoToolLanding from '@/components/SeoToolLanding';
+import { languageAlternates } from '@/lib/site';
 
 interface PageProps {
   params: Promise<{ lang: string }>;
@@ -15,7 +16,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   return { 
     title: hashDict.meta_title || 'Cryptographic Hash Generator', 
+<<<<<<< HEAD
     description: hashDict.meta_desc || 'Generate secure MD5, SHA-1, SHA-256, and SHA-512 hashes locally.' 
+=======
+    description: hashDict.meta_desc || 'Generate secure MD5, SHA-1, SHA-256, and SHA-512 hashes locally.',
+    alternates: { canonical: `/${lang}/hash-generator`, languages: languageAlternates('hash-generator') },
+>>>>>>> 922e231 (Commit)
   };
 }
 
@@ -73,6 +79,7 @@ export default async function ToolPage({ params }: PageProps) {
 
       {/* SEO Landing Page Component */}
       <SeoToolLanding
+        toolPath="hash-generator"
         lang={lang}
         badge={seo.badge}
         title={seo.title}

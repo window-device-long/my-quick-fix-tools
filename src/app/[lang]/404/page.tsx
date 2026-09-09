@@ -1,6 +1,9 @@
 // src/app/[lang]/404/page.tsx
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = { robots: { index: false, follow: false } };
 
 const translations: Record<string, { title: string; desc: string; btn: string }> = {
   en: { title: "404 - Page Not Found", desc: "Oops! The tool or page you are looking for doesn't exist.", btn: "Back to Home" },

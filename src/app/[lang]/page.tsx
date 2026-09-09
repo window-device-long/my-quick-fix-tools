@@ -62,7 +62,11 @@ export default async function HomePage({ params }: HomePageProps) {
           {homeDict.badge}
         </span>
         <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent pb-1">
+<<<<<<< HEAD
           {commonDict?.title || 'QuickFix Studio'}
+=======
+          {commonDict?.title || 'JSNify'}
+>>>>>>> 922e231 (Commit)
         </h1>
         <p className="text-base sm:text-lg text-slate-500 leading-relaxed">
           {commonDict?.description}

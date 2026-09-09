@@ -12,7 +12,11 @@ export async function generateMetadata({
   const dictionary = await getDictionary(lang);
 
   return {
+<<<<<<< HEAD
     title: `${dictionary.guides.title} | Quick-Fix Tools`,
+=======
+    title: `${dictionary.guides.title} | JSNify`,
+>>>>>>> 922e231 (Commit)
     description: dictionary.guides.description,
   };
 }
